@@ -1,0 +1,54 @@
+name: Fetch Overture Filaments
+
+on:
+  schedule:
+    - cron: "0 9 * * *"  # Every day at 9 AM UTC
+  workflow_dispatch:
+
+jobs:
+  fetch_and_notify:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests
+
+      - name: Run filament script
+        id: fetch
+        run: |
+          output=$(python dbworker/fetch_overture_filaments.py)
+          echo "$output" > output.json
+          ROWS=$(echo "$output" | jq '.rows')
+          CHANGED=$(echo "$output" | jq '.changed')
+          echo "rows=$ROWS" >> $GITHUB_OUTPUT
+          echo "changed=$CHANGED" >> $GITHUB_OUTPUT
+
+      - name: Notify Discord if changed
+        if: steps.fetch.outputs.changed == 'true'
+        uses: peter-evans/webhook@v1
+        with:
+          url: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          method: POST
+          content-type: application/json
+          payload: |
+            {
+              "username": "Overture Scraper",
+              "embeds": [
+                {
+                  "title": "Overture Filament Update",
+                  "description": "Fetched ${{ steps.fetch.outputs.rows }} variants (excluding refills). CSV updated in dbworker/overture_filament_index.csv",
+                  "url": "https://github.com/${{ github.repository }}",
+                  "color": 3066993
+                }
+              ]
+            }
