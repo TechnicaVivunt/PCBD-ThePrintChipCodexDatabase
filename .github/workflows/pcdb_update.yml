@@ -1,4 +1,4 @@
-name: Update Print Chip Codex Database
+name: Merge CSV on PR
 
 on:
   pull_request:
@@ -7,12 +7,16 @@ on:
 
 jobs:
   merge-csv:
+    # Skip workflow if PR update was made by the GitHub Actions bot
+    if: github.actor != 'github-actions[bot]'
     runs-on: ubuntu-latest
 
     steps:
-      # Step 1: Checkout repository
-      - name: Checkout repo
+      # Step 1: Checkout the PR branch fully
+      - name: Checkout PR branch
         uses: actions/checkout@v4
+        with:
+          ref: ${{ github.head_ref }}
 
       # Step 2: Set up Python
       - name: Set up Python
@@ -49,7 +53,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add PCDB-Database.csv
-          git diff --cached --quiet || git commit -m "Update PCDB-Database.csv with new entries"
-          git push
+          git diff --cached --quiet || git commit -m "Update PCDB-Database.csv with new entries [skip ci]"
+          git push origin HEAD:${{ github.head_ref }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
