@@ -35,11 +35,11 @@ jobs:
 
       - name: Notify Discord if changed
         if: steps.fetch.outputs.changed == 'true'
-        uses: Ilshidur/action-discord@0.4.0
+        uses: sarisia/actions-status-discord@v1
         with:
           webhook: ${{ secrets.DISCORD_WEBHOOK_URL }}
           username: "Overture Scraper"
-          message: |
+          description: |
             **Overture Filament Update**
             CSV updated in `dbworker/overture_filament_index.csv`.
             Total variants fetched: ${{ steps.fetch.outputs.rows }}.
