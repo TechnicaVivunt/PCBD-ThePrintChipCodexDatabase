@@ -1,6 +1,9 @@
 name: Fetch Overture Filaments
 
 on:
+  push:
+    branches:
+      - database-backend
   schedule:
     - cron: "0 9 * * *"  # Runs every day at 9 AM UTC
   workflow_dispatch:
@@ -22,29 +25,34 @@ jobs:
 
       - name: Install dependencies
         run: |
+          sudo apt-get update
+          sudo apt-get install -y jq
           python -m pip install --upgrade pip
-          pip install requests jq
+          pip install requests
 
       - name: Run filament script
         id: fetch
         run: |
           output=$(python dbworker/fetch_overture_filaments.py)
           echo "$output" > output.json
-          ROWS=$(echo "$output" | jq '.rows')
-          CHANGED=$(echo "$output" | jq '.changed')
+          ROWS=$(echo "$output" | jq -r '.rows')
+          CHANGED=$(echo "$output" | jq -r '.changed')
           echo "rows=$ROWS" >> $GITHUB_OUTPUT
           echo "changed=$CHANGED" >> $GITHUB_OUTPUT
-          
-      - name: Commit updated CSV if changed
+
+      - name: Create Pull Request if changed
         if: steps.fetch.outputs.changed == 'true'
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          git config --local user.email "actions@github.com"
-          git config --local user.name "GitHub Action"
-          git add dbworker/overture_filament_index.csv dbworker/overture_filament_index.hash
-          git commit -m "Update Overture filament CSV [ci skip]" || echo "No changes to commit"
-          git push https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }} HEAD:${{ github.ref }}
+        uses: peter-evans/create-pull-request@v5
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: "Update Overture filament CSV [ci skip]"
+          branch: update/overture-filaments
+          base: main
+          title: "Update Overture filament CSV"
+          body: |
+            This PR updates `dbworker/overture_filament_index.csv`.
+            Total variants fetched: ${{ steps.fetch.outputs.rows }}.
+            Generated automatically by GitHub Actions.
 
       - name: Notify Discord if changed
         if: steps.fetch.outputs.changed == 'true'
