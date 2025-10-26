@@ -85,13 +85,24 @@ PCDB-005-001-3
 
 ## References
 
+- [The Print Codex](https://theprintcodex.com/)
 - [Original Print Chip Codex by James@ThePrintCodex](https://www.printables.com/refresh?redirectUrl=%2F%40JamesThePrint_699540)  
 
 ## Roadmap
 
 Currently - this is mostly being updated manually - I have a few prototyped scripts to manually pull the filament options/colors/variations from different manufacturer websites. The end goal will be to create some workflow/actions to periodically pull the data and have this repository automatically update anytime new filaments are found on the popular manufacturers.
 
+Automated Updates for Filaments for the following manufacturers:
+
+| PolyMaker       |
+| BambuLab        |
+| Prusa           |
+| Overture        |
+| eSUN            |
+| SUNLU           |
+| ERYONE          |
+
+## Additional Notes
+
 I am open to adding additional manufacturers as well so long as they at least have their own websites (scraping popular ecommerce like amazon can be messy).
 This is mostly a hobby project - so updates may be erradic. I'm also using this as a jumping off point to learning github - so PRs and commits may be a little messy. If I get to the point to where I can consistently pull from a fair few manufacturers and get adequate comparisons in python - I will split off between dev and stable branches to ensure entries aren't incidentally removed/changed.
-
-
