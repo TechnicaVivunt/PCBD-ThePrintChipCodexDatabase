@@ -21,7 +21,6 @@ def fetch_all_products():
 
     while True:
         params = {"limit": PAGE_LIMIT, "page": page}
-        print(f"🔄 Fetching page {page}...")
         resp = requests.get(COLLECTION_JSON_URL, params=params)
         resp.raise_for_status()
         data = resp.json()
@@ -42,7 +41,6 @@ def fetch_all_products():
         page += 1
         time.sleep(0.5)
 
-    print(f"✅ Fetched {len(all_products)} total products.")
     return all_products
 
 
@@ -57,7 +55,6 @@ def clean_product_name(name):
 
 def build_csv_rows(products):
     rows = []
-
     for product in products:
         raw_product_name = product.get("title", "")
         if contains_refill(raw_product_name):
@@ -125,12 +122,11 @@ def main():
         with open(HASH_FILE, "w") as f:
             f.write(new_hash)
 
-    # Output info for GitHub Actions
-    print(json.dumps({
-        "rows": len(rows),
-        "changed": changed
-    }))
+    # Return dict for GitHub Actions to parse with jq
+    return {"rows": len(rows), "changed": changed}
 
 
 if __name__ == "__main__":
-    main()
+    result = main()
+    # Print only JSON, no extra prints
+    print(json.dumps(result))
