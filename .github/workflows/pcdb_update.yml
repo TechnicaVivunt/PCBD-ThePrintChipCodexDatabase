@@ -1,0 +1,55 @@
+name: Update Print Chip Codex Database
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  merge-csv:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Checkout repository
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      # Step 2: Set up Python
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      # Step 3: Install dependencies
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install pandas
+
+      # Step 4: Detect new or modified CSVs in dbworker folder
+      - name: Detect changed CSVs
+        id: changed_csvs
+        run: |
+          CHANGED=$(git diff --name-only origin/main...HEAD dbworker/ | grep '\.csv$' || true)
+          echo "changed_csvs=$CHANGED" >> $GITHUB_OUTPUT
+
+      # Step 5: Merge each changed CSV into PCDB-Database.csv
+      - name: Merge changed CSVs
+        if: steps.changed_csvs.outputs.changed_csvs != ''
+        run: |
+          echo "Processing changed CSVs:"
+          for csv in ${{ steps.changed_csvs.outputs.changed_csvs }}; do
+              echo "Merging $csv into PCDB-Database.csv"
+              python merge_and_code.py "$csv"
+          done
+
+      # Step 6: Commit updated PCDB-Database.csv if changed
+      - name: Commit updated PCDB-Database.csv
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add PCDB-Database.csv
+          git diff --cached --quiet || git commit -m "Update PCDB-Database.csv with new entries"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
