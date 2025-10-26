@@ -37,9 +37,10 @@ jobs:
       - name: Commit changes (if any)
         id: commit
         run: |
-          if ! git diff --quiet dbworker/polymaker_filament_index.csv; then
-            git add dbworker/polymaker_filament_index.csv
-            git commit -m "🔄 Update Polymaker CSV on $(date -u '+%Y-%m-%d %H:%M:%S UTC')"
+          FILE="dbworker/polymaker_filament_index.csv"
+          if [ ! -f "$FILE" ] || ! git diff --quiet "$FILE"; then
+            git add "$FILE"
+            git commit -m "🔄 Add/Update Polymaker CSV on $(date -u '+%Y-%m-%d %H:%M:%S UTC')"
             git push origin database-backend
             echo "changes=true" >> $GITHUB_OUTPUT
           else
@@ -73,3 +74,4 @@ jobs:
             Total variants fetched: ${{ steps.fetch.outputs.rows }}.
             Check the repo for details: https://github.com/${{ github.repository }}
           color: 3066993
+
