@@ -32,6 +32,15 @@ jobs:
           CHANGED=$(echo "$output" | jq '.changed')
           echo "rows=$ROWS" >> $GITHUB_OUTPUT
           echo "changed=$CHANGED" >> $GITHUB_OUTPUT
+          
+      - name: Commit updated CSV if changed
+        if: steps.fetch.outputs.changed == 'true'
+        run: |
+          git config --local user.email "actions@github.com"
+          git config --local user.name "GitHub Action"
+          git add dbworker/overture_filament_index.csv dbworker/overture_filament_index.hash
+          git commit -m "Update Overture filament CSV [ci skip]" || echo "No changes to commit"
+          git push origin HEAD:${{ github.ref }}
 
       - name: Notify Discord if changed
         if: steps.fetch.outputs.changed == 'true'
