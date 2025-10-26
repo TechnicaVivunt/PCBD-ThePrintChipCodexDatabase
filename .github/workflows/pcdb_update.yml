@@ -7,8 +7,8 @@ on:
 
 jobs:
   merge-csv:
-    # Skip workflow if PR update was made by the GitHub Actions bot
-    if: github.actor != 'github-actions[bot]'
+    # Skip workflow if PR update was made by the bot or if the PR is from a fork
+    if: github.actor != 'github-actions[bot]' && github.repository == github.event.pull_request.head.repo.full_name
     runs-on: ubuntu-latest
 
     steps:
@@ -49,11 +49,10 @@ jobs:
 
       # Step 6: Commit updated PCDB-Database.csv if changed
       - name: Commit updated PCDB-Database.csv
+        if: steps.changed_csvs.outputs.changed_csvs != ''
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add PCDB-Database.csv
           git diff --cached --quiet || git commit -m "Update PCDB-Database.csv with new entries [skip ci]"
-          git push origin HEAD:${{ github.head_ref }}
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          git push https://x-access-token:${{ secrets.PAT_TOKEN }}@github.com/${{ github.repository }} HEAD:${{ github.head_ref }}
