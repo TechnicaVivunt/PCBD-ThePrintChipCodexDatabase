@@ -8,7 +8,10 @@ on:
 jobs:
   update-csv:
     runs-on: ubuntu-latest
-
+    permissions:
+      contents: write
+      pull-requests: write
+      
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -74,4 +77,5 @@ jobs:
             Total variants fetched: ${{ steps.fetch.outputs.rows }}.
             Check the repo for details: https://github.com/${{ github.repository }}
           color: 3066993
+
 
