@@ -37,6 +37,20 @@ jobs:
           CHANGED=$(echo "$output" | jq -r '.changed')
           echo "rows=$ROWS" >> $GITHUB_OUTPUT
           echo "changed=$CHANGED" >> $GITHUB_OUTPUT
+          
+      - name: Commit changes (if any)
+        id: commit
+        run: |
+          FILE="dbworker/overture_filament_index.csv"
+          if [ ! -f "$FILE" ] || ! git diff --quiet "$FILE"; then
+            git add "$FILE"
+            git commit -m "🔄 Add/Overture CSV on $(date -u '+%Y-%m-%d %H:%M:%S UTC')"
+            git push origin database-backend
+            echo "changes=true" >> $GITHUB_OUTPUT
+          else
+            echo "No changes detected — nothing to commit."
+            echo "changes=false" >> $GITHUB_OUTPUT
+          fi
 
       - name: Create Pull Request if changed
         if: steps.fetch.outputs.changed == 'true'
