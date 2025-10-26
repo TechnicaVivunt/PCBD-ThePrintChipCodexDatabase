@@ -2,7 +2,7 @@ name: Fetch Overture Filaments
 
 on:
   schedule:
-    - cron: "0 9 * * *"  # Every day at 9 AM UTC
+    - cron: "0 9 * * *"  # Runs every day at 9 AM UTC
   workflow_dispatch:
 
 jobs:
@@ -33,16 +33,15 @@ jobs:
           echo "rows=$ROWS" >> $GITHUB_OUTPUT
           echo "changed=$CHANGED" >> $GITHUB_OUTPUT
 
-- name: Notify Discord if changed
-  if: steps.fetch.outputs.changed == 'true'
-  uses: Ilshidur/action-discord@0.4.0
-  with:
-    webhook: ${{ secrets.DISCORD_WEBHOOK_URL }}
-    username: "Overture Scraper"
-    message: |
-      **Overture Filament Update**
-      CSV updated in `dbworker/overture_filament_index.csv`.
-      Total variants fetched: ${{ steps.fetch.outputs.rows }}.
-      Check the repo for details: https://github.com/${{ github.repository }}
-    color: 3066993
-
+      - name: Notify Discord if changed
+        if: steps.fetch.outputs.changed == 'true'
+        uses: Ilshidur/action-discord@0.4.0
+        with:
+          webhook: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          username: "Overture Scraper"
+          message: |
+            **Overture Filament Update**
+            CSV updated in `dbworker/overture_filament_index.csv`.
+            Total variants fetched: ${{ steps.fetch.outputs.rows }}.
+            Check the repo for details: https://github.com/${{ github.repository }}
+          color: 3066993
