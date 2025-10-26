@@ -104,7 +104,7 @@ def main():
     # --- Write everything to CSV ---
     import os
 
-    os.makedirs("dbworker", exist_ok=True
+    os.makedirs("dbworker", exist_ok=True)
     filename = os.path.join("dbworker", "polymaker_filament_index.csv")
 
     with open(filename, "w", newline="", encoding="utf-8-sig") as f:
