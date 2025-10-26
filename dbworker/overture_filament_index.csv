@@ -1,1 +1,437 @@
-
+Product,Variant,SKU,Price,Available,Color,URL
+PLA  1.75mm,White / Filament with spool,VFPWTE17511,16.99,True,White,https://overture3d.com/products/overture-pla
+PLA  1.75mm,Black / Filament with spool,VFPBLK17511,16.99,True,Black,https://overture3d.com/products/overture-pla
+PLA  1.75mm,Cold White / Filament with spool,VSA020004,19.99,True,Cold White,https://overture3d.com/products/overture-pla
+PLA  1.75mm,Red / Filament with spool,VFPRED17511,19.99,True,Red,https://overture3d.com/products/overture-pla
+PLA  1.75mm,Fresh Red / Filament with spool,VFPFRE11-010024,23.99,True,Fresh Red,https://overture3d.com/products/overture-pla
+PLA  1.75mm,Space Gray / Filament with spool,VFPSGR17511,20.99,True,Space Gray,https://overture3d.com/products/overture-pla
+PLA  1.75mm,Light Gray / Filament with spool,VFPLGR17511,23.99,True,Light Gray,https://overture3d.com/products/overture-pla
+PLA  1.75mm,Cement Gray / Filament with spool,VFPCGR11-010070,23.99,True,Cement Gray,https://overture3d.com/products/overture-pla
+PLA  1.75mm,Orange / Filament with spool,VFPORG17511,23.99,False,Orange,https://overture3d.com/products/overture-pla
+PLA  1.75mm,Pink / Filament with spool,VFPPNK17511,23.99,True,Pink,https://overture3d.com/products/overture-pla
+PLA  1.75mm,Blue / Filament with spool,VFPBLE17511,20.99,True,Blue,https://overture3d.com/products/overture-pla
+PLA  1.75mm,Light Blue / Filament with spool,VFPLBU11-010026,23.99,True,Light Blue,https://overture3d.com/products/overture-pla
+PLA  1.75mm,Gray Blue / Filament with spool,VFPGBU11-010034,20.99,True,Gray Blue,https://overture3d.com/products/overture-pla
+PLA  1.75mm,Green / Filament with spool,VFPGRN17511,20.99,True,Green,https://overture3d.com/products/overture-pla
+PLA  1.75mm,Olive Green / Filament with spool,VFPOLI11-010023,23.99,True,Olive Green,https://overture3d.com/products/overture-pla
+PLA  1.75mm,Glow in Dark / Filament with spool,VFPGFLG17511,25.99,False,Glow in Dark,https://overture3d.com/products/overture-pla
+PLA  1.75mm,Yellow / Filament with spool,VFPYLW17511,23.99,True,Yellow,https://overture3d.com/products/overture-pla
+PLA  1.75mm,Highlight Yellow / Filament with spool,VFPHLY11-010036,20.99,True,Highlight Yellow,https://overture3d.com/products/overture-pla
+PLA  1.75mm,Royal Gold / Filament with spool,VFPDGO17511,23.99,True,Royal Gold,https://overture3d.com/products/overture-pla
+PLA  1.75mm,Brown / Filament with spool,VFPBRW11-010031,20.99,True,Brown,https://overture3d.com/products/overture-pla
+PLA  1.75mm,Chocolate / Filament with spool,VFPCHO11-010032,23.99,True,Chocolate,https://overture3d.com/products/overture-pla
+PLA  1.75mm,Purple / Filament with spool,VFPPPL17511,20.99,True,Purple,https://overture3d.com/products/overture-pla
+PLA  1.75mm,Rainbow / Filament with spool,VSA020003,25.99,True,Rainbow,https://overture3d.com/products/overture-pla
+PLA  1.75mm,Aurora Berry / Filament with spool,VSA020008,25.99,True,Aurora Berry,https://overture3d.com/products/overture-pla
+PLA  1.75mm,Avocado / Filament with spool,VSA020015,25.99,True,Avocado,https://overture3d.com/products/overture-pla
+PLA  1.75mm,Tequila Sunrise / Filament with spool,VSA020014,25.99,True,Tequila Sunrise,https://overture3d.com/products/overture-pla
+PLA  1.75mm,Lemon Yellow / Filament with spool,VSA020011,25.99,True,Lemon Yellow,https://overture3d.com/products/overture-pla
+PLA  1.75mm,Metallic Gray / Filament with spool,VSA020010,25.99,True,Metallic Gray,https://overture3d.com/products/overture-pla
+PLA  1.75mm,Northern Lights / Filament with spool,VSA020013,25.99,True,Northern Lights,https://overture3d.com/products/overture-pla
+PLA  1.75mm,Rocket Pop / Filament with spool,VSA020016,25.99,True,Rocket Pop,https://overture3d.com/products/overture-pla
+PLA  1.75mm,Sparkle Black / Filament with spool,VSA020009,25.99,True,Sparkle Black,https://overture3d.com/products/overture-pla
+PLA  1.75mm,Sparkle Purple / Filament with spool,VSA020012,25.99,True,Sparkle Purple,https://overture3d.com/products/overture-pla
+PETG  1.75mm,Black / 1.75mm,VFEBLK17511,15.99,True,Black,https://overture3d.com/products/overture-petg
+PETG  1.75mm,White / 1.75mm,VFEWTE17511,15.99,True,White,https://overture3d.com/products/overture-petg
+PETG  1.75mm,Rock White / 1.75mm,VFERWT17511,22.99,True,Rock White,https://overture3d.com/products/overture-petg
+PETG  1.75mm,Transparent / 1.75mm,VFECLR17511,19.99,True,Transparent,https://overture3d.com/products/overture-petg
+PETG  1.75mm,Space Gray / 1.75mm,VFESGR17511,22.99,True,Space Gray,https://overture3d.com/products/overture-petg
+PETG  1.75mm,Light Gray / 1.75mm,VFELGR17511,22.99,True,Light Gray,https://overture3d.com/products/overture-petg
+PETG  1.75mm,Red / 1.75mm,VFERED17511,18.99,True,Red,https://overture3d.com/products/overture-petg
+PETG  1.75mm,Transparent Red / 1.75mm,VFETRD17511,22.99,True,Transparent Red,https://overture3d.com/products/overture-petg
+PETG  1.75mm,Magenta / 1.75mm,VFEMGT17511,22.99,True,Magenta,https://overture3d.com/products/overture-petg
+PETG  1.75mm,Pink / 1.75mm,VFEPNK17511,22.99,True,Pink,https://overture3d.com/products/overture-petg
+PETG  1.75mm,Orange / 1.75mm,VFEORG17511,19.99,True,Orange,https://overture3d.com/products/overture-petg
+PETG  1.75mm,Gold / 1.75mm,VFEGLD17511,22.99,True,Gold,https://overture3d.com/products/overture-petg
+PETG  1.75mm,Brown / 1.75mm,VSB010002,22.99,True,Brown,https://overture3d.com/products/overture-petg
+PETG  1.75mm,Yellow / 1.75mm,VFEYLW17511,22.99,True,Yellow,https://overture3d.com/products/overture-petg
+PETG  1.75mm,Grass Green / 1.75mm,VFEGGR11-010053,22.99,True,Grass Green,https://overture3d.com/products/overture-petg
+PETG  1.75mm,Transparent Green / 1.75mm,VFETGE17511,22.99,True,Transparent Green,https://overture3d.com/products/overture-petg
+PETG  1.75mm,Green / 1.75mm,VFEGRN17511,22.99,True,Green,https://overture3d.com/products/overture-petg
+PETG  1.75mm,Army Green / 1.75mm,VFEAGN17511,22.99,True,Army Green,https://overture3d.com/products/overture-petg
+PETG  1.75mm,Digital Blue / 1.75mm,VFEELB17511,22.99,True,Digital Blue,https://overture3d.com/products/overture-petg
+PETG  1.75mm,Transparent Blue / 1.75mm,VFETBL17511,22.99,True,Transparent Blue,https://overture3d.com/products/overture-petg
+PETG  1.75mm,Blue / 1.75mm,VFEBLE17511,22.99,True,Blue,https://overture3d.com/products/overture-petg
+PETG  1.75mm,Starry Blue / 1.75mm,VFESBU17511,22.99,True,Starry Blue,https://overture3d.com/products/overture-petg
+PETG  1.75mm,Sparkle Blue / 1.75mm,VFESPB17511,22.99,True,Sparkle Blue,https://overture3d.com/products/overture-petg
+PETG  1.75mm,Purple / 1.75mm,VFEPPL17511,22.99,True,Purple,https://overture3d.com/products/overture-petg
+Matte PLA  1.75mm,1-pack / 1.75mm / White,VFFMWT17511,18.99,True,1-pack,https://overture3d.com/products/overture-matte-pla
+Matte PLA  1.75mm,1-pack / 1.75mm / Black,VFFMBK17511,18.99,True,1-pack,https://overture3d.com/products/overture-matte-pla
+Matte PLA  1.75mm,1-pack / 1.75mm / Carbon Fiber Black,VFCBLK17511,30.99,True,1-pack,https://overture3d.com/products/overture-matte-pla
+Matte PLA  1.75mm,1-pack / 1.75mm / Light gray,VFFMLGR17511,18.99,True,1-pack,https://overture3d.com/products/overture-matte-pla
+Matte PLA  1.75mm,1-pack / 1.75mm / Black-White,VSA040001,24.99,True,1-pack,https://overture3d.com/products/overture-matte-pla
+Matte PLA  1.75mm,1-pack / 1.75mm / Pink,VFFPNK17511,18.99,True,1-pack,https://overture3d.com/products/overture-matte-pla
+Matte PLA  1.75mm,1-pack / 1.75mm / Red,VSA040029,18.99,False,1-pack,https://overture3d.com/products/overture-matte-pla
+Matte PLA  1.75mm,1-pack / 1.75mm / Pastel Red,VFFMRE17511,18.99,True,1-pack,https://overture3d.com/products/overture-matte-pla
+Matte PLA  1.75mm,1-pack / 1.75mm / Brick Red,VFFBRE11-010061,18.99,True,1-pack,https://overture3d.com/products/overture-matte-pla
+Matte PLA  1.75mm,1-pack / 1.75mm / Orange,VFFMOR17511,18.99,True,1-pack,https://overture3d.com/products/overture-matte-pla
+Matte PLA  1.75mm,1-pack / 1.75mm / Yellow,VFFMYLW17511,18.99,True,1-pack,https://overture3d.com/products/overture-matte-pla
+Matte PLA  1.75mm,1-pack / 1.75mm / Skin,VFFSKI11-010056,18.99,True,1-pack,https://overture3d.com/products/overture-matte-pla
+Matte PLA  1.75mm,1-pack / 1.75mm / Light Brown,VFFMLB17511,18.99,True,1-pack,https://overture3d.com/products/overture-matte-pla
+Matte PLA  1.75mm,1-pack / 1.75mm / Wood,OVS-VFFMWD11-010146,22.99,True,1-pack,https://overture3d.com/products/overture-matte-pla
+Matte PLA  1.75mm,1-pack / 1.75mm / Chocolate,VFFMCC17511,20.99,True,1-pack,https://overture3d.com/products/overture-matte-pla
+Matte PLA  1.75mm,1-pack / 1.75mm / Grass green,VFFGGR17511,18.99,True,1-pack,https://overture3d.com/products/overture-matte-pla
+Matte PLA  1.75mm,1-pack / 1.75mm / Army Green,OVS-VFFMAG11-010143,18.99,True,1-pack,https://overture3d.com/products/overture-matte-pla
+Matte PLA  1.75mm,1-pack / 1.75mm / Light Green,VFFMLG11-010009,20.99,True,1-pack,https://overture3d.com/products/overture-matte-pla
+Matte PLA  1.75mm,1-pack / 1.75mm / Green,VFFMGN17511,18.99,True,1-pack,https://overture3d.com/products/overture-matte-pla
+Matte PLA  1.75mm,1-pack / 1.75mm / Light blue,VFFLBE17511,18.99,True,1-pack,https://overture3d.com/products/overture-matte-pla
+Matte PLA  1.75mm,1-pack / 1.75mm / Navy Blue,OVS-VFFMNB11-010145,18.99,True,1-pack,https://overture3d.com/products/overture-matte-pla
+Matte PLA  1.75mm,1-pack / 1.75mm / Blue,VFFMBU17511,20.99,True,1-pack,https://overture3d.com/products/overture-matte-pla
+Matte PLA  1.75mm,1-pack / 1.75mm / Purple,VFFMPP17511,18.99,True,1-pack,https://overture3d.com/products/overture-matte-pla
+Matte PLA  1.75mm,1-pack / 1.75mm / Rainbow,VSA110003,24.99,True,1-pack,https://overture3d.com/products/overture-matte-pla
+Matte PLA  1.75mm,1-pack / 1.75mm / Candy Rainbow,VSA040006,24.99,True,1-pack,https://overture3d.com/products/overture-matte-pla
+Matte PLA  1.75mm,1-pack / 1.75mm / Butter Yellow,VSA040007,18.99,True,1-pack,https://overture3d.com/products/overture-matte-pla
+Matte PLA  1.75mm,1-pack / 1.75mm / Baby Pink,VSA040008,18.99,True,1-pack,https://overture3d.com/products/overture-matte-pla
+Matte PLA  1.75mm,1-pack / 1.75mm / Bamboo Green,VSA040009,18.99,True,1-pack,https://overture3d.com/products/overture-matte-pla
+Matte PLA  1.75mm,1-pack / 1.75mm / Lilac,VSA040010,18.99,True,1-pack,https://overture3d.com/products/overture-matte-pla
+Matte PLA  1.75mm,1-pack / 1.75mm / Turquoise,VSA040011,18.99,True,1-pack,https://overture3d.com/products/overture-matte-pla
+Matte PLA  1.75mm,1-pack / 1.75mm / Beige,VSA040012,18.99,True,1-pack,https://overture3d.com/products/overture-matte-pla
+Matte PLA  1.75mm,1-pack / 1.75mm / Blue-Red,VSA040004,24.99,True,1-pack,https://overture3d.com/products/overture-matte-pla
+Matte PLA  1.75mm,1-pack / 1.75mm / Orange-Red,VSA040002,24.99,True,1-pack,https://overture3d.com/products/overture-matte-pla
+Matte PLA  1.75mm,1-pack / 1.75mm / Light Blue-Yellow,VSA040003,24.99,True,1-pack,https://overture3d.com/products/overture-matte-pla
+Matte PLA  1.75mm,6-pack / 1.75mm / Red,,18.99,False,6-pack,https://overture3d.com/products/overture-matte-pla
+Matte PLA  1.75mm,6-pack / 1.75mm / 6-Color,VFFMLT61-010104,109.99,True,6-pack,https://overture3d.com/products/overture-matte-pla
+Matte PLA  1.75mm,2-pack / 1.75mm / White,VFFWTE21-010097,36.99,True,2-pack,https://overture3d.com/products/overture-matte-pla
+Matte PLA  1.75mm,2-pack / 1.75mm / Black,VFFBLK21-010096,36.99,True,2-pack,https://overture3d.com/products/overture-matte-pla
+Matte PLA  1.75mm,2-pack / 1.75mm / Red,,18.99,False,2-pack,https://overture3d.com/products/overture-matte-pla
+Matte PLA  1.75mm,2-pack / 1.75mm / Light Brown,VFFMLB21-010099,38.99,False,2-pack,https://overture3d.com/products/overture-matte-pla
+Matte PLA  1.75mm,2-pack / 1.75mm / Black & White,VFFBKW21-010098,36.99,True,2-pack,https://overture3d.com/products/overture-matte-pla
+PLA Professional  1.75mm,1.75mm / Wine / 1-Pack,VSA070004,24.99,False,1.75mm,https://overture3d.com/products/overture-pla-professional-3d-printer-filament-1-75mm
+PLA Professional  1.75mm,1.75mm / Pink / 1-Pack,VFBPNK17511,24.99,True,1.75mm,https://overture3d.com/products/overture-pla-professional-3d-printer-filament-1-75mm
+PLA Professional  1.75mm,1.75mm / Black / 1-Pack,VFBBLA17511,18.99,True,1.75mm,https://overture3d.com/products/overture-pla-professional-3d-printer-filament-1-75mm
+PLA Professional  1.75mm,1.75mm / Black / 2-Pack,VFBBLA17521,40.99,True,1.75mm,https://overture3d.com/products/overture-pla-professional-3d-printer-filament-1-75mm
+PLA Professional  1.75mm,1.75mm / Black / 4-Pack,VSA070005,72.99,True,1.75mm,https://overture3d.com/products/overture-pla-professional-3d-printer-filament-1-75mm
+PLA Professional  1.75mm,1.75mm / White / 1-Pack,VFBWTE17511,24.99,True,1.75mm,https://overture3d.com/products/overture-pla-professional-3d-printer-filament-1-75mm
+PLA Professional  1.75mm,1.75mm / White / 2-Pack,VFBWTE21-010102,43.99,True,1.75mm,https://overture3d.com/products/overture-pla-professional-3d-printer-filament-1-75mm
+PLA Professional  1.75mm,1.75mm / White / 4-Pack,VSA070007,72.99,True,1.75mm,https://overture3d.com/products/overture-pla-professional-3d-printer-filament-1-75mm
+PLA Professional  1.75mm,1.75mm / Black & White / 2-Pack,VSA070006,40.99,True,1.75mm,https://overture3d.com/products/overture-pla-professional-3d-printer-filament-1-75mm
+PLA Professional  1.75mm,1.75mm / Black & White / 4-Pack,VSA070008,72.99,True,1.75mm,https://overture3d.com/products/overture-pla-professional-3d-printer-filament-1-75mm
+PLA Professional  1.75mm,1.75mm / Moonlight Silver / 1-Pack,VSA070011,25.99,True,1.75mm,https://overture3d.com/products/overture-pla-professional-3d-printer-filament-1-75mm
+PLA Professional  1.75mm,1.75mm / Light Gray / 1-Pack,VFBLGR17511,24.99,True,1.75mm,https://overture3d.com/products/overture-pla-professional-3d-printer-filament-1-75mm
+PLA Professional  1.75mm,1.75mm / Space Gray / 1-Pack,VFBSGR17511,24.99,True,1.75mm,https://overture3d.com/products/overture-pla-professional-3d-printer-filament-1-75mm
+PLA Professional  1.75mm,1.75mm / Silver Metal / 1-Pack,OVS-VFBSMT11-010164,24.99,True,1.75mm,https://overture3d.com/products/overture-pla-professional-3d-printer-filament-1-75mm
+PLA Professional  1.75mm,1.75mm / Fresh red / 1-Pack,VFBFRE11-010040,24.99,True,1.75mm,https://overture3d.com/products/overture-pla-professional-3d-printer-filament-1-75mm
+PLA Professional  1.75mm,1.75mm / Red / 1-Pack,VFBRED17511,24.99,True,1.75mm,https://overture3d.com/products/overture-pla-professional-3d-printer-filament-1-75mm
+PLA Professional  1.75mm,1.75mm / Chocolate / 1-Pack,VFBCHO11-010048,24.99,True,1.75mm,https://overture3d.com/products/overture-pla-professional-3d-printer-filament-1-75mm
+PLA Professional  1.75mm,1.75mm / Brown / 1-Pack,VFBBRW11-010047,24.99,True,1.75mm,https://overture3d.com/products/overture-pla-professional-3d-printer-filament-1-75mm
+PLA Professional  1.75mm,1.75mm / Royal Gold / 1-Pack,VSA070003,24.99,True,1.75mm,https://overture3d.com/products/overture-pla-professional-3d-printer-filament-1-75mm
+PLA Professional  1.75mm,1.75mm / Orange / 1-Pack,VFBORG17511,24.99,True,1.75mm,https://overture3d.com/products/overture-pla-professional-3d-printer-filament-1-75mm
+PLA Professional  1.75mm,1.75mm / Yellow / 1-Pack,VFBYLW17511,24.99,True,1.75mm,https://overture3d.com/products/overture-pla-professional-3d-printer-filament-1-75mm
+PLA Professional  1.75mm,1.75mm / Highlight Yellow / 1-Pack,VSA070001,24.99,True,1.75mm,https://overture3d.com/products/overture-pla-professional-3d-printer-filament-1-75mm
+PLA Professional  1.75mm,1.75mm / Army Green / 1-Pack,OVS-VFBAGN11-010163,24.99,True,1.75mm,https://overture3d.com/products/overture-pla-professional-3d-printer-filament-1-75mm
+PLA Professional  1.75mm,1.75mm / Green / 1-Pack,VFBGRN17511,24.99,True,1.75mm,https://overture3d.com/products/overture-pla-professional-3d-printer-filament-1-75mm
+PLA Professional  1.75mm,1.75mm / Light Green / 1-Pack,VFBLGR11-010043,24.99,True,1.75mm,https://overture3d.com/products/overture-pla-professional-3d-printer-filament-1-75mm
+PLA Professional  1.75mm,1.75mm / Olive Green / 1-Pack,VFBOLI11-010039,24.99,True,1.75mm,https://overture3d.com/products/overture-pla-professional-3d-printer-filament-1-75mm
+PLA Professional  1.75mm,1.75mm / Light Blue / 1-Pack,VFBLBU11-010042,24.99,True,1.75mm,https://overture3d.com/products/overture-pla-professional-3d-printer-filament-1-75mm
+PLA Professional  1.75mm,1.75mm / Digital Blue / 1-Pack,VFBETB17511,24.99,True,1.75mm,https://overture3d.com/products/overture-pla-professional-3d-printer-filament-1-75mm
+PLA Professional  1.75mm,1.75mm / Digital Blue / 2-Pack,VFBELB17521,43.99,True,1.75mm,https://overture3d.com/products/overture-pla-professional-3d-printer-filament-1-75mm
+PLA Professional  1.75mm,1.75mm / Gray Blue / 1-Pack,VFBGBU11-010050,24.99,True,1.75mm,https://overture3d.com/products/overture-pla-professional-3d-printer-filament-1-75mm
+PLA Professional  1.75mm,1.75mm / Dark Blue / 1-Pack,VFBBLE17511,24.99,True,1.75mm,https://overture3d.com/products/overture-pla-professional-3d-printer-filament-1-75mm
+PLA Professional  1.75mm,1.75mm / Black & Digital Blue / 2-Pack,VFBBLU21-010103,43.99,False,1.75mm,https://overture3d.com/products/overture-pla-professional-3d-printer-filament-1-75mm
+PLA Professional  1.75mm,1.75mm / Purple / 1-Pack,VFBPPL17511,24.99,True,1.75mm,https://overture3d.com/products/overture-pla-professional-3d-printer-filament-1-75mm
+PLA Professional  1.75mm,1.75mm / Sunset Rainbow / 1-Pack,VSA070002,25.99,True,1.75mm,https://overture3d.com/products/overture-pla-professional-3d-printer-filament-1-75mm
+PLA Professional  1.75mm,1.75mm / Copper / 1-Pack,VSA070009,25.99,True,1.75mm,https://overture3d.com/products/overture-pla-professional-3d-printer-filament-1-75mm
+PLA Professional  1.75mm,1.75mm / Bronze / 1-Pack,VSA070010,25.99,True,1.75mm,https://overture3d.com/products/overture-pla-professional-3d-printer-filament-1-75mm
+PLA Professional  1.75mm,1.75mm / Champagne / 1-Pack,VSA070012,25.99,True,1.75mm,https://overture3d.com/products/overture-pla-professional-3d-printer-filament-1-75mm
+TPU  1.75mm,1.75mm / Black / 1-pack,VFTBLK17511,24.99,True,1.75mm,https://overture3d.com/products/overture-tpu
+TPU  1.75mm,1.75mm / Black / 2-pack,VFTBLK17521,47.99,True,1.75mm,https://overture3d.com/products/overture-tpu
+TPU  1.75mm,1.75mm / Space Gray / 1-pack,VFTSPG17511,28.99,True,1.75mm,https://overture3d.com/products/overture-tpu
+TPU  1.75mm,1.75mm / Gray / 1-pack,VFTGRY11-010058,28.99,True,1.75mm,https://overture3d.com/products/overture-tpu
+TPU  1.75mm,1.75mm / White / 1-pack,VFTWTE17511,28.99,True,1.75mm,https://overture3d.com/products/overture-tpu
+TPU  1.75mm,1.75mm / Transparent / 1-pack,VFTTRA11-010059,26.99,True,1.75mm,https://overture3d.com/products/overture-tpu
+TPU  1.75mm,1.75mm / Red / 1-pack,VFTRED17511,26.99,True,1.75mm,https://overture3d.com/products/overture-tpu
+TPU  1.75mm,1.75mm / Bright Pink / 1-pack,VFTBPN11-010060,30.99,True,1.75mm,https://overture3d.com/products/overture-tpu
+TPU  1.75mm,1.75mm / Brown / 1-pack,VSD010002,28.99,True,1.75mm,https://overture3d.com/products/overture-tpu
+TPU  1.75mm,1.75mm / Orange / 1-pack,VFTORG17511,28.99,True,1.75mm,https://overture3d.com/products/overture-tpu
+TPU  1.75mm,1.75mm / Yellow / 1-pack,OVS-VFTYLW11-010157,26.99,True,1.75mm,https://overture3d.com/products/overture-tpu
+TPU  1.75mm,1.75mm / Digital Blue / 1-pack,VFTETB17511,25.99,True,1.75mm,https://overture3d.com/products/overture-tpu
+TPU  1.75mm,1.75mm / Blue / 1-pack,VFTBLE17511,26.99,True,1.75mm,https://overture3d.com/products/overture-tpu
+TPU  1.75mm,1.75mm / Purple / 1-pack,VFTPPL17511,26.99,True,1.75mm,https://overture3d.com/products/overture-tpu
+TPU  1.75mm,1.75mm / Green / 1-pack,VFTGRN17511,26.99,True,1.75mm,https://overture3d.com/products/overture-tpu
+TPU  1.75mm,1.75mm / Neon Red / 1-pack,VSD010004,28.99,True,1.75mm,https://overture3d.com/products/overture-tpu
+TPU  1.75mm,1.75mm / Neon Green / 1-pack,VSD010005,30.99,True,1.75mm,https://overture3d.com/products/overture-tpu
+TPU  1.75mm,1.75mm / Neon Orange / 1-pack,VSD010006,30.99,True,1.75mm,https://overture3d.com/products/overture-tpu
+TPU  1.75mm,1.75mm / Light Green / 1-pack,VSD010007,30.99,True,1.75mm,https://overture3d.com/products/overture-tpu
+Silk PLA  1.75mm,1.75mm / Silk Gold / 1-pack,VFPSGO17511,20.99,True,1.75mm,https://overture3d.com/products/overture-silk-pla-3d-printer-filament-1-75mm
+Silk PLA  1.75mm,1.75mm / Silk Copper / 1-pack,VFPSCP17511,23.99,True,1.75mm,https://overture3d.com/products/overture-silk-pla-3d-printer-filament-1-75mm
+Silk PLA  1.75mm,1.75mm / Silk Gray / 1-pack,VFPSGA17511,23.99,True,1.75mm,https://overture3d.com/products/overture-silk-pla-3d-printer-filament-1-75mm
+Silk PLA  1.75mm,1.75mm / Silk Silver / 1-pack,VFPSSV11-010067,23.99,False,1.75mm,https://overture3d.com/products/overture-silk-pla-3d-printer-filament-1-75mm
+Silk PLA  1.75mm,1.75mm / Silk White / 1-pack,VFPSWE17511,23.99,True,1.75mm,https://overture3d.com/products/overture-silk-pla-3d-printer-filament-1-75mm
+Silk PLA  1.75mm,1.75mm / Silk Red / 1-pack,VFPSRE17511,23.99,True,1.75mm,https://overture3d.com/products/overture-silk-pla-3d-printer-filament-1-75mm
+Silk PLA  1.75mm,1.75mm / Silk Fresh Red / 1-pack,OVS-VFPFRD11-010161,23.99,True,1.75mm,https://overture3d.com/products/overture-silk-pla-3d-printer-filament-1-75mm
+Silk PLA  1.75mm,1.75mm / Silk Christmas Red / 1-pack,VSA030001,23.99,False,1.75mm,https://overture3d.com/products/overture-silk-pla-3d-printer-filament-1-75mm
+Silk PLA  1.75mm,1.75mm / Silk Neon green / 1-pack,VFPSLN17511,23.99,True,1.75mm,https://overture3d.com/products/overture-silk-pla-3d-printer-filament-1-75mm
+Silk PLA  1.75mm,1.75mm / Silk Green / 1-pack,VFPSEE17511,23.99,True,1.75mm,https://overture3d.com/products/overture-silk-pla-3d-printer-filament-1-75mm
+Silk PLA  1.75mm,1.75mm / Silk Purple / 1-pack,VFPPL11-010003,23.99,True,1.75mm,https://overture3d.com/products/overture-silk-pla-3d-printer-filament-1-75mm
+Silk PLA  1.75mm,1.75mm / Silk Blue / 1-pack,VFPSBE17511,23.99,True,1.75mm,https://overture3d.com/products/overture-silk-pla-3d-printer-filament-1-75mm
+Silk PLA  1.75mm,1.75mm / Silk Gold-Silver / 1-pack,OVS-VFPGOS11-010113,25.99,True,1.75mm,https://overture3d.com/products/overture-silk-pla-3d-printer-filament-1-75mm
+Silk PLA  1.75mm,1.75mm / Silk Green-Silver / 1-pack,OVS-VFPGRS11-010118,25.99,True,1.75mm,https://overture3d.com/products/overture-silk-pla-3d-printer-filament-1-75mm
+Silk PLA  1.75mm,1.75mm / Silk Blue-Silver / 1-pack,OVS-VFPBLS11-010116,25.99,True,1.75mm,https://overture3d.com/products/overture-silk-pla-3d-printer-filament-1-75mm
+Silk PLA  1.75mm,1.75mm / Silk Magenta-Gold / 1-pack,OVS-VFPMAG11-010117,25.99,True,1.75mm,https://overture3d.com/products/overture-silk-pla-3d-printer-filament-1-75mm
+Silk PLA  1.75mm,1.75mm / Silk Red-Gold / 1-pack,OVS-VFPREG11-010115,25.99,True,1.75mm,https://overture3d.com/products/overture-silk-pla-3d-printer-filament-1-75mm
+Silk PLA  1.75mm,1.75mm / Silk Green-Magenta / 1-pack,OVS-VFPGRM11-010119,25.99,True,1.75mm,https://overture3d.com/products/overture-silk-pla-3d-printer-filament-1-75mm
+Silk PLA  1.75mm,1.75mm / Silk Blue-Yellow / 1-pack,OVS-VFPBLY11-010120,25.99,True,1.75mm,https://overture3d.com/products/overture-silk-pla-3d-printer-filament-1-75mm
+Silk PLA  1.75mm,1.75mm / Silk Green-Blue / 1-pack,OVS-VFPGRB11-010112,25.99,True,1.75mm,https://overture3d.com/products/overture-silk-pla-3d-printer-filament-1-75mm
+Silk PLA  1.75mm,1.75mm / Silk Purple-Gold / 1-pack,OVS-VFPPUG11-010114,25.99,True,1.75mm,https://overture3d.com/products/overture-silk-pla-3d-printer-filament-1-75mm
+Silk PLA  1.75mm,1.75mm / Silk Caramel / 1-pack,VSA030013,25.99,True,1.75mm,https://overture3d.com/products/overture-silk-pla-3d-printer-filament-1-75mm
+Silk PLA  1.75mm,1.75mm / Silk Tiger Eye / 1-pack,VSA030015,25.99,True,1.75mm,https://overture3d.com/products/overture-silk-pla-3d-printer-filament-1-75mm
+Silk PLA  1.75mm,1.75mm / Silk Tropic / 1-pack,VSA030005,25.99,True,1.75mm,https://overture3d.com/products/overture-silk-pla-3d-printer-filament-1-75mm
+Silk PLA  1.75mm,1.75mm / Silk Glacier Flash / 1-pack,VSA030006,25.99,True,1.75mm,https://overture3d.com/products/overture-silk-pla-3d-printer-filament-1-75mm
+Silk PLA  1.75mm,1.75mm / Silk Purple Chrome / 1-pack,VSA030002,25.99,True,1.75mm,https://overture3d.com/products/overture-silk-pla-3d-printer-filament-1-75mm
+Silk PLA  1.75mm,1.75mm / Silk Lime Surge / 1-pack,VSA030003,25.99,True,1.75mm,https://overture3d.com/products/overture-silk-pla-3d-printer-filament-1-75mm
+Silk PLA  1.75mm,1.75mm / Silk Evergreen Bronze / 1-pack,VSA030012,25.99,True,1.75mm,https://overture3d.com/products/overture-silk-pla-3d-printer-filament-1-75mm
+Silk PLA  1.75mm,1.75mm / Silk Golden Ember / 1-pack,VSA030011,25.99,True,1.75mm,https://overture3d.com/products/overture-silk-pla-3d-printer-filament-1-75mm
+Silk PLA  1.75mm,1.75mm / Silk Chrome Gray / 1-pack,VSA030014,25.99,True,1.75mm,https://overture3d.com/products/overture-silk-pla-3d-printer-filament-1-75mm
+Silk PLA  1.75mm,1.75mm / Silk Periwinkle / 1-pack,VSA030016,25.99,True,1.75mm,https://overture3d.com/products/overture-silk-pla-3d-printer-filament-1-75mm
+Silk PLA  1.75mm,1.75mm / Silk Lettuce Tomato / 1-pack,VSA030007,25.99,True,1.75mm,https://overture3d.com/products/overture-silk-pla-3d-printer-filament-1-75mm
+Silk PLA  1.75mm,1.75mm / Silk Copper Shore / 1-pack,VSA030008,25.99,True,1.75mm,https://overture3d.com/products/overture-silk-pla-3d-printer-filament-1-75mm
+Silk PLA  1.75mm,1.75mm / Silk Punch Pink / 1-pack,VSA030009,25.99,True,1.75mm,https://overture3d.com/products/overture-silk-pla-3d-printer-filament-1-75mm
+Silk PLA  1.75mm,1.75mm / Silk Parakeet / 1-pack,VSA030010,25.99,True,1.75mm,https://overture3d.com/products/overture-silk-pla-3d-printer-filament-1-75mm
+Silk PLA  1.75mm,1.75mm / Silk Vaporwave / 1-pack,VSA030004,25.99,True,1.75mm,https://overture3d.com/products/overture-silk-pla-3d-printer-filament-1-75mm
+Easy PLA  1.75mm,Easy Black / 1.75mm / 1-Pack,VFPBLK11-010090,16.99,True,Easy Black,https://overture3d.com/products/overture-easy-pla-3d-printer-filament
+Easy PLA  1.75mm,Easy Black / 1.75mm / 2-Pack,VSA090012,28.99,True,Easy Black,https://overture3d.com/products/overture-easy-pla-3d-printer-filament
+Easy PLA  1.75mm,Easy Black / 1.75mm / 6-Pack,VSA090009,81.99,True,Easy Black,https://overture3d.com/products/overture-easy-pla-3d-printer-filament
+Easy PLA  1.75mm,Easy White / 1.75mm / 1-Pack,VFPWTE11-010091,16.99,True,Easy White,https://overture3d.com/products/overture-easy-pla-3d-printer-filament
+Easy PLA  1.75mm,Easy White / 1.75mm / 2-Pack,VSA090013,28.99,True,Easy White,https://overture3d.com/products/overture-easy-pla-3d-printer-filament
+Easy PLA  1.75mm,Easy White / 1.75mm / 6-Pack,VSA090010,81.99,True,Easy White,https://overture3d.com/products/overture-easy-pla-3d-printer-filament
+Easy PLA  1.75mm,Easy Space Gray / 1.75mm / 1-Pack,VFPSGR11-010086,17.99,True,Easy Space Gray,https://overture3d.com/products/overture-easy-pla-3d-printer-filament
+Easy PLA  1.75mm,Easy Rock White / 1.75mm / 1-Pack,VFPRWT11-010089,17.99,True,Easy Rock White,https://overture3d.com/products/overture-easy-pla-3d-printer-filament
+Easy PLA  1.75mm,Easy Red / 1.75mm / 1-Pack,VFPRED11-010087,16.99,True,Easy Red,https://overture3d.com/products/overture-easy-pla-3d-printer-filament
+Easy PLA  1.75mm,Easy Orange / 1.75mm / 1-Pack,VSA090015,17.99,True,Easy Orange,https://overture3d.com/products/overture-easy-pla-3d-printer-filament
+Easy PLA  1.75mm,Easy Caramel / 1.75mm / 1-Pack,VSA090017,17.99,True,Easy Caramel,https://overture3d.com/products/overture-easy-pla-3d-printer-filament
+Easy PLA  1.75mm,Easy Digital Blue / 1.75mm / 1-Pack,VFPDBL11-010088,17.99,True,Easy Digital Blue,https://overture3d.com/products/overture-easy-pla-3d-printer-filament
+Easy PLA  1.75mm,Easy Green / 1.75mm / 1-Pack,VSA090016,17.99,True,Easy Green,https://overture3d.com/products/overture-easy-pla-3d-printer-filament
+Easy PLA  1.75mm,Glow Red / 1.75mm / 1-Pack,VSA090002,25.99,True,Glow Red,https://overture3d.com/products/overture-easy-pla-3d-printer-filament
+Easy PLA  1.75mm,Glow Orange / 1.75mm / 1-Pack,VSA090001,25.99,True,Glow Orange,https://overture3d.com/products/overture-easy-pla-3d-printer-filament
+Easy PLA  1.75mm,Glow Yellow / 1.75mm / 1-Pack,VSA090004,25.99,True,Glow Yellow,https://overture3d.com/products/overture-easy-pla-3d-printer-filament
+Easy PLA  1.75mm,Glow Blue / 1.75mm / 1-Pack,VSA090003,25.99,True,Glow Blue,https://overture3d.com/products/overture-easy-pla-3d-printer-filament
+Easy PLA  1.75mm,Easy Natural / 1.75mm / 1-Pack,VSA090014,17.99,True,Easy Natural,https://overture3d.com/products/overture-easy-pla-3d-printer-filament
+Easy PLA  1.75mm,Shimmer Silver Green / 1.75mm / 1-Pack,VSA090006,26.99,True,Shimmer Silver Green,https://overture3d.com/products/overture-easy-pla-3d-printer-filament
+Easy PLA  1.75mm,Shimmer Bronze / 1.75mm / 1-Pack,VSA090007,26.99,True,Shimmer Bronze,https://overture3d.com/products/overture-easy-pla-3d-printer-filament
+Easy PLA  1.75mm,Shimmer Dark Green / 1.75mm / 1-Pack,VSA090005,26.99,True,Shimmer Dark Green,https://overture3d.com/products/overture-easy-pla-3d-printer-filament
+Easy PLA  1.75mm,Shimmer Purple / 1.75mm / 1-Pack,VSA090008,26.99,True,Shimmer Purple,https://overture3d.com/products/overture-easy-pla-3d-printer-filament
+Easy PLA  1.75mm,Easy Black & White / 1.75mm / 6-Pack,VSA090011,81.99,True,Easy Black & White,https://overture3d.com/products/overture-easy-pla-3d-printer-filament
+Easy PLA  1.75mm,Easy Yellow / 1.75mm / 1-Pack,VSA090025,17.99,True,Easy Yellow,https://overture3d.com/products/overture-easy-pla-3d-printer-filament
+Easy PLA  1.75mm,Easy Yolk Yellow / 1.75mm / 1-Pack,VSA090018,17.99,True,Easy Yolk Yellow,https://overture3d.com/products/overture-easy-pla-3d-printer-filament
+Easy PLA  1.75mm,Easy Pumpkin Orange / 1.75mm / 1-Pack,VSA090026,17.99,True,Easy Pumpkin Orange,https://overture3d.com/products/overture-easy-pla-3d-printer-filament
+Easy PLA  1.75mm,Easy Magenta / 1.75mm / 1-Pack,VSA090020,17.99,True,Easy Magenta,https://overture3d.com/products/overture-easy-pla-3d-printer-filament
+Easy PLA  1.75mm,Easy Pink / 1.75mm / 1-Pack,VSA090027,16.99,True,Easy Pink,https://overture3d.com/products/overture-easy-pla-3d-printer-filament
+Easy PLA  1.75mm,Easy Beige / 1.75mm / 1-Pack,VSA090024,17.99,True,Easy Beige,https://overture3d.com/products/overture-easy-pla-3d-printer-filament
+Easy PLA  1.75mm,Easy Purple / 1.75mm / 1-Pack,VSA090021,17.99,True,Easy Purple,https://overture3d.com/products/overture-easy-pla-3d-printer-filament
+Easy PLA  1.75mm,Easy Pine Green / 1.75mm / 1-Pack,VSA090019,17.99,True,Easy Pine Green,https://overture3d.com/products/overture-easy-pla-3d-printer-filament
+Easy PLA  1.75mm,Easy Cobalt Blue / 1.75mm / 1-Pack,VSA090022,17.99,True,Easy Cobalt Blue,https://overture3d.com/products/overture-easy-pla-3d-printer-filament
+Easy PLA  1.75mm,Easy Sky Blue / 1.75mm / 1-Pack,VSA090023,17.99,True,Easy Sky Blue,https://overture3d.com/products/overture-easy-pla-3d-printer-filament
+PETG Transparent  1.75mm,1.75mm / Transparent / 1-Pack,VFECLR17511,19.99,True,1.75mm,https://overture3d.com/products/overture-petg-transparent
+PETG Transparent  1.75mm,1.75mm / Transparent Red / 1-Pack,VFETRD17511,22.99,True,1.75mm,https://overture3d.com/products/overture-petg-transparent
+PETG Transparent  1.75mm,1.75mm / Transparent Green / 1-Pack,VFETGE17511,22.99,True,1.75mm,https://overture3d.com/products/overture-petg-transparent
+PETG Transparent  1.75mm,1.75mm / Transparent Blue / 1-Pack,VFETBL17511,22.99,True,1.75mm,https://overture3d.com/products/overture-petg-transparent
+Silk PLA  Dual Colors 1.75mm,1.75mm / Silk Red-Gold / 1-pack,OVS-VFPREG11-010115,25.99,True,1.75mm,https://overture3d.com/products/overture-silk-pla-3d-printer-filament-dual-colors-1-75mm
+Silk PLA  Dual Colors 1.75mm,1.75mm / Silk Magenta-Gold / 1-pack,OVS-VFPMAG11-010117,25.99,True,1.75mm,https://overture3d.com/products/overture-silk-pla-3d-printer-filament-dual-colors-1-75mm
+Silk PLA  Dual Colors 1.75mm,1.75mm / Silk Purple-Gold / 1-pack,OVS-VFPPUG11-010114,25.99,True,1.75mm,https://overture3d.com/products/overture-silk-pla-3d-printer-filament-dual-colors-1-75mm
+Silk PLA  Dual Colors 1.75mm,1.75mm / Silk Gold-Silver / 1-pack,OVS-VFPGOS11-010113,25.99,True,1.75mm,https://overture3d.com/products/overture-silk-pla-3d-printer-filament-dual-colors-1-75mm
+Silk PLA  Dual Colors 1.75mm,1.75mm / Silk Blue-Silver / 1-pack,OVS-VFPBLS11-010116,25.99,True,1.75mm,https://overture3d.com/products/overture-silk-pla-3d-printer-filament-dual-colors-1-75mm
+Silk PLA  Dual Colors 1.75mm,1.75mm / Silk Green-Silver / 1-pack,OVS-VFPGRS11-010118,25.99,True,1.75mm,https://overture3d.com/products/overture-silk-pla-3d-printer-filament-dual-colors-1-75mm
+Silk PLA  Dual Colors 1.75mm,1.75mm / Silk Green-Blue / 1-pack,OVS-VFPGRB11-010112,25.99,True,1.75mm,https://overture3d.com/products/overture-silk-pla-3d-printer-filament-dual-colors-1-75mm
+Silk PLA  Dual Colors 1.75mm,1.75mm / Silk Blue-Yellow / 1-pack,OVS-VFPBLY11-010120,25.99,True,1.75mm,https://overture3d.com/products/overture-silk-pla-3d-printer-filament-dual-colors-1-75mm
+Silk PLA  Dual Colors 1.75mm,1.75mm / Silk Green-Magenta / 1-pack,OVS-VFPGRM11-010119,25.99,True,1.75mm,https://overture3d.com/products/overture-silk-pla-3d-printer-filament-dual-colors-1-75mm
+Rock PLA  1.75mm,Glacier Blue,VSA110005,24.99,True,Glacier Blue,https://overture3d.com/products/overture-rock-pla-filament-1-75mm
+Rock PLA  1.75mm,Mars Red,VSA110004,24.99,True,Mars Red,https://overture3d.com/products/overture-rock-pla-filament-1-75mm
+Rock PLA  1.75mm,Rock Rainbow,VSA110006,24.99,True,Rock Rainbow,https://overture3d.com/products/overture-rock-pla-filament-1-75mm
+Rock PLA  1.75mm,Rock White,VFFRWT17511,21.99,True,Rock White,https://overture3d.com/products/overture-rock-pla-filament-1-75mm
+Rock PLA  1.75mm,Fossil Rock,VSA110001,24.99,True,Fossil Rock,https://overture3d.com/products/overture-rock-pla-filament-1-75mm
+Rock PLA  1.75mm,Sedimentary Rock,VSA110002,24.99,False,Sedimentary Rock,https://overture3d.com/products/overture-rock-pla-filament-1-75mm
+Rock PLA  1.75mm,Mist Gray,VSA110007,24.99,True,Mist Gray,https://overture3d.com/products/overture-rock-pla-filament-1-75mm
+Rock PLA  1.75mm,Moonlight Gray,VSA110008,24.99,True,Moonlight Gray,https://overture3d.com/products/overture-rock-pla-filament-1-75mm
+Rock PLA  1.75mm,Muted Gray,VSA110009,24.99,True,Muted Gray,https://overture3d.com/products/overture-rock-pla-filament-1-75mm
+Rock PLA  1.75mm,Haze Gray,VSA110010,24.99,True,Haze Gray,https://overture3d.com/products/overture-rock-pla-filament-1-75mm
+Rock PLA  1.75mm,Slate Gray,VSA110011,19.99,True,Slate Gray,https://overture3d.com/products/overture-rock-pla-filament-1-75mm
+Rock PLA  1.75mm,Marigold Yellow,VSA110012,19.99,True,Marigold Yellow,https://overture3d.com/products/overture-rock-pla-filament-1-75mm
+Rock PLA  1.75mm,Alpine Forest,VSA110016,19.99,True,Alpine Forest,https://overture3d.com/products/overture-rock-pla-filament-1-75mm
+Rock PLA  1.75mm,Barrier Reef,VSA110014,19.99,True,Barrier Reef,https://overture3d.com/products/overture-rock-pla-filament-1-75mm
+Rock PLA  1.75mm,Desert Bluff,VSA110017,19.99,True,Desert Bluff,https://overture3d.com/products/overture-rock-pla-filament-1-75mm
+Rock PLA  1.75mm,Painted Hills,VSA110018,19.99,True,Painted Hills,https://overture3d.com/products/overture-rock-pla-filament-1-75mm
+Rock PLA  1.75mm,Pink Lake,VSA110019,19.99,True,Pink Lake,https://overture3d.com/products/overture-rock-pla-filament-1-75mm
+Rock PLA  1.75mm,Sedona Red,VSA110015,19.99,True,Sedona Red,https://overture3d.com/products/overture-rock-pla-filament-1-75mm
+Rock PLA  1.75mm,Tropical Jungle,VSA110020,19.99,True,Tropical Jungle,https://overture3d.com/products/overture-rock-pla-filament-1-75mm
+Rock PLA  1.75mm,Wetland Green,VSA110013,19.99,True,Wetland Green,https://overture3d.com/products/overture-rock-pla-filament-1-75mm
+PETG  1.75mm - 2 Pack,1.75mm / Black / 2-Pack,VFEBLK17521,29.99,True,1.75mm,https://overture3d.com/products/overture-petg-3d-printer-filament-1-75mm-2-pack
+PETG  1.75mm - 2 Pack,1.75mm / White / 2-Pack,VFEWTE17521,29.99,True,1.75mm,https://overture3d.com/products/overture-petg-3d-printer-filament-1-75mm-2-pack
+PETG  1.75mm - 2 Pack,1.75mm / Light Gray / 2-Pack,VFELGR17521,34.99,True,1.75mm,https://overture3d.com/products/overture-petg-3d-printer-filament-1-75mm-2-pack
+PETG  1.75mm - 2 Pack,1.75mm / Black & White / 2-Pack,VFEBKW17521,29.99,True,1.75mm,https://overture3d.com/products/overture-petg-3d-printer-filament-1-75mm-2-pack
+PETG  1.75mm - 2 Pack,1.75mm / Space Gray / 2-Pack,VFESGR17521,34.99,True,1.75mm,https://overture3d.com/products/overture-petg-3d-printer-filament-1-75mm-2-pack
+PETG  1.75mm - 2 Pack,1.75mm / Black & Transparent / 2-Pack,VFEBLC21-010101,38.99,True,1.75mm,https://overture3d.com/products/overture-petg-3d-printer-filament-1-75mm-2-pack
+PLA 3D Printer  Filament 1.75mm-2 Pack,Black / 2-pack,VFPBLA17521,29.99,True,Black,https://overture3d.com/products/overture-pla-3d-printer-filament-1-75mm-2-pack
+PLA 3D Printer  Filament 1.75mm-2 Pack,White / 2-pack,VFPWHE17521,31.99,True,White,https://overture3d.com/products/overture-pla-3d-printer-filament-1-75mm-2-pack
+PLA 3D Printer  Filament 1.75mm-2 Pack,Black/White / 2-pack,VFPBKW17521,31.99,True,Black/White,https://overture3d.com/products/overture-pla-3d-printer-filament-1-75mm-2-pack
+PLA 3D Printer  Filament 1.75mm-2 Pack,Space Grey / 2-pack,VFPSPR17521,37.99,True,Space Grey,https://overture3d.com/products/overture-pla-3d-printer-filament-1-75mm-2-pack
+PLA 3D Printer  Filament 1.75mm-2 Pack,Light Grey / 2-pack,VFPLHG17521,37.99,True,Light Grey,https://overture3d.com/products/overture-pla-3d-printer-filament-1-75mm-2-pack
+High Speed TPU  1.75mm,Black / 1 kg / 1-pack,VSTBLK17511,30.99,True,Black,https://overture3d.com/products/overture-high-speed-tpu-3d-printer-filament-1-75mm
+High Speed TPU  1.75mm,Black / 2 kg / 1-pack,VSD030002,59.99,False,Black,https://overture3d.com/products/overture-high-speed-tpu-3d-printer-filament-1-75mm
+High Speed TPU  1.75mm,White / 1 kg / 1-pack,VSTWHT17511,30.99,True,White,https://overture3d.com/products/overture-high-speed-tpu-3d-printer-filament-1-75mm
+High Speed TPU  1.75mm,Clear / 1 kg / 1-pack,VSTCLR17511,30.99,True,Clear,https://overture3d.com/products/overture-high-speed-tpu-3d-printer-filament-1-75mm
+High Speed TPU  1.75mm,Gray / 1 kg / 1-pack,OVS-VFTGRY11-010155,30.99,True,Gray,https://overture3d.com/products/overture-high-speed-tpu-3d-printer-filament-1-75mm
+High Speed TPU  1.75mm,Pink / 1 kg / 1-pack,OVS-VFTPNK11-010154,30.99,True,Pink,https://overture3d.com/products/overture-high-speed-tpu-3d-printer-filament-1-75mm
+High Speed TPU  1.75mm,Orange / 1 kg / 1-pack,OVS-VFTORG11-010153,30.99,True,Orange,https://overture3d.com/products/overture-high-speed-tpu-3d-printer-filament-1-75mm
+High Speed TPU  1.75mm,Grass Green / 1 kg / 1-pack,VSTGGN17511,30.99,True,Grass Green,https://overture3d.com/products/overture-high-speed-tpu-3d-printer-filament-1-75mm
+High Speed TPU  1.75mm,Translucent Blue / 1 kg / 1-pack,OVS-VFTTBL11-010156,30.99,True,Translucent Blue,https://overture3d.com/products/overture-high-speed-tpu-3d-printer-filament-1-75mm
+High Speed TPU  1.75mm,Translucent Red / 1 kg / 1-pack,OVS-VFTTRD11-010152,30.99,True,Translucent Red,https://overture3d.com/products/overture-high-speed-tpu-3d-printer-filament-1-75mm
+High Speed TPU  1.75mm,Translucent Green / 1 kg / 1-pack,VSD030007,30.99,True,Translucent Green,https://overture3d.com/products/overture-high-speed-tpu-3d-printer-filament-1-75mm
+High Speed TPU  1.75mm,Translucent Purple / 1 kg / 1-pack,VSD030008,30.99,True,Translucent Purple,https://overture3d.com/products/overture-high-speed-tpu-3d-printer-filament-1-75mm
+High Speed TPU  1.75mm,Translucent Orange / 1 kg / 1-pack,VSD030009,30.99,True,Translucent Orange,https://overture3d.com/products/overture-high-speed-tpu-3d-printer-filament-1-75mm
+High Speed TPU  1.75mm,Neon Magenta / 1 kg / 1-pack,VSD030010,33.99,True,Neon Magenta,https://overture3d.com/products/overture-high-speed-tpu-3d-printer-filament-1-75mm
+High Speed TPU  1.75mm,Pastel Rose / 1 kg / 1-pack,VSD030011,30.99,True,Pastel Rose,https://overture3d.com/products/overture-high-speed-tpu-3d-printer-filament-1-75mm
+High Speed TPU  1.75mm,Luminous Pink / 1 kg / 1-pack,VSD030012,33.99,True,Luminous Pink,https://overture3d.com/products/overture-high-speed-tpu-3d-printer-filament-1-75mm
+High Speed TPU  1.75mm,Neon Yellow / 1 kg / 1-pack,VSD030013,33.99,True,Neon Yellow,https://overture3d.com/products/overture-high-speed-tpu-3d-printer-filament-1-75mm
+High Speed TPU  1.75mm,Luminous Electric Indigo / 1 kg / 1-pack,VSD030014,33.99,True,Luminous Electric Indigo,https://overture3d.com/products/overture-high-speed-tpu-3d-printer-filament-1-75mm
+High Speed TPU  1.75mm,Luminous Blue / 1 kg / 1-pack,VSD030004,33.99,True,Luminous Blue,https://overture3d.com/products/overture-high-speed-tpu-3d-printer-filament-1-75mm
+High Speed TPU  1.75mm,Luminous Green / 1 kg / 1-pack,VSD030005,33.99,True,Luminous Green,https://overture3d.com/products/overture-high-speed-tpu-3d-printer-filament-1-75mm
+High Speed TPU  1.75mm,Luminous Orange / 1 kg / 1-pack,VSD030006,33.99,True,Luminous Orange,https://overture3d.com/products/overture-high-speed-tpu-3d-printer-filament-1-75mm
+Super PLA+  1.75mm,1-Pack / Orange,OVS-VFBORG11-010168,28.99,True,1-Pack,https://overture3d.com/products/overture-super-pla-3d-printer-filament-1-75mm
+Super PLA+  1.75mm,1-Pack / Black,OVS-VFBBLK11-010173,24.99,True,1-Pack,https://overture3d.com/products/overture-super-pla-3d-printer-filament-1-75mm
+Super PLA+  1.75mm,1-Pack / Light Gray,OVS-VFBLGR11-010166,28.99,True,1-Pack,https://overture3d.com/products/overture-super-pla-3d-printer-filament-1-75mm
+Super PLA+  1.75mm,1-Pack / White,OVS-VFBWTE11-010165,24.99,True,1-Pack,https://overture3d.com/products/overture-super-pla-3d-printer-filament-1-75mm
+Super PLA+  1.75mm,1-Pack / Red,OVS-VFBRED11-010172,24.99,True,1-Pack,https://overture3d.com/products/overture-super-pla-3d-printer-filament-1-75mm
+Super PLA+  1.75mm,1-Pack / Pink,OVS-VFBPNK11-010175,28.99,True,1-Pack,https://overture3d.com/products/overture-super-pla-3d-printer-filament-1-75mm
+Super PLA+  1.75mm,1-Pack / Sakura Pink,OVS-VFBSKR11-010174,28.99,True,1-Pack,https://overture3d.com/products/overture-super-pla-3d-printer-filament-1-75mm
+Super PLA+  1.75mm,1-Pack / Light Brown,OVS-VFBLBW11-010176,28.99,True,1-Pack,https://overture3d.com/products/overture-super-pla-3d-printer-filament-1-75mm
+Super PLA+  1.75mm,1-Pack / Yellow,OVS-VFBYEL11-010167,28.99,True,1-Pack,https://overture3d.com/products/overture-super-pla-3d-printer-filament-1-75mm
+Super PLA+  1.75mm,1-Pack / Green,OVS-VFBGRN11-010169,28.99,True,1-Pack,https://overture3d.com/products/overture-super-pla-3d-printer-filament-1-75mm
+Super PLA+  1.75mm,1-Pack / Dark Blue,OVS-VFBDBU11-010171,28.99,True,1-Pack,https://overture3d.com/products/overture-super-pla-3d-printer-filament-1-75mm
+Super PLA+  1.75mm,1-Pack / Purple,OVS-VFBPUR11-010170,28.99,True,1-Pack,https://overture3d.com/products/overture-super-pla-3d-printer-filament-1-75mm
+ABS  1.75mm,1  kg / Black / 1-Pack,VFABLK17511,20.99,True,1  kg,https://overture3d.com/products/overture-abs-filament-1-75mm
+ABS  1.75mm,1  kg / Blue / 1-Pack,VFABLE17511,20.99,True,1  kg,https://overture3d.com/products/overture-abs-filament-1-75mm
+ABS  1.75mm,1  kg / Dark Red / 1-Pack,VFADRE11-010078,20.99,True,1  kg,https://overture3d.com/products/overture-abs-filament-1-75mm
+ABS  1.75mm,1  kg / White / 1-Pack,VFAWHT17511,20.99,True,1  kg,https://overture3d.com/products/overture-abs-filament-1-75mm
+ABS  1.75mm,1  kg / Gray / 1-Pack,VFAGRY17511,20.99,True,1  kg,https://overture3d.com/products/overture-abs-filament-1-75mm
+ABS  1.75mm,1  kg / Slate Gray / 1-Pack,VFASGR11-010075,20.99,True,1  kg,https://overture3d.com/products/overture-abs-filament-1-75mm
+ABS  1.75mm,1  kg / Yellow / 1-Pack,VFAYLW11-010073,20.99,True,1  kg,https://overture3d.com/products/overture-abs-filament-1-75mm
+ABS  1.75mm,1  kg / Glow Green / 1-Pack,VFAGGR11-010071,20.99,True,1  kg,https://overture3d.com/products/overture-abs-filament-1-75mm
+ABS  1.75mm,1  kg / Natural / 1-Pack,OVS-VFSNAT11-010121,20.99,False,1  kg,https://overture3d.com/products/overture-abs-filament-1-75mm
+ABS  1.75mm,1  kg / Green / 1-Pack,OVS-VFSGRN11-010122,20.99,True,1  kg,https://overture3d.com/products/overture-abs-filament-1-75mm
+ABS  1.75mm,1  kg / Purple / 1-Pack,OVS-VFSPUR11-010123,20.99,True,1  kg,https://overture3d.com/products/overture-abs-filament-1-75mm
+ABS  1.75mm,1  kg / Diamond Purple / 1-Pack,OVS-VFSDPU11-010130,20.99,True,1  kg,https://overture3d.com/products/overture-abs-filament-1-75mm
+ABS  1.75mm,1  kg / Diamond Gray / 1-Pack,OVS-VFSDGR11-010131,20.99,True,1  kg,https://overture3d.com/products/overture-abs-filament-1-75mm
+ABS  1.75mm,1  kg / Diamond Orange / 1-Pack,OVS-VFSDOR11-010129,20.99,False,1  kg,https://overture3d.com/products/overture-abs-filament-1-75mm
+ASA  1.75mm,Black / 1  kg / 1-Pack,VFSBLK11-010079,24.99,True,Black,https://overture3d.com/products/overture-asa-filament-1-75mm
+ASA  1.75mm,White / 1  kg / 1-Pack,VFSWTE17511,24.99,True,White,https://overture3d.com/products/overture-asa-filament-1-75mm
+ASA  1.75mm,Gray / 1  kg / 1-Pack,VFSGRY11-010080,25.99,True,Gray,https://overture3d.com/products/overture-asa-filament-1-75mm
+ASA  1.75mm,Red / 1  kg / 1-Pack,VFSRED11-010082,25.99,True,Red,https://overture3d.com/products/overture-asa-filament-1-75mm
+ASA  1.75mm,Brown / 1  kg / 1-Pack,OVS-VFSBRW11-010137,25.99,True,Brown,https://overture3d.com/products/overture-asa-filament-1-75mm
+ASA  1.75mm,Orange / 1  kg / 1-Pack,VFSORG11-010083,25.99,True,Orange,https://overture3d.com/products/overture-asa-filament-1-75mm
+ASA  1.75mm,Yellow / 1  kg / 1-Pack,OVS-VFSYLW11-010136,25.99,True,Yellow,https://overture3d.com/products/overture-asa-filament-1-75mm
+ASA  1.75mm,Natural / 1  kg / 1-Pack,OVS-VFSNAT11-010132,29.99,False,Natural,https://overture3d.com/products/overture-asa-filament-1-75mm
+ASA  1.75mm,Olive Green / 1  kg / 1-Pack,OVS-VFSOGR11-010133,25.99,True,Olive Green,https://overture3d.com/products/overture-asa-filament-1-75mm
+ASA  1.75mm,Green / 1  kg / 1-Pack,OVS-VFSGRN11-010135,25.99,True,Green,https://overture3d.com/products/overture-asa-filament-1-75mm
+ASA  1.75mm,Blue / 1  kg / 1-Pack,VFSBLU11-010081,25.99,True,Blue,https://overture3d.com/products/overture-asa-filament-1-75mm
+ASA  1.75mm,Diamond Blue / 1  kg / 1-Pack,OVS-VFSDBL11-010138,29.99,True,Diamond Blue,https://overture3d.com/products/overture-asa-filament-1-75mm
+ASA  1.75mm,Diamond Red / 1  kg / 1-Pack,OVS-VFSDRE11-010139,29.99,True,Diamond Red,https://overture3d.com/products/overture-asa-filament-1-75mm
+ASA  1.75mm,Diamond Green / 1  kg / 1-Pack,OVS-VFSDGR11-010140,29.99,True,Diamond Green,https://overture3d.com/products/overture-asa-filament-1-75mm
+PLA Professional  1.75mm-2 Pack,1.75mm / Black / 2-Pack,VFBBLA17521,37.99,True,1.75mm,https://overture3d.com/products/overture-pla-professional-3d-printer-filament-1-75mm-2-pack
+PLA Professional  1.75mm-2 Pack,1.75mm / White / 2-Pack,VFBWTE21-010102,39.99,True,1.75mm,https://overture3d.com/products/overture-pla-professional-3d-printer-filament-1-75mm-2-pack
+PLA Professional  1.75mm-2 Pack,1.75mm / Black & White / 2-Pack,VSA070006,39.99,True,1.75mm,https://overture3d.com/products/overture-pla-professional-3d-printer-filament-1-75mm-2-pack
+PLA Professional  1.75mm-2 Pack,1.75mm / Digital blue / 2-Pack,VFBELB17521,39.99,True,1.75mm,https://overture3d.com/products/overture-pla-professional-3d-printer-filament-1-75mm-2-pack
+PLA Professional  1.75mm-2 Pack,1.75mm / Black & Digital blue / 2-Pack,VFBBLU21-010103,43.99,False,1.75mm,https://overture3d.com/products/overture-pla-professional-3d-printer-filament-1-75mm-2-pack
+Glow PLA  1.75mm,Glow Blue,VSA090003,25.99,True,Glow Blue,https://overture3d.com/products/overture-glow-pla
+Glow PLA  1.75mm,Glow Red,VSA090002,25.99,True,Glow Red,https://overture3d.com/products/overture-glow-pla
+Glow PLA  1.75mm,Glow Orange,VSA090001,25.99,True,Glow Orange,https://overture3d.com/products/overture-glow-pla
+Glow PLA  1.75mm,Glow Yellow,VSA090004,25.99,True,Glow Yellow,https://overture3d.com/products/overture-glow-pla
+Glow PLA  1.75mm,Glow White (Green in Dark),VFPGFLG17511,25.99,False,Glow White (Green in Dark),https://overture3d.com/products/overture-glow-pla
+Easy Nylon  1.75mm,Black / 1  kg / 1-Pack,VFNBLK17511,33.99,True,Black,https://overture3d.com/products/easy-nylon-filament
+Easy Nylon  1.75mm,Gray / 1  kg / 1-Pack,VFNGRY17511,32.99,True,Gray,https://overture3d.com/products/easy-nylon-filament
+Matte PLA  1.75mm 2 Pack,1.75mm / 2-Pack / White&White,VFFWTE21-010097,34.99,True,1.75mm,https://overture3d.com/products/overture-matte-pla-3d-printer-filament-1-75mm-2-pack
+Matte PLA  1.75mm 2 Pack,1.75mm / 2-Pack / White&Black,VFFBKW21-010098,34.99,True,1.75mm,https://overture3d.com/products/overture-matte-pla-3d-printer-filament-1-75mm-2-pack
+Matte PLA  1.75mm 2 Pack,1.75mm / 2-Pack / Black&Black,VFFBLK21-010096,34.99,True,1.75mm,https://overture3d.com/products/overture-matte-pla-3d-printer-filament-1-75mm-2-pack
+Matte PLA  1.75mm 2 Pack,1.75mm / 2-Pack / Light brown & Light brown,VFFMLB21-010099,34.99,False,1.75mm,https://overture3d.com/products/overture-matte-pla-3d-printer-filament-1-75mm-2-pack
+Matte PLA  1.75mm 2 Pack,1.75mm / 2-Pack / Yellow&Green,VFFYEN21-010100,36.99,False,1.75mm,https://overture3d.com/products/overture-matte-pla-3d-printer-filament-1-75mm-2-pack
+Matte PLA Dual Colors  1.75mm,1-pack / 1.75mm / Black-White,VSA040001,24.99,True,1-pack,https://overture3d.com/products/overture-matte-pla-dual-colors-3d-printer-filament-1-75mm
+Matte PLA Dual Colors  1.75mm,1-pack / 1.75mm / Orange-Red,VSA040002,24.99,True,1-pack,https://overture3d.com/products/overture-matte-pla-dual-colors-3d-printer-filament-1-75mm
+Matte PLA Dual Colors  1.75mm,1-pack / 1.75mm / Blue-Red,VSA040004,24.99,True,1-pack,https://overture3d.com/products/overture-matte-pla-dual-colors-3d-printer-filament-1-75mm
+Matte PLA Dual Colors  1.75mm,1-pack / 1.75mm / Light Blue-Yellow,VSA040003,24.99,True,1-pack,https://overture3d.com/products/overture-matte-pla-dual-colors-3d-printer-filament-1-75mm
+Air PLA  1.75mm,1  kg / Air Black / 1-Pack,OVS-VFFBLK11-010193,25.99,True,1  kg,https://overture3d.com/products/overture-air-pla-3d-printer-filament-1-75mm
+Air PLA  1.75mm,1  kg / Air Light Gray / 1-Pack,OVS-VFFLGR11-010194,25.99,True,1  kg,https://overture3d.com/products/overture-air-pla-3d-printer-filament-1-75mm
+Air PLA  1.75mm,1  kg / Air Neon Green / 1-Pack,OVS-VFFNGN11-010196,25.99,True,1  kg,https://overture3d.com/products/overture-air-pla-3d-printer-filament-1-75mm
+Air PLA  1.75mm,1  kg / Air Orange / 1-Pack,OVS-VFFORG11-010195,25.99,True,1  kg,https://overture3d.com/products/overture-air-pla-3d-printer-filament-1-75mm
+Air PLA  1.75mm,1  kg / Air White / 1-Pack,OVS-VFFWTE11-010192,25.99,True,1  kg,https://overture3d.com/products/overture-air-pla-3d-printer-filament-1-75mm
+Air PLA  1.75mm,1  kg / Air Wood / 1-Pack,OVS-VFFWOD11-010191,25.99,True,1  kg,https://overture3d.com/products/overture-air-pla-3d-printer-filament-1-75mm
+Air PLA  1.75mm,1  kg / Air Yellow / 1-Pack,OVS-VFFYEL11-010197,25.99,True,1  kg,https://overture3d.com/products/overture-air-pla-3d-printer-filament-1-75mm
+Carbon Fiber  1.75mm,Midnight Black / 1  kg / 1-Pack,VFCBLK17511,26.99,True,Midnight Black,https://overture3d.com/products/overture-carbon-fiber-filament
+Rock PETG  1.75mm,Rock White,VFERWT17511,22.99,True,Rock White,https://overture3d.com/products/overture-rock-petg-3d-printer-filament-1-75mm
+Shimmer PLA  1.75mm,Shimmer Dark Green / 1.75mm,VSA090005,26.99,True,Shimmer Dark Green,https://overture3d.com/products/overture-shimmer-pla-3d-printer-filament-1-75mm
+Shimmer PLA  1.75mm,Shimmer Purple / 1.75mm,VSA090008,26.99,True,Shimmer Purple,https://overture3d.com/products/overture-shimmer-pla-3d-printer-filament-1-75mm
+Shimmer PLA  1.75mm,Shimmer Silver Green / 1.75mm,VSA090006,26.99,True,Shimmer Silver Green,https://overture3d.com/products/overture-shimmer-pla-3d-printer-filament-1-75mm
+Shimmer PLA  1.75mm,Shimmer Bronze / 1.75mm,VSA090007,26.99,True,Shimmer Bronze,https://overture3d.com/products/overture-shimmer-pla-3d-printer-filament-1-75mm
+PLA  1.75mm-3 KG,Black 3kg / 3 kg,OVS-VFPBLK13-010109,44.99,True,Black 3kg,https://overture3d.com/products/overture-pla-3d-printer-filament-1-75mm-3-kg
+PLA  1.75mm-3 KG,White 3kg / 3 kg,OVS-VFPWHE13-010110,46.99,True,White 3kg,https://overture3d.com/products/overture-pla-3d-printer-filament-1-75mm-3-kg
+PLA  1.75mm-2 KG,White 2kg / 2 kg,OVS-VFPWHE12-010108,31.99,True,White 2kg,https://overture3d.com/products/overture-pla-3d-printing-filament-2kg
+PLA  1.75mm-2 KG,Black 2kg / 2 kg,OVS-VFPBLK12-010107,31.99,True,Black 2kg,https://overture3d.com/products/overture-pla-3d-printing-filament-2kg
+PC Professional 3D Printer  Filament 1.75mm,1-pack / White,OVS-VFDWTE11-010198,31.99,True,1-pack,https://overture3d.com/products/overture-pc-professional-filament
+PC Professional 3D Printer  Filament 1.75mm,1-pack / Black,OVS-VFDBLK11-010199,31.99,True,1-pack,https://overture3d.com/products/overture-pc-professional-filament
+PC Professional 3D Printer  Filament 1.75mm,1-pack / Transparent,OVS-VFDTRA11-010203,31.99,True,1-pack,https://overture3d.com/products/overture-pc-professional-filament
+PC Professional 3D Printer  Filament 1.75mm,1-pack / Blue,OVS-VFDBLE11-010202,38.99,False,1-pack,https://overture3d.com/products/overture-pc-professional-filament
+PLA 3D Printer  Filament 1.75mm-4 Pack,White / 4-pack,VSA020006,54.99,True,White,https://overture3d.com/products/overture-pla-3d-printer-filament-1-75mm-4-pack
+PLA 3D Printer  Filament 1.75mm-4 Pack,Black / 4-pack,VSA020005,49.99,True,Black,https://overture3d.com/products/overture-pla-3d-printer-filament-1-75mm-4-pack
+PLA 3D Printer  Filament 1.75mm-4 Pack,Black & White / 4-pack,VSA020007,54.99,True,Black & White,https://overture3d.com/products/overture-pla-3d-printer-filament-1-75mm-4-pack
+PLA  1.75mm-6 Pack,6-color / 6-pack / 1.75mm,VFPMLT17561,89.99,True,6-color,https://overture3d.com/products/overture-pla-3d-printer-filament-1-75mm-6-pack
+TPU  1.75mm 2 Pack,1.75mm / black / 2-Pack,VFTBLK17521,46.99,True,1.75mm,https://overture3d.com/products/overture-tpu-3d-printer-filament-1-75mm-2-pack
+PETG  1.75mm -6 Pack,1.75mm / 6-Color / 6-Pack,VFEMLT17561,89.99,True,1.75mm,https://overture3d.com/products/overture-petg-3d-printer-filament-1-75mm-6-pack
+PETG  1.75mm - 4 Pack,White / 1.75mm / 4-Pack,VSB010004,48.99,True,White,https://overture3d.com/products/overture-petg-3d-printer-filament-1-75mm-4-pack
+PETG  1.75mm - 4 Pack,Black / 1.75mm / 4-Pack,VSB010003,44.99,True,Black,https://overture3d.com/products/overture-petg-3d-printer-filament-1-75mm-4-pack
+PETG  1.75mm - 4 Pack,Black & White / 1.75mm / 4-Pack,VSB010005,48.99,True,Black & White,https://overture3d.com/products/overture-petg-3d-printer-filament-1-75mm-4-pack
+PLA Gradient Filament 1.75mm,Northern Lights / 1 Pack,VSA020013,25.99,True,Northern Lights,https://overture3d.com/products/overture-pla-gradient-filament-1-75mm
+PLA Gradient Filament 1.75mm,Rainbow / 1 Pack,VSA020003,25.99,True,Rainbow,https://overture3d.com/products/overture-pla-gradient-filament-1-75mm
+PLA Gradient Filament 1.75mm,Aurora Berry / 1 Pack,VSA020008,25.99,True,Aurora Berry,https://overture3d.com/products/overture-pla-gradient-filament-1-75mm
+PLA Gradient Filament 1.75mm,Avocado / 1 Pack,VSA020015,25.99,True,Avocado,https://overture3d.com/products/overture-pla-gradient-filament-1-75mm
+PLA Gradient Filament 1.75mm,Tequila Sunrise / 1 Pack,VSA020014,25.99,True,Tequila Sunrise,https://overture3d.com/products/overture-pla-gradient-filament-1-75mm
+PLA Gradient Filament 1.75mm,Rocket Pop / 1 Pack,VSA020016,25.99,True,Rocket Pop,https://overture3d.com/products/overture-pla-gradient-filament-1-75mm
+Easy PLA  1.75mm 6-Pack,6-Pack / Easy White / 1.75mm,VSA090010,74.99,True,6-Pack,https://overture3d.com/products/overture-easy-pla-3d-printer-filament-1-75mm-6-pack
+Easy PLA  1.75mm 6-Pack,6-Pack / Easy Black / 1.75mm,VSA090009,74.99,True,6-Pack,https://overture3d.com/products/overture-easy-pla-3d-printer-filament-1-75mm-6-pack
+Easy PLA  1.75mm 6-Pack,6-Pack / Easy Black & White / 1.75mm,VSA090011,74.99,True,6-Pack,https://overture3d.com/products/overture-easy-pla-3d-printer-filament-1-75mm-6-pack
+Matte PLA 3D Printer  Filament 1.75mm 6 Pack,1.75mm / 6-Pack / 6-Color,VFFMLT61-010104,94.99,True,1.75mm,https://overture3d.com/products/overture-matte-pla-3d-printer-filament-1-75mm-6-pack
+Silk PLA Gradient Filament 1.75mm,1.75mm / Silk Red-Gold / 1-pack,OVS-VFPREG11-010115,25.99,True,1.75mm,https://overture3d.com/products/overture-silk-pla-gradient-filament-1-75mm
+Silk PLA Gradient Filament 1.75mm,1.75mm / Silk Magenta-Gold / 1-pack,OVS-VFPMAG11-010117,25.99,True,1.75mm,https://overture3d.com/products/overture-silk-pla-gradient-filament-1-75mm
+Silk PLA Gradient Filament 1.75mm,1.75mm / Silk Purple-Gold / 1-pack,OVS-VFPPUG11-010114,25.99,True,1.75mm,https://overture3d.com/products/overture-silk-pla-gradient-filament-1-75mm
+Silk PLA Gradient Filament 1.75mm,1.75mm / Silk Gold-Silver / 1-pack,OVS-VFPGOS11-010113,25.99,True,1.75mm,https://overture3d.com/products/overture-silk-pla-gradient-filament-1-75mm
+Silk PLA Gradient Filament 1.75mm,1.75mm / Silk Blue-Silver / 1-pack,OVS-VFPBLS11-010116,25.99,True,1.75mm,https://overture3d.com/products/overture-silk-pla-gradient-filament-1-75mm
+Silk PLA Gradient Filament 1.75mm,1.75mm / Silk Green-Silver / 1-pack,OVS-VFPGRS11-010118,25.99,True,1.75mm,https://overture3d.com/products/overture-silk-pla-gradient-filament-1-75mm
+Silk PLA Gradient Filament 1.75mm,1.75mm / Silk Green-Blue / 1-pack,OVS-VFPGRB11-010112,25.99,True,1.75mm,https://overture3d.com/products/overture-silk-pla-gradient-filament-1-75mm
+Silk PLA Gradient Filament 1.75mm,1.75mm / Silk Blue-Yellow / 1-pack,OVS-VFPBLY11-010120,25.99,True,1.75mm,https://overture3d.com/products/overture-silk-pla-gradient-filament-1-75mm
+Silk PLA Gradient Filament 1.75mm,1.75mm / Silk Green-Magenta / 1-pack,OVS-VFPGRM11-010119,25.99,True,1.75mm,https://overture3d.com/products/overture-silk-pla-gradient-filament-1-75mm
+Silk PLA Gradient Filament 1.75mm,1.75mm / Silk Caramel / 1-pack,VSA030013,25.99,True,1.75mm,https://overture3d.com/products/overture-silk-pla-gradient-filament-1-75mm
+Silk PLA Gradient Filament 1.75mm,1.75mm / Silk Tiger Eye / 1-pack,VSA030015,25.99,True,1.75mm,https://overture3d.com/products/overture-silk-pla-gradient-filament-1-75mm
+Silk PLA Gradient Filament 1.75mm,1.75mm / Silk Tropic / 1-pack,VSA030005,25.99,True,1.75mm,https://overture3d.com/products/overture-silk-pla-gradient-filament-1-75mm
+Silk PLA Gradient Filament 1.75mm,1.75mm / Silk Glacier Flash / 1-pack,VSA030006,25.99,True,1.75mm,https://overture3d.com/products/overture-silk-pla-gradient-filament-1-75mm
+Silk PLA Gradient Filament 1.75mm,1.75mm / Silk Purple Chrome / 1-pack,VSA030002,25.99,True,1.75mm,https://overture3d.com/products/overture-silk-pla-gradient-filament-1-75mm
+Silk PLA Gradient Filament 1.75mm,1.75mm / Silk Lime Surge / 1-pack,VSA030003,25.99,True,1.75mm,https://overture3d.com/products/overture-silk-pla-gradient-filament-1-75mm
+Silk PLA Gradient Filament 1.75mm,1.75mm / Silk Evergreen Bronze / 1-pack,VSA030012,25.99,True,1.75mm,https://overture3d.com/products/overture-silk-pla-gradient-filament-1-75mm
+Silk PLA Gradient Filament 1.75mm,1.75mm / Silk Golden Ember / 1-pack,VSA030011,25.99,True,1.75mm,https://overture3d.com/products/overture-silk-pla-gradient-filament-1-75mm
+Silk PLA Gradient Filament 1.75mm,1.75mm / Silk Chrome Gray / 1-pack,VSA030014,25.99,True,1.75mm,https://overture3d.com/products/overture-silk-pla-gradient-filament-1-75mm
+Silk PLA Gradient Filament 1.75mm,1.75mm / Silk Periwinkle / 1-pack,VSA030016,25.99,True,1.75mm,https://overture3d.com/products/overture-silk-pla-gradient-filament-1-75mm
+Silk PLA Gradient Filament 1.75mm,1.75mm / Silk Lettuce Tomato / 1-pack,VSA030007,25.99,True,1.75mm,https://overture3d.com/products/overture-silk-pla-gradient-filament-1-75mm
+Silk PLA Gradient Filament 1.75mm,1.75mm / Silk Copper Shore / 1-pack,VSA030008,25.99,True,1.75mm,https://overture3d.com/products/overture-silk-pla-gradient-filament-1-75mm
+Silk PLA Gradient Filament 1.75mm,1.75mm / Silk Punch Pink / 1-pack,VSA030009,25.99,True,1.75mm,https://overture3d.com/products/overture-silk-pla-gradient-filament-1-75mm
+Silk PLA Gradient Filament 1.75mm,1.75mm / Silk Parakeet / 1-pack,VSA030010,25.99,True,1.75mm,https://overture3d.com/products/overture-silk-pla-gradient-filament-1-75mm
+Silk PLA Gradient Filament 1.75mm,1.75mm / Silk Vaporwave / 1-pack,VSA030004,25.99,True,1.75mm,https://overture3d.com/products/overture-silk-pla-gradient-filament-1-75mm
+Rock PLA Gradient Filament 1.75mm,Alpine Forest,VSA110016,19.99,True,Alpine Forest,https://overture3d.com/products/overture-rock-pla-gradient-filament-1-75mm
+Rock PLA Gradient Filament 1.75mm,Rock Rainbow,VSA110006,19.99,False,Rock Rainbow,https://overture3d.com/products/overture-rock-pla-gradient-filament-1-75mm
+Rock PLA Gradient Filament 1.75mm,Barrier Reef,VSA110014,19.99,True,Barrier Reef,https://overture3d.com/products/overture-rock-pla-gradient-filament-1-75mm
+Rock PLA Gradient Filament 1.75mm,Desert Bluff,VSA110017,19.99,True,Desert Bluff,https://overture3d.com/products/overture-rock-pla-gradient-filament-1-75mm
+Rock PLA Gradient Filament 1.75mm,Painted Hills,VSA110018,19.99,True,Painted Hills,https://overture3d.com/products/overture-rock-pla-gradient-filament-1-75mm
+Rock PLA Gradient Filament 1.75mm,Pink Lake,VSA110019,19.99,True,Pink Lake,https://overture3d.com/products/overture-rock-pla-gradient-filament-1-75mm
+Rock PLA Gradient Filament 1.75mm,Sedona Red,VSA110015,19.99,True,Sedona Red,https://overture3d.com/products/overture-rock-pla-gradient-filament-1-75mm
+Rock PLA Gradient Filament 1.75mm,Tropical Jungle,VSA110020,19.99,True,Tropical Jungle,https://overture3d.com/products/overture-rock-pla-gradient-filament-1-75mm
+Rock PLA Gradient Filament 1.75mm,Wetland Green,VSA110013,19.99,True,Wetland Green,https://overture3d.com/products/overture-rock-pla-gradient-filament-1-75mm
+PLA Professional  1.75mm-4 Pack,Black / 1.75mm / 4-Pack,VSA070005,55.99,True,Black,https://overture3d.com/products/overture-pla-professional-3d-printer-filament-1-75mm-4-pack
+PLA Professional  1.75mm-4 Pack,White / 1.75mm / 4-Pack,VSA070007,58.99,True,White,https://overture3d.com/products/overture-pla-professional-3d-printer-filament-1-75mm-4-pack
+PLA Professional  1.75mm-4 Pack,Black&White / 1.75mm / 4-Pack,VSA070008,58.99,True,Black&White,https://overture3d.com/products/overture-pla-professional-3d-printer-filament-1-75mm-4-pack
+PC Professional Transparent 3D Printer  Filament 1.75mm,1-pack / Transparent,OVS-VFDTRA11-010203,38.99,True,1-pack,https://overture3d.com/products/overture-pc-professional-transparent-3d-printer-filament
+PETG  1.75mm - 2 KG,Black / 2 kg / 1-Pack,VSB010006,26.99,True,Black,https://overture3d.com/products/overture-petg-3d-printer-filament-1-75mm-2-kg
+Matte PLA Gradient Filament 1.75mm,1-pack / 1.75mm / Rainbow,VSA110003,24.99,True,1-pack,https://overture3d.com/products/overture-matte-pla-gradient-filament-1-75mm
+Matte PLA Gradient Filament 1.75mm,1-pack / 1.75mm / Candy Rainbow,VSA040006,24.99,True,1-pack,https://overture3d.com/products/overture-matte-pla-gradient-filament-1-75mm
+Matte PLA Gradient Filament 1.75mm,1-pack / 1.75mm / Blue-Red,VSA040004,24.99,True,1-pack,https://overture3d.com/products/overture-matte-pla-gradient-filament-1-75mm
+Matte PLA Gradient Filament 1.75mm,1-pack / 1.75mm / Orange-Red,VSA040002,24.99,True,1-pack,https://overture3d.com/products/overture-matte-pla-gradient-filament-1-75mm
+Matte PLA Gradient Filament 1.75mm,1-pack / 1.75mm / Light Blue-Yellow,VSA040003,24.99,True,1-pack,https://overture3d.com/products/overture-matte-pla-gradient-filament-1-75mm
+Easy PLA  1.75mm 2-Pack,2-Pack / Easy White / 1.75mm,VSA090013,28.99,True,2-Pack,https://overture3d.com/products/overture-easy-pla-3d-printer-filament-1-75mm-2-pack
+Easy PLA  1.75mm 2-Pack,2-Pack / Easy Black / 1.75mm,VSA090012,28.99,True,2-Pack,https://overture3d.com/products/overture-easy-pla-3d-printer-filament-1-75mm-2-pack
+High Speed TPU  1.75mm -2 KG,Black / 2 kg / 1-pack,VSD030002,53.99,False,Black,https://overture3d.com/products/overture-high-speed-tpu-3d-printer-filament-1-75mm-2-kg
+TPU  1.75mm 2 KG,Black / 2 kg / 1-Pack,VSD010003,46.99,True,Black,https://overture3d.com/products/overture-tpu-3d-printer-filament-1-75mm-2-kg
+PLA Professional Gradient Filament 1.75mm,1.75mm / Sunset Rainbow / 1-Pack,VSA070002,25.99,True,1.75mm,https://overture3d.com/products/overture-pla-professional-gradient-filament-1-75mm
