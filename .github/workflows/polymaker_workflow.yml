@@ -8,10 +8,7 @@ on:
 jobs:
   update-csv:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
-      pull-requests: write
-      
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -30,8 +27,7 @@ jobs:
 
       - name: Run scraper
         run: |
-          cd dbworker
-          python polymaker_filament_index.py
+          python dbworker/polymaker_filament_index.py
 
       - name: Configure Git
         run: |
@@ -41,7 +37,7 @@ jobs:
       - name: Commit changes (if any)
         id: commit
         run: |
-            if ! git diff --quiet dbworker/polymaker_filament_index.csv; then
+          if ! git diff --quiet dbworker/polymaker_filament_index.csv; then
             git add dbworker/polymaker_filament_index.csv
             git commit -m "🔄 Update Polymaker CSV on $(date -u '+%Y-%m-%d %H:%M:%S UTC')"
             git push origin database-backend
@@ -61,20 +57,7 @@ jobs:
           title: "🔄 Automated Polymaker Data Update"
           body: |
             This PR was automatically created because new Polymaker filament data was detected.
-            - Updated CSV: `polymaker_filtered_products.csv`
+            - Updated CSV: `dbworker/polymaker_filament_index.csv`
             - Generated on: $(date -u '+%Y-%m-%d %H:%M:%S UTC')
           commit-message: "🔄 Update Polymaker CSV"
           delete-branch: false
-
-      - name: Notify Discord if changed
-        if: steps.fetch.outputs.changed == 'true'
-        uses: sarisia/actions-status-discord@v1
-        with:
-          webhook: ${{ secrets.DISCORD_WEBHOOK_URL }}
-          username: "Overture Scraper"
-          description: |
-            **Polymaker Filament Update**
-            CSV updated in `dbworker/polymaker_filament_index.csv`.
-            Total variants fetched: ${{ steps.fetch.outputs.rows }}.
-            Check the repo for details: https://github.com/${{ github.repository }}
-          color: 3066993
