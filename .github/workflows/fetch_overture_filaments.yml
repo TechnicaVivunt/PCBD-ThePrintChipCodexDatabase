@@ -2,7 +2,7 @@ name: Fetch Overture Filaments
 
 on:
   schedule:
-    - cron: "0 9 * * *"  # Every day at 9 AM UTC
+    - cron: "0 9 * * *"  # Runs every day at 9 AM UTC
   workflow_dispatch:
 
 jobs:
@@ -38,9 +38,10 @@ jobs:
         uses: Ilshidur/action-discord@0.4.0
         with:
           webhook: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          username: "Overture Scraper"
           message: |
             **Overture Filament Update**
-            Fetched ${{ steps.fetch.outputs.rows }} variants (excluding refills).  
             CSV updated in `dbworker/overture_filament_index.csv`.
-          username: "Overture Scraper"
+            Total variants fetched: ${{ steps.fetch.outputs.rows }}.
+            Check the repo for details: https://github.com/${{ github.repository }}
           color: 3066993
