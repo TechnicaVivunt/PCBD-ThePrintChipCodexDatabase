@@ -30,7 +30,7 @@ jobs:
 
       - name: Run scraper
         run: |
-          python dbworker/VOXELPLA_filament_index.py
+          python dbworker/voxelpla_filament_indexer.py
 
       - name: Configure Git
         run: |
@@ -40,7 +40,7 @@ jobs:
       - name: Commit changes (if any)
         id: commit
         run: |
-          FILE="dbworker/VOXELPLA_filament_index.csv"
+          FILE="dbworker/voxelpla_filament_index.csv"
           if [ ! -f "$FILE" ] || ! git diff --quiet "$FILE"; then
             git add "$FILE"
             git commit -m "🔄 Add/Update VOXELPLA CSV on $(date -u '+%Y-%m-%d %H:%M:%S UTC')"
@@ -61,7 +61,7 @@ jobs:
           title: "🔄 Automated VOXELPLA Data Update"
           body: |
             This PR was automatically created because new VOXELPLA filament data was detected.
-            - Updated CSV: `dbworker/VOXELPLA_filament_index.csv`
+            - Updated CSV: `dbworker/voxelpla_filament_index.csv`
             - Generated on: $(date -u '+%Y-%m-%d %H:%M:%S UTC')
           commit-message: "🔄 Update VOXELPLA CSV"
           delete-branch: false
@@ -73,9 +73,10 @@ jobs:
           username: "VOXELPLA Scraper"
           description: |
             **VOXELPLA Filament Update**
-            CSV updated in `dbworker/VOXELPLA_filament_index.csv`.
+            CSV updated in `dbworker/voxelpla_filament_index.csv`.
             Total variants fetched: ${{ steps.fetch.outputs.rows }}.
             Check the repo for details: https://github.com/${{ github.repository }}
           color: 3066993
+
 
 
