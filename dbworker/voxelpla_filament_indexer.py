@@ -1,0 +1,117 @@
+import os
+import csv
+import re
+import requests
+
+# Create output directory
+os.makedirs("dbworker", exist_ok=True)
+csv_path = os.path.join("dbworker", "voxel_filament_index.csv")
+
+# Base URL for products JSON
+base_url = "https://voxelpla.com/collections/all/products.json"
+
+products = []
+page = 1
+
+print("Fetching product data...")
+
+# Fetch all pages
+while True:
+    url = f"{base_url}?page={page}"
+    resp = requests.get(url)
+    if resp.status_code != 200:
+        print(f"Request failed on page {page}: {resp.status_code}")
+        break
+    data = resp.json()
+    items = data.get("products", [])
+    if not items:
+        break
+    products.extend(items)
+    print(f"Fetched page {page} with {len(items)} products...")
+    page += 1
+
+print(f"\nTotal products fetched: {len(products)}")
+
+# CSV fields
+fields = ["brand_name", "color_name", "diameter", "weight", "material", "price"]
+
+# Uppercase words for brand formatting
+UPPERCASE_WORDS = {"HS", "PLA", "PLA+", "PETG", "PETG+"}
+
+def parse_product_title(title):
+    title_lower = title.lower()
+
+    # Only include filament products
+    if "filament" not in title_lower or "bundle" in title_lower:
+        return None
+
+    # Diameter and weight
+    diameter_match = re.search(r"\d+\.?\d*mm", title, re.IGNORECASE)
+    diameter = diameter_match.group(0) if diameter_match else ""
+    weight_match = re.search(r"\((\d+\.?\d*kg)\)", title, re.IGNORECASE)
+    weight = weight_match.group(1) if weight_match else ""
+
+    # Material detection
+    material = ""
+    if "pla" in title_lower:
+        material = "PLA"
+    elif "petg" in title_lower:
+        material = "PETG"
+
+    # Clean title (remove diameter, weight, Filament, stray parentheses)
+    clean_title = title
+    # Remove any parentheses not containing weight
+    clean_title = re.sub(r"\((?!\d+\.?\d*kg\)).*?\)", "", clean_title)
+    clean_title = clean_title.replace(diameter, "")
+    clean_title = clean_title.replace(weight, "")
+    clean_title = clean_title.replace("Filament", "").strip(" -")
+
+    clean_title_lower = clean_title.lower()
+
+    # Assign proper brand and extract color
+    if re.search(r"voxel\s*galaxy\s*petg\+?\s*hs", clean_title_lower):
+        brand_name = "Voxel Galaxy PETG+ HS"
+        color_name = re.sub(r"voxel\s*galaxy\s*petg\+?\s*hs", "", clean_title_lower, flags=re.IGNORECASE).strip()
+    elif re.search(r"voxelpetg\+?\s*hs", clean_title_lower):
+        brand_name = "VOXEL PETG+ HS"
+        color_name = re.sub(r"voxelpetg\+?\s*hs", "", clean_title_lower, flags=re.IGNORECASE).strip()
+    elif re.search(r"voxelpla\s*pla\+?\s*hs", clean_title_lower):
+        brand_name = "Voxel PLA+ HS"
+        color_name = re.sub(r"voxelpla\s*pla\+?\s*hs", "", clean_title_lower, flags=re.IGNORECASE).strip()
+    else:
+        # Fallback: first 2 words as brand
+        parts = clean_title.split()
+        brand_name = " ".join(parts[:2])
+        color_name = " ".join(parts[2:])
+
+    # Remove any leftover parentheses in color_name
+    color_name = re.sub(r"[()]", "", color_name).strip()
+    # Capitalize color properly
+    color_name = " ".join([word.title() for word in color_name.split()])
+
+    return {
+        "brand_name": brand_name,
+        "color_name": color_name,
+        "diameter": diameter,
+        "weight": weight,
+        "material": material
+    }
+
+# Write to CSV
+with open(csv_path, "w", newline="", encoding="utf-8") as f:
+    writer = csv.DictWriter(f, fieldnames=fields)
+    writer.writeheader()
+
+    count = 0
+    for p in products:
+        title = p.get("title", "")
+        parsed = parse_product_title(title)
+        if not parsed:
+            continue
+        variants = p.get("variants", [])
+        price = variants[0].get("price") if variants else ""
+        parsed["price"] = price
+        writer.writerow(parsed)
+        count += 1
+
+print(f"\n✅ Export complete: {csv_path} ({count} filament products)")
