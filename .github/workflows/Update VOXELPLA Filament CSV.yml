@@ -2,8 +2,8 @@ name: Update VOXELPLA Filament CSV
 
 on:
   schedule:
-    - cron: "0 0 * * FRI"  # Runs every Friday at 00:00 UTC
-  workflow_dispatch:       # Allow manual triggering
+    - cron: "0 0 * * FRI"
+  workflow_dispatch:
 
 jobs:
   update-csv:
@@ -11,99 +11,94 @@ jobs:
     permissions:
       contents: write
       pull-requests: write
-      
+
     steps:
-      # 1️⃣ Checkout the repo
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0   # Required for PR creation and diffing
+          ref: database-backend
+          fetch-depth: 0
 
-      # 2️⃣ Setup Python
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.10"
 
-      # 3️⃣ Install dependencies
       - name: Install dependencies
-        run: |
-          pip install --upgrade pip
-          pip install requests
+        run: pip install requests
 
-      # 4️⃣ Run the scraper
-      - name: Run VOXELPLA scraper
+      - name: Save previous CSV
         run: |
-          python dbworker/voxelpla_filament_indexer.py
+          FILE="dbworker/voxel_filament_index.csv"
+          if [ -f "$FILE" ]; then
+            cp "$FILE" "$FILE.prev"
+          fi
 
-      # 5️⃣ Configure Git for commits
+      - name: Run scraper
+        run: python dbworker/voxelpla_filament_indexer.py
+
       - name: Configure Git
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-- name: Commit changes (if any)
-  id: commit
-  run: |
-    FILE="dbworker/voxel_filament_index.csv"
-    
-    echo "Number of rows in CSV:"
-    ROWS=$(wc -l < "$FILE")
-    echo "rows=$ROWS" >> $GITHUB_OUTPUT
-
-    echo "Checking for changes..."
-    git add "$FILE"
-
-    # Show diff in logs
-    git diff --cached "$FILE" || echo "No staged changes detected"
-
-    # Only commit if there is a diff
-    if ! git diff --cached --quiet "$FILE"; then
-      git commit -m "🔄 Update VOXELPLA CSV on $(date -u '+%Y-%m-%d %H:%M:%S UTC')"
-      git push origin database-backend
-      echo "changes=true" >> $GITHUB_OUTPUT
-    else
-      echo "No changes detected — nothing to commit."
-      echo "changes=false" >> $GITHUB_OUTPUT
-    fi
-
-
-      # 7️⃣ Count CSV rows for Discord
-      - name: Count CSV rows
-        id: csvcount
-        if: steps.commit.outputs.changes == 'true'
+      - name: Compare CSVs
+        id: compare
         run: |
-          ROWS=$(tail -n +2 dbworker/voxelpla_filament_index.csv | wc -l)
+          FILE="dbworker/voxel_filament_index.csv"
+          PREV="$FILE.prev"
+
+          if [ -f "$PREV" ]; then
+            DIFF=$(git --no-pager diff --no-color -- "$FILE")
+            echo "$DIFF"
+            if [ -n "$DIFF" ]; then
+              echo "changes=true" >> $GITHUB_OUTPUT
+            else
+              echo "changes=false" >> $GITHUB_OUTPUT
+            fi
+          else
+            echo "No previous CSV found, treating as new file."
+            echo "changes=true" >> $GITHUB_OUTPUT
+
+          ROWS=$(wc -l < "$FILE")
           echo "rows=$ROWS" >> $GITHUB_OUTPUT
 
-      # 8️⃣ Create PR to main if changes
-      - name: Create PR to main
-        if: steps.commit.outputs.changes == 'true'
+      - name: Commit changes
+        if: steps.compare.outputs.changes == 'true'
+        run: |
+          FILE="dbworker/voxel_filament_index.csv"
+          git add "$FILE"
+          git commit -m "🔄 Update VOXELPLA CSV on $(date -u '+%Y-%m-%d %H:%M:%S UTC')"
+          git push origin database-backend
+
+      - name: Create PR
+        if: steps.compare.outputs.changes == 'true'
         uses: peter-evans/create-pull-request@v6
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          branch: ${{ steps.commit.outputs.branch }}
+          branch: database-backend
           base: main
           title: "🔄 Automated VOXELPLA Data Update"
           body: |
             This PR was automatically created because new VOXELPLA filament data was detected.
-            - Updated CSV: `dbworker/voxelpla_filament_index.csv`
+            - Updated CSV: `dbworker/voxel_filament_index.csv`
             - Generated on: $(date -u '+%Y-%m-%d %H:%M:%S UTC')
           commit-message: "🔄 Update VOXELPLA CSV"
-          delete-branch: true   # Delete temp branch after PR merge
+          delete-branch: false
 
-      # 9️⃣ Notify Discord if CSV changed
-      - name: Notify Discord
-        if: steps.commit.outputs.changes == 'true'
+      - name: Notify Discord with changes
+        if: steps.compare.outputs.changes == 'true'
         uses: sarisia/actions-status-discord@v1
         with:
           webhook: ${{ secrets.DISCORD_WEBHOOK_URL }}
           username: "VOXELPLA Scraper"
           description: |
             **VOXELPLA Filament Update**
-            CSV updated: `dbworker/voxelpla_filament_index.csv`.
-            Total variants fetched: ${{ steps.csvcount.outputs.rows }}.
+            CSV updated: `dbworker/voxel_filament_index.csv`
+            Total rows: ${{ steps.compare.outputs.rows }}
+            Changes:
+            ```
+            ${{ steps.compare.outputs.diff }}
+            ```
             Check the repo for details: https://github.com/${{ github.repository }}
           color: 3066993
-
-
