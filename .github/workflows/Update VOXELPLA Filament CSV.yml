@@ -1,0 +1,81 @@
+name: Update VOXELPLA Filament CSV
+
+on:
+  schedule:
+    - cron: "0 0 * * FRI"  # Runs daily at 9 AM UTC
+  workflow_dispatch:      # Allow manual triggering
+
+jobs:
+  update-csv:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+      
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: database-backend
+          fetch-depth: 0   # needed for PR creation and diffing
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+
+      - name: Install dependencies
+        run: |
+          pip install requests
+
+      - name: Run scraper
+        run: |
+          python dbworker/VOXELPLA_filament_index.py
+
+      - name: Configure Git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Commit changes (if any)
+        id: commit
+        run: |
+          FILE="dbworker/VOXELPLA_filament_index.csv"
+          if [ ! -f "$FILE" ] || ! git diff --quiet "$FILE"; then
+            git add "$FILE"
+            git commit -m "🔄 Add/Update VOXELPLA CSV on $(date -u '+%Y-%m-%d %H:%M:%S UTC')"
+            git push origin database-backend
+            echo "changes=true" >> $GITHUB_OUTPUT
+          else
+            echo "No changes detected — nothing to commit."
+            echo "changes=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Create or update PR to main
+        if: steps.commit.outputs.changes == 'true'
+        uses: peter-evans/create-pull-request@v6
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: database-backend
+          base: main
+          title: "🔄 Automated VOXELPLA Data Update"
+          body: |
+            This PR was automatically created because new VOXELPLA filament data was detected.
+            - Updated CSV: `dbworker/VOXELPLA_filament_index.csv`
+            - Generated on: $(date -u '+%Y-%m-%d %H:%M:%S UTC')
+          commit-message: "🔄 Update VOXELPLA CSV"
+          delete-branch: false
+      - name: Notify Discord if changed
+        if: steps.fetch.outputs.changed == 'true'
+        uses: sarisia/actions-status-discord@v1
+        with:
+          webhook: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          username: "VOXELPLA Scraper"
+          description: |
+            **VOXELPLA Filament Update**
+            CSV updated in `dbworker/VOXELPLA_filament_index.csv`.
+            Total variants fetched: ${{ steps.fetch.outputs.rows }}.
+            Check the repo for details: https://github.com/${{ github.repository }}
+          color: 3066993
+
+
