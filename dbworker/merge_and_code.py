@@ -51,6 +51,7 @@ vendor_map = {
     "Overture": 5,
     "eSUN": 6,
     "AmazonBasics": 7,
+    "VOXELPLA": 8,
     "SUNLU": 9,
     "ERYONE": 10
 }
