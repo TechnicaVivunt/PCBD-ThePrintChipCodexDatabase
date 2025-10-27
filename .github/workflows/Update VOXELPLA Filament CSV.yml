@@ -1,4 +1,4 @@
-name: Update VOXELPLA Filament CSV
+name: Update VOXELPLA CSV
 
 on:
   schedule:
@@ -11,72 +11,73 @@ jobs:
     permissions:
       contents: write
       pull-requests: write
-
+    outputs:
+      changes: ${{ steps.check-changes.outputs.changes }}
+      pr-branch: ${{ steps.set-pr-branch.outputs.branch }}
     steps:
-      - name: Checkout repository
+      - name: Checkout repo
         uses: actions/checkout@v4
         with:
-          ref: database-backend
           fetch-depth: 0
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v4
         with:
           python-version: "3.10"
 
       - name: Install dependencies
-        run: pip install requests
-
-      - name: Save previous CSV
         run: |
-          FILE="dbworker/voxel_filament_index.csv"
-          if [ -f "$FILE" ]; then
-            cp "$FILE" "$FILE.prev"
-          fi
-
-      - name: Run scraper
-        run: python dbworker/voxelpla_filament_indexer.py
-
-      - name: Configure Git
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-
-      - name: Compare CSVs
-        id: compare
+          pip install requests
+          python -m pip install --upgrade pip
+      - name: Regenerate VOXELPLA CSV
         run: |
           FILE="dbworker/voxel_filament_index.csv"
           PREV="$FILE.prev"
 
-          if [ -f "$PREV" ]; then
-            DIFF=$(git --no-pager diff --no-color -- "$FILE")
-            echo "$DIFF"
-            if [ -n "$DIFF" ]; then
-              echo "changes=true" >> $GITHUB_OUTPUT
-            else
-              echo "changes=false" >> $GITHUB_OUTPUT
-            fi
-          else
-            echo "No previous CSV found, treating as new file."
-            echo "changes=true" >> $GITHUB_OUTPUT
+          # Save previous version if it exists
+          if [ -f "$FILE" ]; then
+            cp "$FILE" "$PREV"
+          fi
+
+          # Regenerate CSV
+          python dbworker/voxelpla_filament_indexer.py
 
           ROWS=$(wc -l < "$FILE")
           echo "rows=$ROWS" >> $GITHUB_OUTPUT
 
-      - name: Commit changes
-        if: steps.compare.outputs.changes == 'true'
+      - name: Check for changes
+        id: check-changes
         run: |
           FILE="dbworker/voxel_filament_index.csv"
+          if [ ! -f "$FILE.prev" ] || ! cmp -s "$FILE" "$FILE.prev"; then
+            echo "changes=true" >> $GITHUB_OUTPUT
+          else
+            echo "changes=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Set PR branch name
+        id: set-pr-branch
+        run: |
+          branch="voxelpla-update-$(date -u +%Y%m%d%H%M%S)"
+          echo "branch=$branch" >> $GITHUB_OUTPUT
+
+      - name: Commit changes
+        if: steps.check-changes.outputs.changes == 'true'
+        run: |
+          FILE="dbworker/voxel_filament_index.csv"
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -B database-backend
           git add "$FILE"
           git commit -m "🔄 Update VOXELPLA CSV on $(date -u '+%Y-%m-%d %H:%M:%S UTC')"
-          git push origin database-backend
+          git push -u origin database-backend
 
-      - name: Create PR
-        if: steps.compare.outputs.changes == 'true'
+      - name: Create Pull Request
+        if: steps.check-changes.outputs.changes == 'true'
         uses: peter-evans/create-pull-request@v6
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          branch: database-backend
+          branch: ${{ steps.set-pr-branch.outputs.branch }}
           base: main
           title: "🔄 Automated VOXELPLA Data Update"
           body: |
@@ -84,7 +85,11 @@ jobs:
             - Updated CSV: `dbworker/voxel_filament_index.csv`
             - Generated on: $(date -u '+%Y-%m-%d %H:%M:%S UTC')
           commit-message: "🔄 Update VOXELPLA CSV"
-          delete-branch: false
+          delete-branch: true
+          committer: "github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>"
+          author: "TechnicaVivunt <59510408+TechnicaVivunt@users.noreply.github.com>"
+          signoff: false
+          draft: false
 
       - name: Notify Discord with changes
         if: steps.compare.outputs.changes == 'true'
@@ -102,3 +107,7 @@ jobs:
             ```
             Check the repo for details: https://github.com/${{ github.repository }}
           color: 3066993
+
+
+
+
