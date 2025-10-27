@@ -2,7 +2,7 @@ name: Update VOXELPLA Filament CSV
 
 on:
   schedule:
-    - cron: "0 0 * * FRI"
+    - cron: "0 0 * * FRI"  # Runs every Friday at 00:00 UTC
   workflow_dispatch:
 
 jobs:
@@ -59,6 +59,7 @@ jobs:
           else
             echo "No previous CSV found, treating as new file."
             echo "changes=true" >> $GITHUB_OUTPUT
+          fi
 
           ROWS=$(wc -l < "$FILE")
           echo "rows=$ROWS" >> $GITHUB_OUTPUT
@@ -69,14 +70,13 @@ jobs:
           FILE="dbworker/voxel_filament_index.csv"
           git add "$FILE"
           git commit -m "🔄 Update VOXELPLA CSV on $(date -u '+%Y-%m-%d %H:%M:%S UTC')"
-          git push origin database-backend
 
-      - name: Create PR
+      - name: Create PR with unique branch
         if: steps.compare.outputs.changes == 'true'
         uses: peter-evans/create-pull-request@v6
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          branch: database-backend
+          branch: "voxelpla-update-$(date +%Y%m%d%H%M%S)"  # unique branch per run
           base: main
           title: "🔄 Automated VOXELPLA Data Update"
           body: |
@@ -84,9 +84,9 @@ jobs:
             - Updated CSV: `dbworker/voxel_filament_index.csv`
             - Generated on: $(date -u '+%Y-%m-%d %H:%M:%S UTC')
           commit-message: "🔄 Update VOXELPLA CSV"
-          delete-branch: false
+          delete-branch: true
 
-      - name: Notify Discord with changes
+      - name: Notify Discord
         if: steps.compare.outputs.changes == 'true'
         uses: sarisia/actions-status-discord@v1
         with:
@@ -96,9 +96,5 @@ jobs:
             **VOXELPLA Filament Update**
             CSV updated: `dbworker/voxel_filament_index.csv`
             Total rows: ${{ steps.compare.outputs.rows }}
-            Changes:
-            ```
-            ${{ steps.compare.outputs.diff }}
-            ```
             Check the repo for details: https://github.com/${{ github.repository }}
           color: 3066993
