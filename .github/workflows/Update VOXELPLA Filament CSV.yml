@@ -24,6 +24,7 @@ jobs:
 
       - name: Install dependencies
         run: |
+          pip install requests
           python -m pip install --upgrade pip
       - name: Regenerate VOXELPLA CSV
         run: |
@@ -103,5 +104,6 @@ jobs:
             ```
             Check the repo for details: https://github.com/${{ github.repository }}
           color: 3066993
+
 
 
