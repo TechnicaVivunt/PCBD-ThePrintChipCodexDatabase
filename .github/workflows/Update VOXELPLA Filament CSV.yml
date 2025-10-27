@@ -2,12 +2,15 @@ name: Update VOXELPLA CSV
 
 on:
   schedule:
-    - cron: "0 0 * * *" # daily at midnight UTC
+    - cron: "0 0 * * FRI"
   workflow_dispatch:
 
 jobs:
   update-csv:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
     outputs:
       changes: ${{ steps.check-changes.outputs.changes }}
       pr-branch: ${{ steps.set-pr-branch.outputs.branch }}
@@ -104,6 +107,7 @@ jobs:
             ```
             Check the repo for details: https://github.com/${{ github.repository }}
           color: 3066993
+
 
 
 
