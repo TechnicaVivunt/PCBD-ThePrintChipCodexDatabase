@@ -42,24 +42,31 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-      # 6️⃣ Commit CSV if changed
-      - name: Commit changes (if any)
-        id: commit
-        run: |
-          FILE="dbworker/voxelpla_filament_index.csv"
-          BRANCH="voxelpla-update-$(date +%s)"
-          
-          if [ ! -f "$FILE" ] || ! git diff --quiet "$FILE"; then
-            git checkout -b "$BRANCH"
-            git add "$FILE"
-            git commit -m "🔄 Update VOXELPLA CSV on $(date -u '+%Y-%m-%d %H:%M:%S UTC')"
-            git push origin "$BRANCH"
-            echo "branch=$BRANCH" >> $GITHUB_OUTPUT
-            echo "changes=true" >> $GITHUB_OUTPUT
-          else
-            echo "No changes detected — nothing to commit."
-            echo "changes=false" >> $GITHUB_OUTPUT
-          fi
+- name: Commit changes (if any)
+  id: commit
+  run: |
+    FILE="dbworker/voxel_filament_index.csv"
+    
+    echo "Number of rows in CSV:"
+    ROWS=$(wc -l < "$FILE")
+    echo "rows=$ROWS" >> $GITHUB_OUTPUT
+
+    echo "Checking for changes..."
+    git add "$FILE"
+
+    # Show diff in logs
+    git diff --cached "$FILE" || echo "No staged changes detected"
+
+    # Only commit if there is a diff
+    if ! git diff --cached --quiet "$FILE"; then
+      git commit -m "🔄 Update VOXELPLA CSV on $(date -u '+%Y-%m-%d %H:%M:%S UTC')"
+      git push origin database-backend
+      echo "changes=true" >> $GITHUB_OUTPUT
+    else
+      echo "No changes detected — nothing to commit."
+      echo "changes=false" >> $GITHUB_OUTPUT
+    fi
+
 
       # 7️⃣ Count CSV rows for Discord
       - name: Count CSV rows
@@ -98,3 +105,5 @@ jobs:
             Total variants fetched: ${{ steps.csvcount.outputs.rows }}.
             Check the repo for details: https://github.com/${{ github.repository }}
           color: 3066993
+
+
