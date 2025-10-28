@@ -1,8 +1,8 @@
 name: Update Polymaker Filament CSV
 
 on:
-  schedule:
-    - cron: "0 0 * * FRI"  # Runs daily at 9 AM UTC
+#  schedule:
+#    - cron: "0 0 * * FRI"  # Runs daily at 9 AM UTC
   workflow_dispatch:      # Allow manual triggering
 
 jobs:
@@ -77,6 +77,7 @@ jobs:
             Total variants fetched: ${{ steps.fetch.outputs.rows }}.
             Check the repo for details: https://github.com/${{ github.repository }}
           color: 3066993
+
 
 
 
