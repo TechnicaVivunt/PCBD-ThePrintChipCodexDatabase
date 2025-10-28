@@ -1711,3 +1711,91 @@ PCDB-011-010-1,HATCHBOX,PLA,Ash Gray Matte,PLA,,,,,hatchbox_filament_index.csv
 PCDB-011-011-1,HATCHBOX,PLA,White Matte,PLA,,,,,hatchbox_filament_index.csv
 PCDB-011-002-2,HATCHBOX,PETG,Gray Blue,PETG,,,,,hatchbox_filament_index.csv
 PCDB-011-012-1,HATCHBOX,PLA,Metallic Finish Gray,PLA,,,,,hatchbox_filament_index.csv
+PCDB-999-001-1,Unknown,panchroma dual matte pla,matte shadow black,PLA,,,,,exclude_list_polymaker.csv
+PCDB-999-002-1,Unknown,panchroma dual matte pla,matte shadow red,PLA,,,,,exclude_list_polymaker.csv
+PCDB-999-003-1,Unknown,panchroma dual matte pla,matte shadow orange,PLA,,,,,exclude_list_polymaker.csv
+PCDB-999-004-1,Unknown,panchroma dual matte pla,matte foggy orange,PLA,,,,,exclude_list_polymaker.csv
+PCDB-999-005-1,Unknown,panchroma dual matte pla,matte foggy purple,PLA,,,,,exclude_list_polymaker.csv
+PCDB-999-006-1,Unknown,panchroma dual matte pla,matte glacier blue,PLA,,,,,exclude_list_polymaker.csv
+PCDB-999-007-1,Unknown,panchroma dual matte pla,matte flamingo,PLA,,,,,exclude_list_polymaker.csv
+PCDB-999-008-1,Unknown,panchroma dual matte pla,matte chameleon,PLA,,,,,exclude_list_polymaker.csv
+PCDB-999-009-1,Unknown,panchroma dual matte pla,matte sunrise,PLA,,,,,exclude_list_polymaker.csv
+PCDB-999-010-1,Unknown,panchroma dual matte pla,matte camouflage,PLA,,,,,exclude_list_polymaker.csv
+PCDB-999-011-1,Unknown,panchroma dual matte pla,matte mixed berries,PLA,,,,,exclude_list_polymaker.csv
+PCDB-999-012-1,Unknown,Panchroma Dual Silk PLA,Dual Silk Aubergine Silk Lime-Magenta,PLA,,,,,exclude_list_polymaker.csv
+PCDB-999-013-1,Unknown,Panchroma Dual Silk PLA,Dual Silk Banquet Silk Gold-Magenta,PLA,,,,,exclude_list_polymaker.csv
+PCDB-999-014-1,Unknown,Panchroma PLA,Teal,PLA,,,,,exclude_list_polymaker.csv
+PCDB-999-015-1,Unknown,Panchroma Temp Shift PLA,Temperature Color Change Green/Lime,PLA,,,,,exclude_list_polymaker.csv
+PCDB-999-016-1,Unknown,Panchroma Temp Shift PLA,Temperature Color Change Purple/Pink/Translucent,PLA,,,,,exclude_list_polymaker.csv
+PCDB-999-001-2,Unknown,Polymaker PETG,Teal,PETG,,,,,exclude_list_polymaker.csv
+PCDB-999-017-1,Unknown,panchroma galaxy pla,galaxy black,PLA,,,,,exclude_list_polymaker.csv
+PCDB-999-018-1,Unknown,panchroma galaxy pla,galaxy dark blue,PLA,,,,,exclude_list_polymaker.csv
+PCDB-999-019-1,Unknown,panchroma galaxy pla,galaxy dark red,PLA,,,,,exclude_list_polymaker.csv
+PCDB-999-020-1,Unknown,panchroma galaxy pla,hedgehog makes - galaxy red,PLA,,,,,exclude_list_polymaker.csv
+PCDB-999-021-1,Unknown,panchroma gradient matte pla,gradient matte gradient wood,PLA,,,,,exclude_list_polymaker.csv
+PCDB-999-022-1,Unknown,panchroma matte pla,matte charcoal black,PLA,,,,,exclude_list_polymaker.csv
+PCDB-999-023-1,Unknown,panchroma matte pla,matte cotton white,PLA,,,,,exclude_list_polymaker.csv
+PCDB-999-024-1,Unknown,panchroma matte pla,matte army beige,PLA,,,,,exclude_list_polymaker.csv
+PCDB-999-025-1,Unknown,panchroma matte pla,matte army brown,PLA,,,,,exclude_list_polymaker.csv
+PCDB-999-026-1,Unknown,panchroma matte pla,matte earth brown,PLA,,,,,exclude_list_polymaker.csv
+PCDB-999-027-1,Unknown,panchroma matte pla,matte muted white,PLA,,,,,exclude_list_polymaker.csv
+PCDB-999-028-1,Unknown,panchroma matte pla,matte pastel peanut,PLA,,,,,exclude_list_polymaker.csv
+PCDB-999-029-1,Unknown,panchroma matte pla,matte wood brown,PLA,,,,,exclude_list_polymaker.csv
+PCDB-999-030-1,Unknown,panchroma matte pla,matte pastel peach,PLA,,,,,exclude_list_polymaker.csv
+PCDB-999-031-1,Unknown,panchroma matte pla,matte sunrise orange,PLA,,,,,exclude_list_polymaker.csv
+PCDB-999-032-1,Unknown,panchroma matte pla,matte pastel banana,PLA,,,,,exclude_list_polymaker.csv
+PCDB-999-033-1,Unknown,panchroma matte pla,matte army light green,PLA,,,,,exclude_list_polymaker.csv
+PCDB-999-034-1,Unknown,panchroma matte pla,matte savannah yellow,PLA,,,,,exclude_list_polymaker.csv
+PCDB-999-035-1,Unknown,panchroma matte pla,matte army dark green,PLA,,,,,exclude_list_polymaker.csv
+PCDB-999-036-1,Unknown,panchroma matte pla,matte pastel mint,PLA,,,,,exclude_list_polymaker.csv
+PCDB-999-037-1,Unknown,panchroma matte pla,matte muted green,PLA,,,,,exclude_list_polymaker.csv
+PCDB-999-038-1,Unknown,panchroma matte pla,matte forest green,PLA,,,,,exclude_list_polymaker.csv
+PCDB-999-039-1,Unknown,panchroma matte pla,matte arctic teal,PLA,,,,,exclude_list_polymaker.csv
+PCDB-999-040-1,Unknown,panchroma matte pla,matte pastel ice,PLA,,,,,exclude_list_polymaker.csv
+PCDB-999-041-1,Unknown,panchroma matte pla,matte sapphire blue,PLA,,,,,exclude_list_polymaker.csv
+PCDB-999-042-1,Unknown,panchroma matte pla,matte army blue,PLA,,,,,exclude_list_polymaker.csv
+PCDB-999-043-1,Unknown,panchroma matte pla,matte muted blue,PLA,,,,,exclude_list_polymaker.csv
+PCDB-999-044-1,Unknown,panchroma matte pla,matte fossil grey,PLA,,,,,exclude_list_polymaker.csv
+PCDB-999-045-1,Unknown,panchroma matte pla,matte lavender purple,PLA,,,,,exclude_list_polymaker.csv
+PCDB-999-046-1,Unknown,panchroma matte pla,matte muted purple,PLA,,,,,exclude_list_polymaker.csv
+PCDB-999-047-1,Unknown,panchroma matte pla,matte pastel candy,PLA,,,,,exclude_list_polymaker.csv
+PCDB-999-048-1,Unknown,panchroma matte pla,matte sakura pink,PLA,,,,,exclude_list_polymaker.csv
+PCDB-999-049-1,Unknown,panchroma matte pla,matte pastel watermelon,PLA,,,,,exclude_list_polymaker.csv
+PCDB-999-050-1,Unknown,panchroma matte pla,matte lava red,PLA,,,,,exclude_list_polymaker.csv
+PCDB-999-051-1,Unknown,panchroma matte pla,matte army red,PLA,,,,,exclude_list_polymaker.csv
+PCDB-999-052-1,Unknown,panchroma matte pla,matte muted red,PLA,,,,,exclude_list_polymaker.csv
+PCDB-999-053-1,Unknown,panchroma starlight pla,starlight comet,PLA,,,,,exclude_list_polymaker.csv
+PCDB-999-054-1,Unknown,panchroma starlight pla,starlight meteor,PLA,,,,,exclude_list_polymaker.csv
+PCDB-999-055-1,Unknown,panchroma starlight pla,starlight aurora,PLA,,,,,exclude_list_polymaker.csv
+PCDB-999-056-1,Unknown,panchroma starlight pla,starlight nebula,PLA,,,,,exclude_list_polymaker.csv
+PCDB-999-057-1,Unknown,panchroma starlight pla,starlight twilight,PLA,,,,,exclude_list_polymaker.csv
+PCDB-999-058-1,Unknown,panchroma starlight pla,starlight mars,PLA,,,,,exclude_list_polymaker.csv
+PCDB-999-059-1,Unknown,panchroma starlight pla,starlight midnight,PLA,,,,,exclude_list_polymaker.csv
+PCDB-999-060-1,Unknown,panchroma starlight pla,starlight pulsar,PLA,,,,,exclude_list_polymaker.csv
+PCDB-999-061-1,Unknown,panchroma uv shift pla,uv shift natural/orange,PLA,,,,,exclude_list_polymaker.csv
+PCDB-999-062-1,Unknown,polylite cospla,version a - durability with extra sand-ability,PLA,,,,,exclude_list_polymaker.csv
+PCDB-999-063-1,Unknown,polylite cospla,version b - sand-ability with extra durability,PLA,,,,,exclude_list_polymaker.csv
+PCDB-999-002-2,Unknown,polymaker petg,black,PETG,,,,,exclude_list_polymaker.csv
+PCDB-999-003-2,Unknown,polymaker petg,dark grey,PETG,,,,,exclude_list_polymaker.csv
+PCDB-999-004-2,Unknown,polymaker petg,silver,PETG,,,,,exclude_list_polymaker.csv
+PCDB-999-005-2,Unknown,polymaker petg,grey,PETG,,,,,exclude_list_polymaker.csv
+PCDB-999-006-2,Unknown,polymaker petg,white,PETG,,,,,exclude_list_polymaker.csv
+PCDB-999-007-2,Unknown,polymaker petg,pink,PETG,,,,,exclude_list_polymaker.csv
+PCDB-999-008-2,Unknown,polymaker petg,magenta,PETG,,,,,exclude_list_polymaker.csv
+PCDB-999-009-2,Unknown,polymaker petg,red,PETG,,,,,exclude_list_polymaker.csv
+PCDB-999-010-2,Unknown,polymaker petg,orange,PETG,,,,,exclude_list_polymaker.csv
+PCDB-999-011-2,Unknown,polymaker petg,green,PETG,,,,,exclude_list_polymaker.csv
+PCDB-999-012-2,Unknown,polymaker petg,yellow,PETG,,,,,exclude_list_polymaker.csv
+PCDB-999-013-2,Unknown,polymaker petg,lime,PETG,,,,,exclude_list_polymaker.csv
+PCDB-999-014-2,Unknown,polymaker petg,dark green,PETG,,,,,exclude_list_polymaker.csv
+PCDB-999-015-2,Unknown,polymaker petg,electric blue,PETG,,,,,exclude_list_polymaker.csv
+PCDB-999-016-2,Unknown,polymaker petg,blue,PETG,,,,,exclude_list_polymaker.csv
+PCDB-999-017-2,Unknown,polymaker petg,dark blue,PETG,,,,,exclude_list_polymaker.csv
+PCDB-999-018-2,Unknown,polymaker petg,purple,PETG,,,,,exclude_list_polymaker.csv
+PCDB-999-019-2,Unknown,polymaker petg,dark purple,PETG,,,,,exclude_list_polymaker.csv
+PCDB-999-020-2,Unknown,polymaker petg,gold,PETG,,,,,exclude_list_polymaker.csv
+PCDB-999-021-2,Unknown,polymaker petg,polymaker teal,PETG,,,,,exclude_list_polymaker.csv
+PCDB-999-022-2,Unknown,polymaker petg,clear,PETG,,,,,exclude_list_polymaker.csv
+PCDB-999-064-1,Unknown,panchroma starlight pla,starlight jupiter,PLA,,,,,exclude_list_polymaker.csv
+PCDB-999-065-1,Unknown,panchroma starlight pla,starlight neptune,PLA,,,,,exclude_list_polymaker.csv
+PCDB-999-066-1,Unknown,panchroma silk pla,silk pink,PLA,,,,,exclude_list_polymaker.csv
