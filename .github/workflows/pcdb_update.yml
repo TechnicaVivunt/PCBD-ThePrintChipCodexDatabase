@@ -28,23 +28,14 @@ jobs:
       - name: Run enrichment script
         run: python dbworker/update_master.py
 
-      - name: Configure Git
-        run: |
-          git config user.name "github-actions"
-          git config user.email "github-actions@github.com"
-
-      - name: Create temp branch
-        run: |
-          git checkout -b enrich-csv-${{ github.run_id }}
-          git add PCDB-Database.csv
-          git commit -m "Update master CSV from PR #${{ github.event.number }}"
-          git push origin enrich-csv-${{ github.run_id }}
-
       - name: Create pull request to main
         uses: peter-evans/create-pull-request@v5
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          source: enrich-csv-${{ github.run_id }}
-          destination: main
+          commit-message: "Update master CSV from PR #${{ github.event.number }}"
           title: "Auto-update master CSV from PR #${{ github.event.number }}"
           body: "This PR was automatically generated to update PCDB-Database.csv based on changes in dbworker."
+          branch: enrich-csv-${{ github.run_id }}
+          base: main
+          add-paths: PCDB-Database.csv
+          delete-branch: true
