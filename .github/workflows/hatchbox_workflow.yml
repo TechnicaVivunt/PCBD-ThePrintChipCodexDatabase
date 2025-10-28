@@ -1,0 +1,96 @@
+name: Update Hatchbox CSV
+
+on:
+  schedule:
+    - cron: "0 9 * * FRI"  # 9am UTC every Friday
+  workflow_dispatch:
+
+jobs:
+  update-csv:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.10"
+
+      - name: Install dependencies
+        run: |
+          pip install requests
+          python -m pip install --upgrade pip
+
+      - name: Regenerate Hatchbox CSV
+        run: |
+          FILE="dbworker/hatchbox_filament_index.csv"
+          PREV="$FILE.prev"
+
+          # Save previous version if it exists
+          if [ -f "$FILE" ]; then
+            cp "$FILE" "$PREV"
+          fi
+
+          # Regenerate CSV
+          python dbworker/hatchbox_filament_indexer.py
+
+          # Output row count
+          ROWS=$(wc -l < "$FILE")
+          echo "rows=$ROWS" >> $GITHUB_OUTPUT
+
+      - name: Check for changes
+        id: check-changes
+        run: |
+          FILE="dbworker/hatchbox_filament_index.csv"
+          if [ ! -f "$FILE.prev" ] || ! cmp -s "$FILE" "$FILE.prev"; then
+            echo "changes=true" >> $GITHUB_OUTPUT
+          else
+            echo "changes=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Stage CSV for PR
+        if: steps.check-changes.outputs.changes == 'true'
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          echo "dbworker/hatchbox_filament_index.csv.prev" >> .gitignore
+          git rm --cached dbworker/hatchbox_filament_index.csv.prev || true
+          git add dbworker/hatchbox_filament_index.csv
+
+      - name: Create Pull Request
+        if: steps.check-changes.outputs.changes == 'true'
+        uses: peter-evans/create-pull-request@v6
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: "🔄 Update Hatchbox CSV"
+          title: "🔄 Automated Hatchbox Data Update"
+          body: |
+            This PR was automatically created because new Hatchbox filament data was detected.
+            - Updated CSV: `dbworker/hatchbox_filament_index.csv`
+            - Generated on: $(date -u '+%Y-%m-%d %H:%M:%S UTC')
+          base: main
+          branch: hatchbox-update-${{ github.run_id }}
+          delete-branch: true
+          committer: "github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>"
+          author: "TechnicaVivunt <59510408+TechnicaVivunt@users.noreply.github.com>"
+          signoff: false
+          draft: false
+
+      - name: Notify Discord with changes
+        if: steps.check-changes.outputs.changes == 'true'
+        uses: sarisia/actions-status-discord@v1
+        with:
+          webhook: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          username: "Hatchbox Scraper"
+          description: |
+            **Hatchbox Filament Update**
+            CSV updated: `dbworker/hatchbox_filament_index.csv`
+            Total rows: ${{ steps.check-changes.outputs.rows }}
+            Check the repo for details: https://github.com/${{ github.repository }}
+          color: 3447003
