@@ -4,13 +4,11 @@ on:
   pull_request:
     paths:
       - 'dbworker/*.csv'
-  workflow_dispatch:
+
 jobs:
   update-master:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
-      pull-requests: write
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -33,18 +31,19 @@ jobs:
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
 
-      - name: Create temp branch
+      - name: Create temp branch and commit changes
         run: |
           git checkout -b enrich-csv-${{ github.run_id }}
           git add PCDB-Database.csv
-          git commit -m "Update master CSV from PR #${{ github.event.number }}"
+          git diff --cached --quiet || git commit -m "Update master CSV from PR #${{ github.event.number }}"
           git push origin enrich-csv-${{ github.run_id }}
 
       - name: Create pull request to main
         uses: peter-evans/create-pull-request@v5
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          source: enrich-csv-${{ github.run_id }}
-          destination: main
+          branch: enrich-csv-${{ github.run_id }}
+          base: main
           title: "Auto-update master CSV from PR #${{ github.event.number }}"
           body: "This PR was automatically generated to update PCDB-Database.csv based on changes in dbworker."
+          delete-branch: true
