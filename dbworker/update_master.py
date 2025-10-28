@@ -14,7 +14,7 @@ existing_product_ids = set(master_df['product_id']) if 'product_id' in master_df
 manufacturer_ids = {
     'Polymaker': '2', 'BambuLab': '3', 'Prusa': '4', 'Overture': '5',
     'eSUN': '6', 'AmazonBasics': '7', 'VOXELPLA': '8', 'SUNLU': '9',
-    'ERYONE': '10', 'Unknown': '999'
+    'ERYONE': '10', 'HATCHBOX': '11', 'Unknown': '999'
 }
 
 material_code_ids = {
@@ -27,7 +27,8 @@ material_code_ids = {
 # Manufacturer name inference from filename
 manufacturer_map = {
     'polymaker': 'Polymaker',
-    'voxel': 'VOXELPLA'
+    'voxel': 'VOXELPLA',
+    'hatchbox': "HATCHBOX"
 }
 
 # Clean trademark symbols and unwanted characters
@@ -144,3 +145,4 @@ if skipped_files:
     for fname in skipped_files:
         print(f"   - {fname}")
 print(f"• New rows added: {total_new_rows}")
+
