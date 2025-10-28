@@ -5,7 +5,7 @@ import os
 import re
 
 BASE_URL = "https://us.polymaker.com/collections/all/products.json"
-EXCLUDE_FILE = "exclude_list_polymaker.csv"
+EXCLUDE_FILE = "exclude_list/exclude_list_polymaker.csv"
 
 def safe_str(value):
     if value is None:
