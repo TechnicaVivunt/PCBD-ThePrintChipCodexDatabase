@@ -11,9 +11,6 @@ jobs:
     permissions:
       contents: write
       pull-requests: write
-    outputs:
-      changes: ${{ steps.check-changes.outputs.changes }}
-      pr-branch: ${{ steps.set-pr-branch.outputs.branch }}
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
@@ -47,11 +44,6 @@ jobs:
           ROWS=$(wc -l < "$FILE")
           echo "rows=$ROWS" >> $GITHUB_OUTPUT
 
-      - name: Show CSV diff
-        run: |
-          echo "Diff between old and new CSV:"
-          diff dbworker/voxel_filament_index.csv.prev dbworker/voxel_filament_index.csv || echo "No differences"
-
       - name: Check for changes
         id: check-changes
         run: |
@@ -62,38 +54,28 @@ jobs:
             echo "changes=false" >> $GITHUB_OUTPUT
           fi
 
-      - name: Set PR branch name
-        id: set-pr-branch
-        run: |
-          branch="voxelpla-update-$(date -u +%Y%m%d%H%M%S)"
-          echo "branch=$branch" >> $GITHUB_OUTPUT
-
-      - name: Commit changes
+      - name: Stage CSV for PR
         if: steps.check-changes.outputs.changes == 'true'
         run: |
-          FILE="dbworker/voxel_filament_index.csv"
           git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git fetch origin main
-          git switch -c ${{ steps.set-pr-branch.outputs.branch }} origin/main
+          echo "dbworker/voxel_filament_index.csv.prev" >> .gitignore
           git rm --cached dbworker/voxel_filament_index.csv.prev || true
-          git add -f "$FILE"
-          git commit --allow-empty -m "🔄 Update VOXELPLA CSV on $(date -u '+%Y-%m-%d %H:%M:%S UTC')"
-          git push origin ${{ steps.set-pr-branch.outputs.branch }}
+          git add dbworker/voxel_filament_index.csv
 
       - name: Create Pull Request
         if: steps.check-changes.outputs.changes == 'true'
         uses: peter-evans/create-pull-request@v6
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          branch: ${{ steps.set-pr-branch.outputs.branch }}
-          base: main
+          commit-message: "🔄 Update VOXELPLA CSV"
           title: "🔄 Automated VOXELPLA Data Update"
           body: |
             This PR was automatically created because new VOXELPLA filament data was detected.
             - Updated CSV: `dbworker/voxel_filament_index.csv`
             - Generated on: $(date -u '+%Y-%m-%d %H:%M:%S UTC')
-          commit-message: "🔄 Update VOXELPLA CSV"
+          base: main
+          branch: voxelpla-update-${{ github.run_id }}
           delete-branch: true
           committer: "github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>"
           author: "TechnicaVivunt <59510408+TechnicaVivunt@users.noreply.github.com>"
