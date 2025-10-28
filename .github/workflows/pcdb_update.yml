@@ -4,11 +4,13 @@ on:
   pull_request:
     paths:
       - 'dbworker/*.csv'
-
+  workflow_dispatch:
 jobs:
   update-master:
     runs-on: ubuntu-latest
-
+    permissions:
+      contents: write
+      pull-requests: write
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
