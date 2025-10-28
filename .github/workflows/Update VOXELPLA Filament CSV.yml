@@ -69,11 +69,11 @@ jobs:
           FILE="dbworker/voxel_filament_index.csv"
           git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git checkout -B ${{ steps.set-pr-branch.outputs.branch }}
+          git checkout -b ${{ steps.set-pr-branch.outputs.branch }}
           echo "dbworker/voxel_filament_index.csv.prev" >> .gitignore
           git add "$FILE"
           git commit -m "🔄 Update VOXELPLA CSV on $(date -u '+%Y-%m-%d %H:%M:%S UTC')"
-          git push -u origin ${{ steps.set-pr-branch.outputs.branch }}
+          git push origin ${{ steps.set-pr-branch.outputs.branch }}
 
       - name: Create Pull Request
         if: steps.check-changes.outputs.changes == 'true'

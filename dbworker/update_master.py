@@ -78,19 +78,26 @@ def generate_product_id(row):
             return product_id
         count += 1
 
-# Collect unmatched rows
+# Track summary stats
 new_rows = []
+skipped_files = []
+processed_files = 0
+total_new_rows = 0
 
+# Process each CSV file
 for filename in os.listdir(folder_path):
     if filename.endswith('.csv'):
+        processed_files += 1
         file_path = os.path.join(folder_path, filename)
         df = pd.read_csv(file_path, encoding='utf-8')
 
-        # Clean trademark symbols
-        df['brand_name'] = df['brand_name'].apply(clean_text)
-        df['color_name'] = df['color_name'].apply(clean_text)
+        # Normalize column names
+        df.columns = [col.lower() for col in df.columns]
 
         if 'brand_name' in df.columns and 'color_name' in df.columns:
+            df['brand_name'] = df['brand_name'].apply(clean_text)
+            df['color_name'] = df['color_name'].apply(clean_text)
+
             unmatched_mask = df.apply(lambda row: (row['brand_name'], row['color_name']) not in master_pairs, axis=1)
             unmatched_df = df[unmatched_mask]
 
@@ -114,7 +121,9 @@ for filename in os.listdir(folder_path):
                 unmatched_df['product_id'] = unmatched_df.apply(generate_product_id, axis=1)
 
                 new_rows.append(unmatched_df)
+                total_new_rows += len(unmatched_df)
         else:
+            skipped_files.append(filename)
             print(f"⚠️ Skipping {filename}: Missing required columns.")
 
 # Append to master file
@@ -122,6 +131,16 @@ if new_rows:
     combined_new_rows = pd.concat(new_rows, ignore_index=True)
     updated_master_df = pd.concat([master_df, combined_new_rows], ignore_index=True)
     updated_master_df.to_csv(master_file, index=False, encoding='utf-8')
-    print(f"\n✅ Appended {len(combined_new_rows)} new rows to {master_file} with full enrichment.")
+    print(f"\n✅ Appended {total_new_rows} new rows to {master_file} with full enrichment.")
 else:
     print("\n🎉 No unmatched rows found in any file.")
+
+# Summary
+print("\n📊 Summary:")
+print(f"• Files processed: {processed_files}")
+print(f"• Files skipped due to missing columns: {len(skipped_files)}")
+if skipped_files:
+    print("• Skipped files:")
+    for fname in skipped_files:
+        print(f"   - {fname}")
+print(f"• New rows added: {total_new_rows}")
