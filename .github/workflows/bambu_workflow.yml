@@ -25,6 +25,7 @@ jobs:
       - name: Install dependencies
         run: |
           pip install requests
+          pip install selenium
           python -m pip install --upgrade pip
 
       - name: Regenerate BAMBU CSV
