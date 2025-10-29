@@ -1715,3 +1715,14 @@ PCDB-002-294-1,Polymaker,Panchroma Glow PLA,Glow Orange,PLA,,,,,polymaker_filame
 PCDB-002-295-1,Polymaker,Panchroma Marble PLA,Marble White,PLA,,,,,polymaker_filament_index.csv
 PCDB-002-296-1,Polymaker,Panchroma Marble PLA,Marble Slate Grey,PLA,,,,,polymaker_filament_index.csv
 PCDB-002-297-1,Polymaker,Panchroma Starlight PLA,Starlight Mercury,PLA,,,,,polymaker_filament_index.csv
+PCDB-003-142-1,Bambu Lab,PLA Marble,Red Granite,PLA,,,,,bambu_filament_index.csv
+PCDB-003-014-5,Bambu Lab,TPU for AMS,Blue,TPU,,,,,bambu_filament_index.csv
+PCDB-003-015-5,Bambu Lab,TPU for AMS,Red,TPU,,,,,bambu_filament_index.csv
+PCDB-003-016-5,Bambu Lab,TPU for AMS,Yellow,TPU,,,,,bambu_filament_index.csv
+PCDB-003-017-5,Bambu Lab,TPU for AMS,Neon Green,TPU,,,,,bambu_filament_index.csv
+PCDB-003-018-5,Bambu Lab,TPU for AMS,White,TPU,,,,,bambu_filament_index.csv
+PCDB-003-019-5,Bambu Lab,TPU for AMS,Gray,TPU,,,,,bambu_filament_index.csv
+PCDB-003-020-5,Bambu Lab,TPU for AMS,Black,TPU,,,,,bambu_filament_index.csv
+PCDB-003-143-1,Bambu Lab,PLA Aero,White,PLA,,,,,bambu_filament_index.csv
+PCDB-003-001-999,Bambu Lab,Support for PLA (New Version),White,UNKNOWN,,,,,bambu_filament_index.csv
+PCDB-003-002-999,Bambu Lab,Support for PA/PET,Green,UNKNOWN,,,,,bambu_filament_index.csv
