@@ -1711,3 +1711,7 @@ PCDB-011-010-1,HATCHBOX,PLA,Ash Gray Matte,PLA,,,,,hatchbox_filament_index.csv
 PCDB-011-011-1,HATCHBOX,PLA,White Matte,PLA,,,,,hatchbox_filament_index.csv
 PCDB-011-002-2,HATCHBOX,PETG,Gray Blue,PETG,,,,,hatchbox_filament_index.csv
 PCDB-011-012-1,HATCHBOX,PLA,Metallic Finish Gray,PLA,,,,,hatchbox_filament_index.csv
+PCDB-002-294-1,Polymaker,Panchroma Glow PLA,Glow Orange,PLA,,,,,polymaker_filament_index.csv
+PCDB-002-295-1,Polymaker,Panchroma Marble PLA,Marble White,PLA,,,,,polymaker_filament_index.csv
+PCDB-002-296-1,Polymaker,Panchroma Marble PLA,Marble Slate Grey,PLA,,,,,polymaker_filament_index.csv
+PCDB-002-297-1,Polymaker,Panchroma Starlight PLA,Starlight Mercury,PLA,,,,,polymaker_filament_index.csv
