@@ -12,7 +12,7 @@ existing_product_ids = set(master_df['product_id']) if 'product_id' in master_df
 
 # Manufacturer and material code mappings
 manufacturer_ids = {
-    'Polymaker': '2', 'BambuLab': '3', 'Prusa': '4', 'Overture': '5',
+    'Polymaker': '2', 'Bambu Lab': '3', 'Prusa': '4', 'Overture': '5',
     'eSUN': '6', 'AmazonBasics': '7', 'VOXELPLA': '8', 'SUNLU': '9',
     'ERYONE': '10', 'HATCHBOX': '11', 'Unknown': '999'
 }
@@ -28,7 +28,8 @@ material_code_ids = {
 manufacturer_map = {
     'polymaker': 'Polymaker',
     'voxel': 'VOXELPLA',
-    'hatchbox': "HATCHBOX"
+    'hatchbox': "HATCHBOX",
+    'bambu': "Bambu Lab"
 }
 
 # Clean trademark symbols and unwanted characters
