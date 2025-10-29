@@ -1,9 +1,9 @@
-name: Update Polymaker Filament CSV
+name: Update Polymaker CSV
 
 on:
   schedule:
-    - cron: "0 0 * * FRI"  # Runs daily at 9 AM UTC
-  workflow_dispatch:      # Allow manual triggering
+    - cron: "0 9 * * MON"  # 9am UTC every Monday
+  workflow_dispatch:
 
 jobs:
   update-csv:
@@ -11,74 +11,86 @@ jobs:
     permissions:
       contents: write
       pull-requests: write
-      
     steps:
-      - name: Checkout repository
+      - name: Checkout repo
         uses: actions/checkout@v4
         with:
-          ref: database-backend
-          fetch-depth: 0   # needed for PR creation and diffing
+          fetch-depth: 0
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v4
         with:
           python-version: "3.10"
 
       - name: Install dependencies
         run: |
           pip install requests
+          python -m pip install --upgrade pip
 
-      - name: Run scraper
-        run: |
-          python dbworker/polymaker_filament_indexer.py
-
-      - name: Configure Git
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-
-      - name: Commit changes (if any)
-        id: commit
+      - name: Regenerate Polymaker CSV
         run: |
           FILE="dbworker/polymaker_filament_index.csv"
-          if [ ! -f "$FILE" ] || ! git diff --quiet "$FILE"; then
-            git add "$FILE"
-            git commit -m "🔄 Add/Update Polymaker CSV on $(date -u '+%Y-%m-%d %H:%M:%S UTC')"
-            git push origin database-backend
+          PREV="$FILE.prev"
+
+          # Save previous version if it exists
+          if [ -f "$FILE" ]; then
+            cp "$FILE" "$PREV"
+          fi
+
+          # Regenerate CSV
+          python dbworker/polymaker_filament_indexer.py
+
+          # Output row count
+          ROWS=$(wc -l < "$FILE")
+          echo "rows=$ROWS" >> $GITHUB_OUTPUT
+
+      - name: Check for changes
+        id: check-changes
+        run: |
+          FILE="dbworker/polymaker_filament_index.csv"
+          if [ ! -f "$FILE.prev" ] || ! cmp -s "$FILE" "$FILE.prev"; then
             echo "changes=true" >> $GITHUB_OUTPUT
           else
-            echo "No changes detected — nothing to commit."
             echo "changes=false" >> $GITHUB_OUTPUT
           fi
 
-      - name: Create or update PR to main
-        if: steps.commit.outputs.changes == 'true'
+      - name: Stage CSV for PR
+        if: steps.check-changes.outputs.changes == 'true'
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          echo "dbworker/polymaker_filament_index.csv.prev" >> .gitignore
+          git rm --cached dbworker/polymaker_filament_index.csv.prev || true
+          git add dbworker/polymaker_filament_index.csv
+
+      - name: Create Pull Request
+        if: steps.check-changes.outputs.changes == 'true'
         uses: peter-evans/create-pull-request@v6
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          branch: database-backend
-          base: main
+          commit-message: "🔄 Update Polymaker CSV"
           title: "🔄 Automated Polymaker Data Update"
           body: |
             This PR was automatically created because new Polymaker filament data was detected.
             - Updated CSV: `dbworker/polymaker_filament_index.csv`
             - Generated on: $(date -u '+%Y-%m-%d %H:%M:%S UTC')
-          commit-message: "🔄 Update Polymaker CSV"
-          delete-branch: false
-      - name: Notify Discord if changed
-        if: steps.fetch.outputs.changed == 'true'
+          base: main
+          branch: polymaker-update-${{ github.run_id }}
+          delete-branch: true
+          committer: "github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>"
+          author: "TechnicaVivunt <59510408+TechnicaVivunt@users.noreply.github.com>"
+          signoff: false
+          draft: false
+
+      - name: Notify Discord with changes
+        if: steps.check-changes.outputs.changes == 'true'
         uses: sarisia/actions-status-discord@v1
         with:
           webhook: ${{ secrets.DISCORD_WEBHOOK_URL }}
           username: "Polymaker Scraper"
           description: |
             **Polymaker Filament Update**
-            CSV updated in `dbworker/polymaker_filament_index.csv`.
-            Total variants fetched: ${{ steps.fetch.outputs.rows }}.
+            CSV updated: `dbworker/polymaker_filament_index.csv`
+            Total rows: ${{ steps.check-changes.outputs.rows }}
             Check the repo for details: https://github.com/${{ github.repository }}
           color: 3066993
-
-
-
-
-
