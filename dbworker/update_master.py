@@ -145,4 +145,3 @@ if skipped_files:
     for fname in skipped_files:
         print(f"   - {fname}")
 print(f"• New rows added: {total_new_rows}")
-
