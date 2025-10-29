@@ -62,7 +62,7 @@ options.add_argument("--window-size=1920,1080")
 driver = webdriver.Chrome(options=options)
 
 # Output CSV file
-output_file = "dbworker\bambu_filament_index.csv"
+output_file = "dbworker/bambu_filament_index.csv"
 
 with open(output_file, mode='w', newline='', encoding='utf-8') as csvfile:
     writer = csv.writer(csvfile)
@@ -111,3 +111,4 @@ with open(output_file, mode='w', newline='', encoding='utf-8') as csvfile:
 
 driver.quit()
 print(f"Done! All data saved to {output_file}")
+
