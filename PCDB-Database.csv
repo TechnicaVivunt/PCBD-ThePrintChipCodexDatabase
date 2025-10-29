@@ -1711,3 +1711,69 @@ PCDB-011-010-1,HATCHBOX,PLA,Ash Gray Matte,PLA,,,,,hatchbox_filament_index.csv
 PCDB-011-011-1,HATCHBOX,PLA,White Matte,PLA,,,,,hatchbox_filament_index.csv
 PCDB-011-002-2,HATCHBOX,PETG,Gray Blue,PETG,,,,,hatchbox_filament_index.csv
 PCDB-011-012-1,HATCHBOX,PLA,Metallic Finish Gray,PLA,,,,,hatchbox_filament_index.csv
+PCDB-002-030-2,Polymaker,Fiberon PETG-ESD,Black,PETG,,,,,polymaker_filament_index.csv
+PCDB-002-294-1,Polymaker,Panchroma Glow PLA,Glow Orange,PLA,,,,,polymaker_filament_index.csv
+PCDB-002-295-1,Polymaker,Panchroma Marble PLA,Marble White,PLA,,,,,polymaker_filament_index.csv
+PCDB-002-296-1,Polymaker,Panchroma Marble PLA,Marble Slate Grey,PLA,,,,,polymaker_filament_index.csv
+PCDB-002-297-1,Polymaker,Panchroma Starlight PLA,Starlight Mercury,PLA,,,,,polymaker_filament_index.csv
+PCDB-002-001-999,Polymaker,PolyDissolve S1,Natural,UNKNOWN,,,,,polymaker_filament_index.csv
+PCDB-002-015-5,Polymaker,PolyFlex TPU90,Black,TPU,,,,,polymaker_filament_index.csv
+PCDB-002-016-5,Polymaker,PolyFlex TPU90,White,TPU,,,,,polymaker_filament_index.csv
+PCDB-002-017-5,Polymaker,PolyFlex TPU90,Grey,TPU,,,,,polymaker_filament_index.csv
+PCDB-002-018-5,Polymaker,PolyFlex TPU90,Polymaker Teal,TPU,,,,,polymaker_filament_index.csv
+PCDB-002-019-5,Polymaker,PolyFlex TPU90,Clear,TPU,,,,,polymaker_filament_index.csv
+PCDB-002-020-5,Polymaker,PolyFlex TPU95,Black,TPU,,,,,polymaker_filament_index.csv
+PCDB-002-021-5,Polymaker,PolyFlex TPU95,White,TPU,,,,,polymaker_filament_index.csv
+PCDB-002-022-5,Polymaker,PolyFlex TPU95,Blue,TPU,,,,,polymaker_filament_index.csv
+PCDB-002-023-5,Polymaker,PolyFlex TPU95,Red,TPU,,,,,polymaker_filament_index.csv
+PCDB-002-024-5,Polymaker,PolyFlex TPU95,Yellow,TPU,,,,,polymaker_filament_index.csv
+PCDB-002-025-5,Polymaker,PolyFlex TPU95,Orange,TPU,,,,,polymaker_filament_index.csv
+PCDB-002-026-5,Polymaker,PolyFlex TPU95-HF,Black,TPU,,,,,polymaker_filament_index.csv
+PCDB-002-027-5,Polymaker,PolyFlex TPU95-HF,White,TPU,,,,,polymaker_filament_index.csv
+PCDB-002-028-5,Polymaker,PolyFlex TPU95-HF,Clear,TPU,,,,,polymaker_filament_index.csv
+PCDB-002-029-4,Polymaker,PolyLite ABS,Black,ABS,,,,,polymaker_filament_index.csv
+PCDB-002-030-4,Polymaker,PolyLite ABS,White,ABS,,,,,polymaker_filament_index.csv
+PCDB-002-031-4,Polymaker,PolyLite ABS,Grey,ABS,,,,,polymaker_filament_index.csv
+PCDB-002-032-4,Polymaker,PolyLite ABS,Blue,ABS,,,,,polymaker_filament_index.csv
+PCDB-002-033-4,Polymaker,PolyLite ABS,Red,ABS,,,,,polymaker_filament_index.csv
+PCDB-002-034-4,Polymaker,PolyLite ABS,Green,ABS,,,,,polymaker_filament_index.csv
+PCDB-002-035-4,Polymaker,PolyLite ABS,Yellow,ABS,,,,,polymaker_filament_index.csv
+PCDB-002-036-4,Polymaker,PolyLite ABS,Orange,ABS,,,,,polymaker_filament_index.csv
+PCDB-002-037-4,Polymaker,PolyLite ABS,Teal,ABS,,,,,polymaker_filament_index.csv
+PCDB-002-038-4,Polymaker,PolyLite ABS,Purple,ABS,,,,,polymaker_filament_index.csv
+PCDB-002-039-4,Polymaker,PolyLite ABS,Pink,ABS,,,,,polymaker_filament_index.csv
+PCDB-002-040-4,Polymaker,PolyLite ABS,Lime,ABS,,,,,polymaker_filament_index.csv
+PCDB-002-041-4,Polymaker,PolyLite ABS,Light Blue,ABS,,,,,polymaker_filament_index.csv
+PCDB-002-042-4,Polymaker,PolyLite ABS,Dark Grey,ABS,,,,,polymaker_filament_index.csv
+PCDB-002-043-4,Polymaker,PolyLite ABS,Gold,ABS,,,,,polymaker_filament_index.csv
+PCDB-002-044-4,Polymaker,PolyLite ABS,Dark Purple,ABS,,,,,polymaker_filament_index.csv
+PCDB-002-045-4,Polymaker,PolyLite ABS,Natural,ABS,,,,,polymaker_filament_index.csv
+PCDB-002-046-4,Polymaker,PolyLite Galaxy ABS,Galaxy Black,ABS,,,,,polymaker_filament_index.csv
+PCDB-002-047-4,Polymaker,PolyLite Galaxy ABS,Galaxy Dark Grey,ABS,,,,,polymaker_filament_index.csv
+PCDB-002-048-4,Polymaker,PolyLite Galaxy ABS,Galaxy Purple,ABS,,,,,polymaker_filament_index.csv
+PCDB-002-049-4,Polymaker,PolyLite Galaxy ABS,Galaxy Teal,ABS,,,,,polymaker_filament_index.csv
+PCDB-002-050-4,Polymaker,PolyLite Galaxy ABS,Galaxy Orange,ABS,,,,,polymaker_filament_index.csv
+PCDB-002-298-1,Polymaker,PolyLite LW-PLA,Black,PLA,,,,,polymaker_filament_index.csv
+PCDB-002-299-1,Polymaker,PolyLite LW-PLA,White,PLA,,,,,polymaker_filament_index.csv
+PCDB-002-300-1,Polymaker,PolyLite LW-PLA,Grey,PLA,,,,,polymaker_filament_index.csv
+PCDB-002-301-1,Polymaker,PolyLite LW-PLA,Wood,PLA,,,,,polymaker_filament_index.csv
+PCDB-002-302-1,Polymaker,PolyLite LW-PLA,Bright Orange,PLA,,,,,polymaker_filament_index.csv
+PCDB-002-303-1,Polymaker,PolyLite LW-PLA,Bright Yellow,PLA,,,,,polymaker_filament_index.csv
+PCDB-002-304-1,Polymaker,PolyLite LW-PLA,Bright Green,PLA,,,,,polymaker_filament_index.csv
+PCDB-002-305-1,Polymaker,PolyLite LW-PLA,Bright Red,PLA,,,,,polymaker_filament_index.csv
+PCDB-002-051-4,Polymaker,PolyLite Metallic ABS,Metallic Blue,ABS,,,,,polymaker_filament_index.csv
+PCDB-002-052-4,Polymaker,PolyLite Metallic ABS,Metallic Green,ABS,,,,,polymaker_filament_index.csv
+PCDB-002-053-4,Polymaker,PolyLite Neon ABS,Neon Green,ABS,,,,,polymaker_filament_index.csv
+PCDB-002-054-4,Polymaker,PolyLite Neon ABS,Neon Yellow,ABS,,,,,polymaker_filament_index.csv
+PCDB-002-055-4,Polymaker,PolyLite Neon ABS,Neon Orange,ABS,,,,,polymaker_filament_index.csv
+PCDB-002-056-4,Polymaker,PolyLite Neon ABS,Neon Magenta,ABS,,,,,polymaker_filament_index.csv
+PCDB-002-013-8,Polymaker,PolyMax PC-FR,Black,PC,,,,,polymaker_filament_index.csv
+PCDB-002-014-8,Polymaker,PolyMax PC-FR,White,PC,,,,,polymaker_filament_index.csv
+PCDB-002-031-2,Polymaker,PolyMax PETG,Black,PETG,,,,,polymaker_filament_index.csv
+PCDB-002-032-2,Polymaker,PolyMax PETG,White,PETG,,,,,polymaker_filament_index.csv
+PCDB-002-006-7,Polymaker,PolyMide CoPA,Black,PA,,,,,polymaker_filament_index.csv
+PCDB-002-007-7,Polymaker,PolyMide CoPA,Natural,PA,,,,,polymaker_filament_index.csv
+PCDB-002-306-1,Polymaker,PolySonic PLA,Polymaker Teal,PLA,,,,,polymaker_filament_index.csv
+PCDB-002-307-1,Polymaker,PolySonic PLA Pro,Polymaker Teal,PLA,,,,,polymaker_filament_index.csv
+PCDB-002-002-999,Polymaker,PolySupport for PA12,Grass Green,UNKNOWN,,,,,polymaker_filament_index.csv
+PCDB-002-003-999,Polymaker,PolySupport for PLA,Pearl White,UNKNOWN,,,,,polymaker_filament_index.csv
