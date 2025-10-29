@@ -14,7 +14,7 @@ existing_product_ids = set(master_df['product_id']) if 'product_id' in master_df
 manufacturer_ids = {
     'Polymaker': '2', 'BambuLab': '3', 'Prusa': '4', 'Overture': '5',
     'eSUN': '6', 'AmazonBasics': '7', 'VOXELPLA': '8', 'SUNLU': '9',
-    'ERYONE': '10', 'HATCHBOX': '11' 'Unknown': '999'
+    'ERYONE': '10', 'HATCHBOX': '11', 'Unknown': '999'
 }
 
 material_code_ids = {
@@ -126,4 +126,5 @@ if new_rows:
     print(f"\n✅ Appended {len(combined_new_rows)} new rows to {master_file} with full enrichment.")
 else:
     print("\n🎉 No unmatched rows found in any file.")
+
 
