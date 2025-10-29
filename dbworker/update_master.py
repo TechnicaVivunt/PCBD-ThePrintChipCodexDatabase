@@ -27,7 +27,8 @@ material_code_ids = {
 # Manufacturer name inference from filename
 manufacturer_map = {
     'polymaker': 'Polymaker',
-    'voxel': 'VOXELPLA'
+    'voxel': 'VOXELPLA',
+    'hatchbox': "HATCHBOX"
 }
 
 # Clean trademark symbols and unwanted characters
@@ -125,3 +126,4 @@ if new_rows:
     print(f"\n✅ Appended {len(combined_new_rows)} new rows to {master_file} with full enrichment.")
 else:
     print("\n🎉 No unmatched rows found in any file.")
+
