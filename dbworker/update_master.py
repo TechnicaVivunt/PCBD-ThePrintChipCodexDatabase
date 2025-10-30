@@ -1,11 +1,13 @@
 import os
 import pandas as pd
+import re
+from collections import Counter
 
 # Paths
 folder_path = 'dbworker'
 master_file = 'PCDB-Database.csv'
 
-# Load master file with UTF-8 encoding
+# Load master file
 master_df = pd.read_csv(master_file, encoding='utf-8')
 master_pairs = set(zip(master_df['brand_name'], master_df['color_name']))
 existing_product_ids = set(master_df['product_id']) if 'product_id' in master_df.columns else set()
@@ -14,7 +16,7 @@ existing_product_ids = set(master_df['product_id']) if 'product_id' in master_df
 manufacturer_ids = {
     'Polymaker': '2', 'Bambu Lab': '3', 'Prusa': '4', 'Overture': '5',
     'eSUN': '6', 'AmazonBasics': '7', 'VOXELPLA': '8', 'SUNLU': '9',
-    'ERYONE': '10', 'HATCHBOX': '11', 'Unknown': '999'
+    'ERYONE': '10', 'HATCHBOX': '11', 'COEX3D': '12', 'Unknown': '999'
 }
 
 material_code_ids = {
@@ -29,30 +31,38 @@ manufacturer_map = {
     'polymaker': 'Polymaker',
     'voxel': 'VOXELPLA',
     'hatchbox': "HATCHBOX",
-    'bambu': "Bambu Lab"
+    'bambu': "Bambu Lab",
+    'coex3d' : 'COEX3D'
 }
 
 # Clean trademark symbols and unwanted characters
 def clean_text(text):
     if isinstance(text, str):
-        return (
-            text.replace('™', '')
-                .replace('®', '')
-                .replace('©', '')
-                .replace('Â', '')
-                .strip()
-        )
+        text = re.sub(r'[™®©Â]', '', text)
+        text = re.sub(r'\s+', ' ', text)  # Normalize whitespace
+        return text.strip()
     return text
+
+# Remove brand name from color name if present (case-insensitive)
+def strip_brand_from_color(row):
+    brand = row['brand_name']
+    color = row['color_name']
+    if pd.notnull(brand) and pd.notnull(color):
+        cleaned = re.sub(re.escape(brand), '', color, flags=re.IGNORECASE)
+        return re.sub(r'\s+', ' ', cleaned).strip()
+    return color
 
 # Material code extraction logic
 def extract_material_code(brand):
-    brand = str(brand).upper()
-    if 'SUPPORT' in brand:
+    if not isinstance(brand, str):
         return 'UNKNOWN'
-    if 'PA6' in brand or 'PA12' in brand:
+    brand_upper = brand.upper()
+    if 'SUPPORT' in brand_upper:
+        return 'UNKNOWN'
+    if any(code in brand_upper for code in ['PA6', 'PA12', 'NYLON']):
         return 'PA'
     for material in material_code_ids:
-        if material in brand:
+        if material.upper() in brand_upper:
             return material
     return 'UNKNOWN'
 
@@ -71,7 +81,6 @@ def generate_product_id(row):
     mat_id = material_code_ids.get(mat, '999')
     key = (mfg, mat)
     count = existing_counts.get(key, 0) + 1
-
     while True:
         product_id = f"PCDB-{mfg_id.zfill(3)}-{count:03d}-{mat_id}"
         if product_id not in existing_product_ids:
@@ -99,6 +108,7 @@ for filename in os.listdir(folder_path):
         if 'brand_name' in df.columns and 'color_name' in df.columns:
             df['brand_name'] = df['brand_name'].apply(clean_text)
             df['color_name'] = df['color_name'].apply(clean_text)
+            df['color_name'] = df.apply(strip_brand_from_color, axis=1)
 
             unmatched_mask = df.apply(lambda row: (row['brand_name'], row['color_name']) not in master_pairs, axis=1)
             unmatched_df = df[unmatched_mask]
