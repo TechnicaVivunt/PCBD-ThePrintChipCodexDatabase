@@ -1,11 +1,14 @@
 name: Update Master CSV on PR
-
 on:
   pull_request:
     paths:
       - 'dbworker/*.csv'
+  push:
+    branches:
+      - main
+    paths:
+      - 'dbworker/*.csv'
   workflow_dispatch:
-
 jobs:
   update-master:
     runs-on: ubuntu-latest
