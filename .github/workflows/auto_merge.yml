@@ -1,0 +1,15 @@
+- name: Auto-merge BAMBU PR
+  uses: pascalgn/automerge-action@v0.15.6
+  with:
+    pull-request-label: auto-merge
+    merge-method: squash
+  env:
+    GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+- name: Auto-merge README PR
+  uses: pascalgn/automerge-action@v0.15.6
+  with:
+    pull-request-title: "Update manufacturer table in README.md"
+    merge-method: squash
+  env:
+    GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
