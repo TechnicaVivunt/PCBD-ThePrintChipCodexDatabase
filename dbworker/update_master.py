@@ -1,30 +1,29 @@
 import os
 import pandas as pd
+import re
 
 # Paths
 folder_path = 'dbworker'
 master_file = 'PCDB-Database.csv'
-
-# Load master file with UTF-8 encoding
-master_df = pd.read_csv(master_file, encoding='utf-8')
-master_pairs = set(zip(master_df['brand_name'], master_df['color_name']))
-existing_product_ids = set(master_df['product_id']) if 'product_id' in master_df.columns else set()
+dry_run = false  # Set to True to simulate without writing changes
 
 # Manufacturer and material code mappings
 manufacturer_ids = {
     'Polymaker': '2', 'Bambu Lab': '3', 'Prusa': '4', 'Overture': '5',
     'eSUN': '6', 'AmazonBasics': '7', 'VOXELPLA': '8', 'SUNLU': '9',
-    'ERYONE': '10', 'HATCHBOX': '11', 'Unknown': '999'
+    'ERYONE': '10', 'HATCHBOX': '11', 'COEX3D': '12', 'Unknown': '999'
 }
 
 material_code_ids = {
-    'PLA': '1', 'PETG': '2', 'ASA': '3', 'ABS': '4', 'TPU': '5', 'TPE': '6',
-    'PA': '7', 'PC': '8', 'PP': '9', 'PEEK': '10', 'PVA': '11', 'PVB': '12',
-    'COPE': '13', 'PET': '14', 'PPS': '15', 'COPA': '16', 'PPA': '18', 'HIPS': '19',
-    'UNKNOWN': '999'
+    'PLA': '0', 'PETG': '1', 'TPU': '2', 'ABS': '3', 'ASA': '4', 'PC': '5',
+    'PCTG': '6', 'PP': '7', 'PA6': '8', 'PA11': '9', 'PA12': '10', 'PA66': '11',
+    'CPE': '12', 'TPE': '13', 'HIPS': '14', 'PHA': '15', 'PET': '16', 'PEI': '17',
+    'PBT': '18', 'PVB': '19', 'PVA': '20', 'PEKK': '21', 'PEEK': '22', 'BVOH': '23',
+    'TPC': '24', 'PPS': '25', 'PPSU': '26', 'PVC': '27', 'PEBA': '28', 'PVDF': '29',
+    'PPA': '30', 'PCL': '31', 'PES': '32', 'PMMA': '33', 'POM': '34', 'PPE': '35',
+    'PS': '36', 'PSU': '37', 'TPI': '38', 'UNKNOWN': '999'
 }
 
-# Manufacturer name inference from filename
 manufacturer_map = {
     'polymaker': 'Polymaker',
     'voxel': 'VOXELPLA',
@@ -32,7 +31,6 @@ manufacturer_map = {
     'bambu': "Bambu Lab"
 }
 
-# Clean trademark symbols and unwanted characters
 def clean_text(text):
     if isinstance(text, str):
         return (
@@ -44,17 +42,82 @@ def clean_text(text):
         )
     return text
 
-# Material code extraction logic
-def extract_material_code(brand):
-    brand = str(brand).upper()
-    if 'SUPPORT' in brand:
-        return 'UNKNOWN'
-    if 'PA6' in brand or 'PA12' in brand:
-        return 'PA'
-    for material in material_code_ids:
-        if material in brand:
-            return material
-    return 'UNKNOWN'
+# Track material code corrections
+material_corrections = []
+
+def debug_material_inference(row):
+    brand = str(row['brand_name'])
+    fallback = str(row.get('material_code', '')).strip()
+    tokens = re.findall(r'\b[A-Z0-9]+\b', brand.upper())
+
+    inferred = None
+    if 'SUPPORT' in tokens:
+        inferred = 'UNKNOWN'
+    elif 'NYLON' in tokens or ('PA' in tokens and not any(pa in tokens for pa in ['PA12', 'PA11', 'PA66'])):
+        inferred = 'PA6'
+    elif 'PLA' in tokens:
+        inferred = 'PLA'
+    else:
+        for key in material_code_ids:
+            if key in tokens:
+                inferred = key
+                break
+
+    if inferred and inferred != 'UNKNOWN':
+        if inferred != fallback and fallback:
+            material_corrections.append(row.to_dict())
+        return inferred
+    else:
+        return fallback if fallback else 'UNKNOWN'
+
+# Load master file
+master_df = pd.read_csv(master_file, encoding='utf-8')
+master_df['brand_name'] = master_df['brand_name'].apply(clean_text)
+master_df['color_name'] = master_df['color_name'].apply(clean_text)
+
+# Refresh manufacturer_name and material_code
+master_df['manufacturer_name'] = master_df.get('manufacturer_name', pd.Series(['Unknown'] * len(master_df)))
+master_df['material_code'] = master_df.apply(debug_material_inference, axis=1)
+
+# Track changed product_ids
+changed_ids = []
+
+def update_product_id(row):
+    original_id = str(row['product_id'])
+    if pd.isna(original_id) or not original_id.startswith("PCDB-"):
+        return original_id
+
+    match = re.match(r'^PCDB-(\d{3})-(\d{3})-(\d+)$', original_id)
+    if not match:
+        return original_id
+
+    old_mfg_id, seq, old_mat_id = match.groups()
+    mfg = row['manufacturer_name']
+    mat = row['material_code']
+    new_mfg_id = manufacturer_ids.get(mfg, '999')
+    new_mat_id = material_code_ids.get(mat, '999')
+
+    new_id = f"PCDB-{new_mfg_id.zfill(3)}-{seq}-{new_mat_id}"
+    if new_id != original_id:
+        changed_ids.append((original_id, new_id))
+    return new_id
+
+print("🔧 Checking and correcting product_id codes in master file...")
+master_df['product_id'] = master_df.apply(update_product_id, axis=1)
+
+if changed_ids:
+    print(f"\n🔁 Updated {len(changed_ids)} product_id values:")
+    for old, new in changed_ids:
+        print(f"• {old} → {new}")
+else:
+    print("\n✅ All product_id values are already correct.")
+
+if material_corrections:
+    print(f"\n🧪 Corrected {len(material_corrections)} material_code values based on brand_name:")
+    for row in material_corrections:
+        print("•", row)
+
+master_pairs = set(zip(master_df['brand_name'], master_df['color_name']))
 
 # Count existing (manufacturer, material_code) combinations
 existing_counts = (
@@ -62,8 +125,8 @@ existing_counts = (
     .size()
     .to_dict()
 )
+existing_product_ids = set(master_df['product_id'])
 
-# Generate unique product_id
 def generate_product_id(row):
     mfg = row['manufacturer_name']
     mat = row['material_code']
@@ -80,69 +143,58 @@ def generate_product_id(row):
             return product_id
         count += 1
 
-# Track summary stats
 new_rows = []
 skipped_files = []
 processed_files = 0
 total_new_rows = 0
 
-# Process each CSV file
 for filename in os.listdir(folder_path):
     if filename.endswith('.csv'):
         processed_files += 1
         file_path = os.path.join(folder_path, filename)
         df = pd.read_csv(file_path, encoding='utf-8')
-
-        # Normalize column names
         df.columns = [col.lower() for col in df.columns]
 
-        if 'brand_name' in df.columns and 'color_name' in df.columns:
-            df['brand_name'] = df['brand_name'].apply(clean_text)
-            df['color_name'] = df['color_name'].apply(clean_text)
+        required_cols = ['brand_name', 'color_name']
+        missing_cols = [col for col in required_cols if col not in df.columns]
 
-            unmatched_mask = df.apply(lambda row: (row['brand_name'], row['color_name']) not in master_pairs, axis=1)
-            unmatched_df = df[unmatched_mask]
+        if missing_cols:
+            skipped_files.append((filename, missing_cols))
+            print(f"⚠️ Skipping {filename}: Missing columns {missing_cols}")
+            continue
 
-            if not unmatched_df.empty:
-                print(f"➕ Found {len(unmatched_df)} unmatched rows in {filename}")
-                unmatched_df = unmatched_df[['brand_name', 'color_name']].copy()
-                unmatched_df['source_file'] = filename
+        df['brand_name'] = df['brand_name'].apply(clean_text)
+        df['color_name'] = df['color_name'].apply(clean_text)
 
-                # Assign manufacturer_name
-                for prefix, manufacturer in manufacturer_map.items():
-                    if filename.lower().startswith(prefix):
-                        unmatched_df['manufacturer_name'] = manufacturer
-                        break
-                else:
-                    unmatched_df['manufacturer_name'] = 'Unknown'
+        unmatched_mask = df.apply(lambda row: (row['brand_name'], row['color_name']) not in master_pairs, axis=1)
+        unmatched_df = df[unmatched_mask]
 
-                # Assign material_code
-                unmatched_df['material_code'] = unmatched_df['brand_name'].apply(extract_material_code)
+        if not unmatched_df.empty:
+            print(f"➕ Found {len(unmatched_df)} unmatched rows in {filename}")
+            unmatched_df = unmatched_df[['brand_name', 'color_name']].copy()
+            unmatched_df['source_file'] = filename
 
-                # Assign product_id
-                unmatched_df['product_id'] = unmatched_df.apply(generate_product_id, axis=1)
+            for prefix, manufacturer in manufacturer_map.items():
+                if filename.lower().startswith(prefix):
+                    unmatched_df['manufacturer_name'] = manufacturer
+                    break
+            else:
+                unmatched_df['manufacturer_name'] = 'Unknown'
 
-                new_rows.append(unmatched_df)
-                total_new_rows += len(unmatched_df)
-        else:
-            skipped_files.append(filename)
-            print(f"⚠️ Skipping {filename}: Missing required columns.")
+            unmatched_df['material_code'] = unmatched_df.apply(debug_material_inference, axis=1)
+            unmatched_df['product_id'] = unmatched_df.apply(generate_product_id, axis=1)
 
-# Append to master file
+            new_rows.append(unmatched_df)
+            total_new_rows += len(unmatched_df)
+
 if new_rows:
     combined_new_rows = pd.concat(new_rows, ignore_index=True)
     updated_master_df = pd.concat([master_df, combined_new_rows], ignore_index=True)
-    updated_master_df.to_csv(master_file, index=False, encoding='utf-8')
-    print(f"\n✅ Appended {total_new_rows} new rows to {master_file} with full enrichment.")
+    if not dry_run:
+        updated_master_df.to_csv(master_file, index=False, encoding='utf-8')
+    print(f"\n✅ {'Simulated' if dry_run else 'Appended'} {total_new_rows} new rows to {master_file} with full enrichment.")
 else:
     print("\n🎉 No unmatched rows found in any file.")
 
-# Summary
 print("\n📊 Summary:")
-print(f"• Files processed: {processed_files}")
-print(f"• Files skipped due to missing columns: {len(skipped_files)}")
-if skipped_files:
-    print("• Skipped files:")
-    for fname in skipped_files:
-        print(f"   - {fname}")
-print(f"• New rows added: {total_new_rows}")
+print(f"\n✅ {'Simulated' if dry_run else 'Appended'} {total_new_rows} new rows to {master_file} with full enrichment.")
