@@ -19,7 +19,7 @@ jobs:
           python-version: '3.x'
 
       - name: Run update script
-        run: python /dbworker/update_readme.py
+        run: python dbworker/update_readme.py
 
       - name: Commit changes
         run: |
