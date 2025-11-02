@@ -1,4 +1,4 @@
-name: Assign and Add to Project
+name: Assign Issue When Checkboxes Checked
 
 on:
   issues:
@@ -9,17 +9,16 @@ permissions:
   contents: read
 
 jobs:
-  process-checkboxes:
+  assign-if-checked:
     runs-on: ubuntu-latest
     steps:
-      - name: Check checkboxes and update project
+      - name: Assign issue to TechnicaVivunt
         uses: actions/github-script@v7
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
             const body = context.payload.issue.body;
             const issueNumber = context.payload.issue.number;
-            const issueId = context.payload.issue.node_id;
             const owner = context.repo.owner;
             const repo = context.repo.repo;
 
@@ -30,11 +29,10 @@ jobs:
 
             const allChecked = checks.every(check => body.includes(check));
             if (!allChecked) {
-              console.log("Not all checkboxes are checked. Skipping.");
+              console.log("Not all checkboxes are checked. Skipping assignment.");
               return;
             }
 
-            // Assign issue to TechnicaVivunt
             await github.rest.issues.addAssignees({
               owner,
               repo,
@@ -42,50 +40,4 @@ jobs:
               assignees: ["TechnicaVivunt"]
             });
 
-            // Add issue to GitHub Project (Beta)
-            const projectId = "PVT_kwHOA4wOiM4BHBeG"; // ✅ Confirmed project node ID
-            const statusFieldId = "PVTSSF_lAHOA4wOiM4BHBeGzg35fYU"; // ✅ Your Status field ID
-            const noActionOptionId = "6a88e033"; // ✅ Your "No Actions Taken" option ID
-
-            const addItemResponse = await github.graphql(`
-              mutation($projectId: ID!, $contentId: ID!) {
-                addProjectV2ItemById(input: {
-                  projectId: $projectId,
-                  contentId: $contentId
-                }) {
-                  item {
-                    id
-                  }
-                }
-              }
-            `, {
-              projectId: projectId,
-              contentId: issueId
-            });
-
-            const itemId = addItemResponse.addProjectV2ItemById.item.id;
-
-            // Set the Status field to "No Actions Taken"
-            await github.graphql(`
-              mutation($projectId: ID!, $itemId: ID!, $fieldId: ID!, $optionId: String!) {
-                updateProjectV2ItemFieldValue(input: {
-                  projectId: $projectId,
-                  itemId: $itemId,
-                  fieldId: $fieldId,
-                  value: {
-                    singleSelectOptionId: $optionId
-                  }
-                }) {
-                  projectV2Item {
-                    id
-                  }
-                }
-              }
-            `, {
-              projectId: projectId,
-              itemId: itemId,
-              fieldId: statusFieldId,
-              optionId: noActionOptionId
-            });
-
-            console.log("✅ Issue assigned and added to project with status 'No Actions Taken'.");
+            console.log("✅ Issue assigned to TechnicaVivunt.");
