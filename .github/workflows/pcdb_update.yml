@@ -36,9 +36,13 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add PCDB-Database.csv
+          echo "🔍 Checking for changes in PCDB-Database.csv..."
+          git diff --cached PCDB-Database.csv || true
           if git diff --cached --quiet; then
+            echo "✅ No changes detected"
             echo "no_changes=true" >> $GITHUB_OUTPUT
           else
+            echo "⚠️ Changes detected"
             echo "no_changes=false" >> $GITHUB_OUTPUT
           fi
 
