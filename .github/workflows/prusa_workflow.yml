@@ -30,7 +30,7 @@ jobs:
       - name: Regenerate PRUSA CSV
         id: regenerate
         run: |
-          FILE="dbworker/prusa_filament_index.csv"
+          FILE="dbworker/prusament_filament_index.csv"
           PREV="$FILE.prev"
 
           if [ -f "$FILE" ]; then
@@ -45,7 +45,7 @@ jobs:
       - name: Check for changes
         id: check-changes
         run: |
-          FILE="dbworker/prusa_filament_index.csv"
+          FILE="dbworker/prusament_filament_index.csv"
           if [ ! -f "$FILE.prev" ] || ! cmp -s "$FILE" "$FILE.prev"; then
             echo "changes=true" >> "$GITHUB_OUTPUT"
           else
@@ -56,9 +56,9 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          echo "dbworker/prusa_filament_index.csv.prev" >> .gitignore
-          git rm --cached dbworker/prusa_filament_index.csv.prev || true
-          git add dbworker/prusa_filament_index.csv
+          echo "dbworker/prusament_filament_index.csv.prev" >> .gitignore
+          git rm --cached dbworker/prusament_filament_index.csv.prev || true
+          git add dbworker/prusament_filament_index.csv
 
       - name: Create Pull Request
         if: steps.check-changes.outputs.changes == 'true'
@@ -69,7 +69,7 @@ jobs:
           title: "🔄 Automated PRUSA Data Update"
           body: |
             This PR was automatically created because new PRUSA filament data was detected.
-            - Updated CSV: `dbworker/prusa_filament_index.csv`
+            - Updated CSV: `dbworker/prusament_filament_index.csv`
             - Generated on: $(date -u '+%Y-%m-%d %H:%M:%S UTC')
           base: main
           branch: prusa-update-${{ github.run_id }}
@@ -87,7 +87,7 @@ jobs:
           username: "PRUSA Scraper"
           description: |
             **PRUSA Filament Update**
-            CSV updated: `dbworker/prusa_filament_index.csv`
+            CSV updated: `dbworker/prusament_filament_index.csv`
             Total rows: ${{ steps.regenerate.outputs.rows }}
             Check the repo for details: https://github.com/${{ github.repository }}
           color: 3066993
