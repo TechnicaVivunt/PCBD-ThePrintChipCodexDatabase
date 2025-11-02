@@ -6,13 +6,13 @@ on:
 
 permissions:
   issues: write
-  repository-projects: write
+  project: write
 
 jobs:
   process-checkboxes:
     runs-on: ubuntu-latest
     steps:
-      - name: Check checkboxes and assign issue
+      - name: Check checkboxes and update project
         uses: actions/github-script@v7
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
@@ -34,7 +34,7 @@ jobs:
               return;
             }
 
-            // Assign issue
+            // Assign issue to TechnicaVivunt
             await github.rest.issues.addAssignees({
               owner,
               repo,
@@ -42,15 +42,15 @@ jobs:
               assignees: ["TechnicaVivunt"]
             });
 
-            // Add to project
-            const projectNumber = 5;
+            // Add issue to GitHub Project (Beta)
+            const projectId = "PVT_kwHOA4wOiM4BHBeG";
             const statusFieldId = "PVTSSF_lAHOA4wOiM4BHBeGzg35fYU";
             const noActionOptionId = "6a88e033";
 
-            const addItem = await github.graphql(`
-              mutation($project: Int!, $contentId: ID!) {
+            const addItemResponse = await github.graphql(`
+              mutation($projectId: ID!, $contentId: ID!) {
                 addProjectV2ItemById(input: {
-                  projectId: $project,
+                  projectId: $projectId,
                   contentId: $contentId
                 }) {
                   item {
@@ -59,17 +59,17 @@ jobs:
                 }
               }
             `, {
-              project: projectNumber,
+              projectId: projectId,
               contentId: issueId
             });
 
-            const itemId = addItem.addProjectV2ItemById.item.id;
+            const itemId = addItemResponse.addProjectV2ItemById.item.id;
 
-            // Set status field
+            // Set the Status field to "No Actions Taken"
             await github.graphql(`
-              mutation($itemId: ID!, $fieldId: ID!, $optionId: String!) {
+              mutation($projectId: ID!, $itemId: ID!, $fieldId: ID!, $optionId: String!) {
                 updateProjectV2ItemFieldValue(input: {
-                  projectId: ${projectNumber},
+                  projectId: $projectId,
                   itemId: $itemId,
                   fieldId: $fieldId,
                   value: {
@@ -82,9 +82,10 @@ jobs:
                 }
               }
             `, {
-              itemId,
+              projectId: projectId,
+              itemId: itemId,
               fieldId: statusFieldId,
               optionId: noActionOptionId
             });
 
-            console.log("Issue assigned and added to project with status 'No Actions Taken'.");
+            console.log("✅ Issue assigned and added to project with status 'No Actions Taken'.");
