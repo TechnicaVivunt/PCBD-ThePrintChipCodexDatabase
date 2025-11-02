@@ -1726,3 +1726,55 @@ PCDB-003-020-2,Bambu Lab,TPU for AMS,Black,TPU,,,,,bambu_filament_index.csv
 PCDB-003-143-0,Bambu Lab,PLA Aero,White,PLA,,,,,bambu_filament_index.csv
 PCDB-003-001-999,Bambu Lab,Support for PLA (New Version),White,UNKNOWN,,,,,bambu_filament_index.csv
 PCDB-003-002-999,Bambu Lab,Support for PA/PET,Green,UNKNOWN,,,,,bambu_filament_index.csv
+PCDB-004-001-4,Prusa,Prusament ASA,Jet Black,ASA,,,,,prusament_filament_index.csv
+PCDB-004-002-4,Prusa,Prusament ASA,Natural,ASA,,,,,prusament_filament_index.csv
+PCDB-004-003-4,Prusa,Prusament ASA,Prusa Galaxy Black,ASA,,,,,prusament_filament_index.csv
+PCDB-004-004-4,Prusa,Prusament ASA,Prusa Orange,ASA,,,,,prusament_filament_index.csv
+PCDB-004-005-4,Prusa,Prusament ASA,Signal White,ASA,,,,,prusament_filament_index.csv
+PCDB-004-006-4,Prusa,Prusament ASA,Lipstick Red,ASA,,,,,prusament_filament_index.csv
+PCDB-004-007-4,Prusa,Prusament ASA,Prusa Pro Green,ASA,,,,,prusament_filament_index.csv
+PCDB-004-008-4,Prusa,Prusament ASA,Sapphire Blue,ASA,,,,,prusament_filament_index.csv
+PCDB-004-009-4,Prusa,Prusament ASA,Olive Green,ASA,,,,,prusament_filament_index.csv
+PCDB-004-001-9,Prusa,Prusament PA11,Carbon Fiber Black,PA11,,,,,prusament_filament_index.csv
+PCDB-004-001-5,Prusa,Prusament PC Blend,Jet Black,PC,,,,,prusament_filament_index.csv
+PCDB-004-002-5,Prusa,Prusament PC Blend,Natural,PC,,,,,prusament_filament_index.csv
+PCDB-004-003-5,Prusa,Prusament PC Blend,Prusa Orange,PC,,,,,prusament_filament_index.csv
+PCDB-004-004-5,Prusa,Prusament PC Blend,Prusa Pro Green,PC,,,,,prusament_filament_index.csv
+PCDB-004-005-5,Prusa,Prusament PC Blend,Urban Grey,PC,,,,,prusament_filament_index.csv
+PCDB-004-006-5,Prusa,Prusament PC Blend,Carbon Fiber Black,PC,,,,,prusament_filament_index.csv
+PCDB-004-007-5,Prusa,Prusament PC Space,Grade Black,PC,,,,,prusament_filament_index.csv
+PCDB-004-001-17,Prusa,Prusament PEI 1010,Natural,PEI,,,,,prusament_filament_index.csv
+PCDB-004-026-1,Prusa,Prusament PETG,Tungsten 75%,PETG,,,,,prusament_filament_index.csv
+PCDB-004-027-1,Prusa,Prusament PETG,Orange for PPE,PETG,,,,,prusament_filament_index.csv
+PCDB-004-028-1,Prusa,Prusament PETG,Recycled,PETG,,,,,prusament_filament_index.csv
+PCDB-004-029-1,Prusa,Prusament PETG,Recycled Black,PETG,,,,,prusament_filament_index.csv
+PCDB-004-030-1,Prusa,Prusament PETG,Ultramarine Blue,PETG,,,,,prusament_filament_index.csv
+PCDB-004-031-1,Prusa,Prusament PETG,Magnetite 40% Grey,PETG,,,,,prusament_filament_index.csv
+PCDB-004-001-999,Prusa,Prusament Woodfill,Chocolate Brown,UNKNOWN,,,,,prusament_filament_index.csv
+PCDB-004-002-999,Prusa,Prusament Woodfill,Linden Light,UNKNOWN,,,,,prusament_filament_index.csv
+PCDB-004-003-999,Prusa,Prusament Woodfill,Pastel Brown,UNKNOWN,,,,,prusament_filament_index.csv
+PCDB-004-034-0,Prusa,Prusament PLA Blend,Ms. Pink,PLA,,,,,prusament_filament_index.csv
+PCDB-004-035-0,Prusa,Prusament PLA Blend,Pearl White,PLA,,,,,prusament_filament_index.csv
+PCDB-004-036-0,Prusa,Prusament PLA Blend,My Silverness,PLA,,,,,prusament_filament_index.csv
+PCDB-004-037-0,Prusa,Prusament PLA,Galaxy Red,PLA,,,,,prusament_filament_index.csv
+PCDB-004-038-0,Prusa,Prusament PLA,Mystic Brown,PLA,,,,,prusament_filament_index.csv
+PCDB-004-039-0,Prusa,Prusament PLA Blend,Lime Green,PLA,,,,,prusament_filament_index.csv
+PCDB-004-040-0,Prusa,Prusament PLA Blend,Oh My Gold,PLA,,,,,prusament_filament_index.csv
+PCDB-004-041-0,Prusa,Prusament PLA Blend,Royal Blue,PLA,,,,,prusament_filament_index.csv
+PCDB-004-042-0,Prusa,Prusament PLA Blend,Viva La Bronze,PLA,,,,,prusament_filament_index.csv
+PCDB-004-043-0,Prusa,Prusament PLA,Blood Red,PLA,,,,,prusament_filament_index.csv
+PCDB-004-044-0,Prusa,Prusament PLA,Mystic Green,PLA,,,,,prusament_filament_index.csv
+PCDB-004-045-0,Prusa,Prusament PLA,Natural,PLA,,,,,prusament_filament_index.csv
+PCDB-004-001-7,Prusa,Prusament PP,Carbon Fiber Black,PP,,,,,prusament_filament_index.csv
+PCDB-004-002-7,Prusa,Prusament PP,Glass Fiber Natural,PP,,,,,prusament_filament_index.csv
+PCDB-004-001-19,Prusa,Prusament PVB,Natural,PVB,,,,,prusament_filament_index.csv
+PCDB-004-002-19,Prusa,Prusament PVB,Bright Green,PVB,,,,,prusament_filament_index.csv
+PCDB-004-003-19,Prusa,Prusament PVB,Dark Blue,PVB,,,,,prusament_filament_index.csv
+PCDB-004-004-19,Prusa,Prusament PVB,Light Yellow,PVB,,,,,prusament_filament_index.csv
+PCDB-004-005-19,Prusa,Prusament PVB,Prusa Orange,PVB,,,,,prusament_filament_index.csv
+PCDB-004-006-19,Prusa,Prusament PVB,Smoky Black,PVB,,,,,prusament_filament_index.csv
+PCDB-004-001-2,Prusa,Prusament TPU 95A,Natural,TPU,,,,,prusament_filament_index.csv
+PCDB-004-004-999,Prusa,Prusament rPLA,Algae Pigment,UNKNOWN,,,,,prusament_filament_index.csv
+PCDB-004-005-999,Prusa,Prusament rPLA,Corn Pigment,UNKNOWN,,,,,prusament_filament_index.csv
+PCDB-004-006-999,Prusa,Prusament rPLA,Risotto Pigment,UNKNOWN,,,,,prusament_filament_index.csv
+PCDB-004-007-999,Prusa,Prusament rPLA,Wine Pigment,UNKNOWN,,,,,prusament_filament_index.csv
