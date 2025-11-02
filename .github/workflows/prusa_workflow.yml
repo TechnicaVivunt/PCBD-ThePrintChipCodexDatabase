@@ -2,7 +2,7 @@ name: Update PRUSA CSV
 
 on:
   schedule:
-    - cron: "0 9 * * FRI"
+    - cron: "0 9 * * FRI"  # 9am UTC every Friday
   workflow_dispatch:
 
 jobs:
@@ -46,7 +46,8 @@ jobs:
         id: check-changes
         run: |
           FILE="dbworker/prusament_filament_index.csv"
-          if [ ! -f "$FILE.prev" ] || ! cmp -s "$FILE" "$FILE.prev"; then
+          PREV="$FILE.prev"
+          if [ ! -f "$PREV" ] || ! cmp -s "$FILE" "$PREV"; then
             echo "changes=true" >> "$GITHUB_OUTPUT"
           else
             echo "changes=false" >> "$GITHUB_OUTPUT"
