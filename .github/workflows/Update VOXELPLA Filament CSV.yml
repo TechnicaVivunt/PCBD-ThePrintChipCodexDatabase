@@ -81,7 +81,27 @@ jobs:
           author: "TechnicaVivunt <59510408+TechnicaVivunt@users.noreply.github.com>"
           signoff: false
           draft: false
+      - name: Add auto-merge label to PR
+        if: steps.check-changes.outputs.changes == 'true'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const prBranch = `voxelpla-update-${{ github.run_id }}`;
+            const { data: prs } = await github.rest.pulls.list({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              head: `${context.repo.owner}:${prBranch}`
+            });
 
+            if (prs.length > 0) {
+              const prNumber = prs[0].number;
+              await github.rest.issues.addLabels({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: prNumber,
+                labels: ['auto-merge']
+              });
+            }
       - name: Notify Discord with changes
         if: steps.check-changes.outputs.changes == 'true'
         uses: sarisia/actions-status-discord@v1
@@ -94,3 +114,4 @@ jobs:
             Total rows: ${{ steps.check-changes.outputs.rows }}
             Check the repo for details: https://github.com/${{ github.repository }}
           color: 3066993
+
