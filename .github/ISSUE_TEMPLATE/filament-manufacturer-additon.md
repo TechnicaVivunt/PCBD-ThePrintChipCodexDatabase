@@ -1,6 +1,6 @@
 ---
 name: Filament Manufacturer Additon
-about: Describe this issue template's purpose here.
+about: Want to see your favorite filament added to the PCDB?
 title: "[MFG ADD]"
 labels: Manufacturer Addition
 assignees: TechnicaVivunt

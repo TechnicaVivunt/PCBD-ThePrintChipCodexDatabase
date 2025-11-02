@@ -1,6 +1,6 @@
 ---
-name: Custom issue template
-about: Describe this issue template's purpose here.
+name: Duplicate Filament Entry Report
+about: Found a duplicate?
 title: ''
 labels: Potential Duplicate
 assignees: TechnicaVivunt
