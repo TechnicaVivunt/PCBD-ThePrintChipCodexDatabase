@@ -11,7 +11,7 @@ dry_run = False  # Set to True to simulate without writing changes
 manufacturer_ids = {
     'Polymaker': '2', 'Bambu Lab': '3', 'Prusa': '4', 'Overture': '5',
     'eSUN': '6', 'AmazonBasics': '7', 'VOXELPLA': '8', 'SUNLU': '9',
-    'ERYONE': '10', 'HATCHBOX': '11', 'COEX3D': '12', 'Unknown': '999'
+    'ERYONE': '10', 'HATCHBOX': '11', 'Unknown': '999'
 }
 
 material_code_ids = {
@@ -187,15 +187,25 @@ for filename in os.listdir(folder_path):
             new_rows.append(unmatched_df)
             total_new_rows += len(unmatched_df)
 
+# Combine and write updated master file
 if new_rows:
     combined_new_rows = pd.concat(new_rows, ignore_index=True)
     updated_master_df = pd.concat([master_df, combined_new_rows], ignore_index=True)
-    if not dry_run:
-        updated_master_df.to_csv(master_file, index=False, encoding='utf-8')
-    print(f"\n✅ {'Simulated' if dry_run else 'Appended'} {total_new_rows} new rows to {master_file} with full enrichment.")
 else:
-    print("\n🎉 No unmatched rows found in any file.")
+    updated_master_df = master_df  # ← Ensure corrections are saved even if no new rows
+
+if not dry_run:
+    try:
+        updated_master_df.to_csv(master_file, index=False, encoding='utf-8')
+        print(f"\n✅ Saved all changes to {master_file}")
+    except Exception as e:
+        print(f"\n❌ Failed to write to {master_file}: {e}")
+else:
+    print(f"\n🧪 Dry run mode: No changes written to {master_file}")
 
 print("\n📊 Summary:")
-print(f"\n✅ {'Simulated' if dry_run else 'Appended'} {total_new_rows} new rows to {master_file} with full enrichment.")
-
+print(f"• Files processed: {processed_files}")
+print(f"• New rows added: {total_new_rows}")
+print(f"• Product ID corrections: {len(changed_ids)}")
+print(f"• Material code corrections: {len(material_corrections)}")
+print(f"• Files skipped: {len(skipped_files)}")
