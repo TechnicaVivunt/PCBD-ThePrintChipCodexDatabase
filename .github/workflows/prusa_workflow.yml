@@ -47,10 +47,12 @@ jobs:
         run: |
           FILE="dbworker/prusament_filament_index.csv"
           PREV="$FILE.prev"
+
           if [ ! -f "$PREV" ] || ! cmp -s "$FILE" "$PREV"; then
             echo "changes=true" >> "$GITHUB_OUTPUT"
           else
             echo "changes=false" >> "$GITHUB_OUTPUT"
+          fi
 
       - name: Stage CSV for PR
         if: steps.check-changes.outputs.changes == 'true'
