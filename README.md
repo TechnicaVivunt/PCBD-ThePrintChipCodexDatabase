@@ -26,16 +26,8 @@ The original **Print Chip Codex (PCX)** is a great system, but lacks a lot of fi
 
 ## Manufacturer Mapping
 
-| Code | Manufacturer     |
-|------|----------------|
-| 2    | PolyMaker       |
-| 3    | BambuLab        |
-| 4    | Prusa           |
-| 5    | Overture        |
-| 6    | eSUN            |
-| 7    | AmazonBasics    |
-| 9    | SUNLU           |
-| 10   | ERYONE          |
+<!-- manufacturer-table-start -->
+<!-- manufacturer-table-end -->
 
 ---
 
