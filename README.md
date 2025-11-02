@@ -118,11 +118,11 @@ Automated Updates for Filaments for the following manufacturers:
 
 | PolyMaker (Complete)      |
 | BambuLab  (Complete)      |
-| Prusa (requires graphql - actively working on) |
-| Overture (parsing work is done, but filtering needs work) |
-| eSUN (mostly complete, needs sorting and checks against master) |
-| SUNLU   (parsing work is done, but filtering needs work) |
-| ERYONE (parsing work is done, but filtering needs work) |
+| Prusa (requires graphql - actively working on)      |
+| Overture (parsing work is done, but filtering needs work)      |
+| eSUN (mostly complete, needs sorting and checks against master)      |
+| SUNLU   (parsing work is done, but filtering needs work)      |
+| ERYONE (parsing work is done, but filtering needs work)      |
 | VOXELPLA (Complete)          |
 | HATCHBOX (Complete)         |
 
