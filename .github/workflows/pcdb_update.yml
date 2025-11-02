@@ -37,11 +37,10 @@ jobs:
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add PCDB-Database.csv
           if git diff --cached --quiet; then
-          echo "no_changes=true" >> $GITHUB_OUTPUT
+            echo "no_changes=true" >> $GITHUB_OUTPUT
           else
-          echo "no_changes=false" >> $GITHUB_OUTPUT
+            echo "no_changes=false" >> $GITHUB_OUTPUT
           fi
-
 
       - name: Create pull request to main
         if: steps.detect_changes.outputs.no_changes == 'false'
