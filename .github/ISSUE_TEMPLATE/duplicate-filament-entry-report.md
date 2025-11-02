@@ -2,7 +2,7 @@
 name: Duplicate Filament Entry Report
 about: Found a duplicate?
 title: ''
-labels: Potential Duplicate
+labels: Manufacturer Addition, Potential Duplicate
 assignees: TechnicaVivunt
 
 ---
