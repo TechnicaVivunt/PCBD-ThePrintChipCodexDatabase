@@ -1,0 +1,30 @@
+---
+name: Filament Manufacturer Additon
+about: Describe this issue template's purpose here.
+title: "[MFG ADD]"
+labels: Manufacturer Addition
+assignees: TechnicaVivunt
+
+---
+
+## 🧵 Request to Add Filament Manufacturer
+
+**Manufacturer Name:**  
+<!-- Enter the name of the filament manufacturer -->
+
+**Filament Brand(s):**  
+<!-- List the filament brands produced by this manufacturer -->
+
+**Website URL:**  
+<!-- Provide the official website of the manufacturer. Amazon links will not be accepted. -->
+
+**Types of Filament Offered  (optional):**  
+<!-- e.g., PLA, ABS, PETG, TPU, etc. -->
+
+**Additional Notes (optional):**  
+<!-- Any other relevant information or context -->
+
+---
+
+✅ Please ensure that the manufacturer has a dedicated website and does not rely solely on third-party marketplaces like Amazon.  
+🚫 Submissions with only Amazon or reseller links will not be accepted.
