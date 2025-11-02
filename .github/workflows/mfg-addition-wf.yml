@@ -43,7 +43,7 @@ jobs:
             });
 
             // Add issue to GitHub Project (Beta)
-            const projectId = "PVT_kwHOA4wOiM4BHBeG"; // ✅ Your confirmed project node ID
+            const projectId = "PVT_kwHOA4wOiM4BHBeG"; // ✅ Confirmed project node ID
             const statusFieldId = "PVTSSF_lAHOA4wOiM4BHBeGzg35fYU"; // ✅ Your Status field ID
             const noActionOptionId = "6a88e033"; // ✅ Your "No Actions Taken" option ID
 
