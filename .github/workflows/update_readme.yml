@@ -23,10 +23,15 @@ jobs:
       - name: Run update script
         run: python dbworker/update_readme.py
 
-      - name: Commit changes
-        run: |
-          git config --global user.name "github-actions"
-          git config --global user.email "github-actions@github.com"
-          git add README.md
-          git commit -m "Update manufacturer table in README.md" || echo "No changes to commit"
-          git push
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v5
+        with:
+          commit-message: "Update manufacturer table in README.md"
+          title: "Auto-update manufacturer table"
+          body: "This PR updates the manufacturer mapping table in README.md based on dbworker/update_master.py"
+          branch: auto/update-manufacturer-table
+          base: main
+          delete-branch: true
+          labels: auto-merge
+          assignees: TechnicaVivunt
+          reviewers: TechnicaVivunt
