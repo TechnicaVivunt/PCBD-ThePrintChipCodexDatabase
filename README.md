@@ -114,19 +114,21 @@ PCDB-005-001-4
 
 Currently - this is mostly being updated manually - I have a few prototyped scripts to manually pull the filament options/colors/variations from different manufacturer websites. The end goal will be to create some workflow/actions to periodically pull the data and have this repository automatically update anytime new filaments are found on the popular manufacturers.
 
-Automated Updates for Filaments for the following manufacturers:
+Automated Updates for Filaments for the following manufacturers as of writing:
 
 | Brand      | Status/Notes                                      |
 |------------|---------------------------------------------------|
 | PolyMaker  | Complete                                          |
 | BambuLab   | Complete                                          |
-| Prusa      | Requires GraphQL - actively working on            |
-| Overture   | Parsing work is done, but filtering needs work    |
-| eSUN       | Mostly complete, needs sorting and checks         |
-| SUNLU      | Parsing work is done, but filtering needs work    |
-| ERYONE     | Parsing work is done, but filtering needs work    |
+| Prusa      | Complete           |
 | VOXELPLA   | Complete                                          |
 | HATCHBOX   | Complete                                          |
+
+Future filament manufacturers will be added soon - you can keep track of my progress on manufacturers on the Project board: 
+[Project Roadmap](https://github.com/users/TechnicaVivunt/projects/5)
+
+If you don't see a filament brand that you'd like to see - Raise an issue here:
+[Filament Manufacter Additions List](https://github.com/TechnicaVivunt/PCBD-ThePrintChipCodexDatabase/issues?q=is%3Aissue%20state%3Aopen%20label%3A%22Manufacturer%20Addition%22)
 
 
 ## Additional Notes
