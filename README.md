@@ -116,15 +116,18 @@ Currently - this is mostly being updated manually - I have a few prototyped scri
 
 Automated Updates for Filaments for the following manufacturers:
 
-| PolyMaker (Complete)      |
-| BambuLab  (Complete)      |
-| Prusa (requires graphql - actively working on)      |
-| Overture (parsing work is done, but filtering needs work)      |
-| eSUN (mostly complete, needs sorting and checks against master)      |
-| SUNLU   (parsing work is done, but filtering needs work)      |
-| ERYONE (parsing work is done, but filtering needs work)      |
-| VOXELPLA (Complete)          |
-| HATCHBOX (Complete)         |
+| Brand      | Status/Notes                                      |
+|------------|---------------------------------------------------|
+| PolyMaker  | Complete                                          |
+| BambuLab   | Complete                                          |
+| Prusa      | Requires GraphQL - actively working on            |
+| Overture   | Parsing work is done, but filtering needs work    |
+| eSUN       | Mostly complete, needs sorting and checks         |
+| SUNLU      | Parsing work is done, but filtering needs work    |
+| ERYONE     | Parsing work is done, but filtering needs work    |
+| VOXELPLA   | Complete                                          |
+| HATCHBOX   | Complete                                          |
+
 
 ## Additional Notes
 
