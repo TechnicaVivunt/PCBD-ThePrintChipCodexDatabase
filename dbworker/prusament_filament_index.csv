@@ -1,4 +1,4 @@
-Material,Brand,Color,Weight,Price (USD),Availability,Image URL,Product URL
+Material,brand_name,color_name,Weight,Price (USD),Availability,Image URL,Product URL
 ASA,Prusament ASA,Jet Black,800g,29.991736,In stock,/content/images/product/90a28488-7fa4-447c-a665-de362d227435.jpg,https://www.prusa3d.com/product/product/prusament-asa-jet-black-800g-nfc//
 ASA,Prusament ASA,Natural,800g,29.991736,In stock,/content/images/product/6399a9e7-6020-49ec-87f4-92cad29d0532.jpg,https://www.prusa3d.com/product/product/prusament-asa-natural-800g-nfc//
 ASA,Prusament ASA,Prusa Galaxy Black,800g,29.991736,In stock,/content/images/product/3eba6ada-f1b5-451f-8a18-ae7ef1c8d7c7.jpg,https://www.prusa3d.com/product/product/prusament-asa-prusa-galaxy-black-800g-nfc//
