@@ -5,7 +5,7 @@ import re
 # Paths
 folder_path = 'dbworker'
 master_file = 'PCDB-Database.csv'
-dry_run = false  # Set to True to simulate without writing changes
+dry_run = False  # Set to True to simulate without writing changes
 
 # Manufacturer and material code mappings
 manufacturer_ids = {
@@ -198,3 +198,4 @@ else:
 
 print("\n📊 Summary:")
 print(f"\n✅ {'Simulated' if dry_run else 'Appended'} {total_new_rows} new rows to {master_file} with full enrichment.")
+
