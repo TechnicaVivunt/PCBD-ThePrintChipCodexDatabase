@@ -35,3 +35,11 @@ jobs:
           labels: auto-merge
           assignees: TechnicaVivunt
           reviewers: TechnicaVivunt
+      - name: Auto-merge PR
+        uses: pascalgn/automerge-action@v0.15.6
+        with:
+          merge-method: squash
+          pull-request-title: "Auto-update manufacturer table"
+          pull-request-label: auto-merge
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
