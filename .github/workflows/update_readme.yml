@@ -5,7 +5,9 @@ on:
     paths:
       - dbworker/update_master.py
   workflow_dispatch:
-
+permissions:
+  contents: write
+  pull-requests: write
 jobs:
   update-readme:
     runs-on: ubuntu-latest
