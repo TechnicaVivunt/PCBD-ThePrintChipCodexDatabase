@@ -6,7 +6,7 @@ on:
 
 permissions:
   issues: write
-  project: write
+  contents: read
 
 jobs:
   process-checkboxes:
