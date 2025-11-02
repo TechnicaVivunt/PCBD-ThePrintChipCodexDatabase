@@ -28,7 +28,8 @@ manufacturer_map = {
     'polymaker': 'Polymaker',
     'voxel': 'VOXELPLA',
     'hatchbox': "HATCHBOX",
-    'bambu': "Bambu Lab"
+    'bambu': "Bambu Lab",
+    'prusament': "Prusa"
 }
 
 def clean_text(text):
@@ -53,10 +54,12 @@ def debug_material_inference(row):
     inferred = None
     if 'SUPPORT' in tokens:
         inferred = 'UNKNOWN'
-    elif 'NYLON' in tokens or ('PA' in tokens and not any(pa in tokens for pa in ['PA12', 'PA11', 'PA66'])):
+    elif 'NYLON' in tokens or 'CoPA' in tokens or ('PA' in tokens and not any(pa in tokens for pa in ['PA12', 'PA11', 'PA66'])):
         inferred = 'PA6'
-    elif 'PLA' in tokens:
+    elif 'PLA' in tokens or 'rPLA' in tokens:
         inferred = 'PLA'
+    elif 'CoPE' in tokens:
+        inferred = 'CPE'        
     else:
         for key in material_code_ids:
             if key in tokens:
@@ -69,6 +72,7 @@ def debug_material_inference(row):
         return inferred
     else:
         return fallback if fallback else 'UNKNOWN'
+
 
 # Load master file
 master_df = pd.read_csv(master_file, encoding='utf-8')
