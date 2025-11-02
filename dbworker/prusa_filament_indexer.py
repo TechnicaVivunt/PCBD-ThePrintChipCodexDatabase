@@ -151,7 +151,7 @@ all_products.sort(key=lambda x: x[0])
 # Export to CSV in dbworker folder
 with open("dbworker/prusament_filament_index.csv", mode='w', newline='', encoding='utf-8') as file:
     writer = csv.writer(file)
-    writer.writerow(["Material", "Brand", "Color", "Weight", "Price (USD)", "Availability", "Image URL", "Product URL"])
+    writer.writerow(["Material", "brand_name", "color_name", "Weight", "Price (USD)", "Availability", "Image URL", "Product URL"])
     writer.writerows(all_products)
 
 print(f"✅ Exported {len(all_products)} unique products to 'dbworker/prusament_filament_index.csv'")
