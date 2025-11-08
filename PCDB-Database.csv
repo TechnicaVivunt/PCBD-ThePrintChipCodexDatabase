@@ -1778,3 +1778,5 @@ PCDB-004-004-999,Prusa,Prusament rPLA,Algae Pigment,UNKNOWN,,,,,prusament_filame
 PCDB-004-005-999,Prusa,Prusament rPLA,Corn Pigment,UNKNOWN,,,,,prusament_filament_index.csv
 PCDB-004-006-999,Prusa,Prusament rPLA,Risotto Pigment,UNKNOWN,,,,,prusament_filament_index.csv
 PCDB-004-007-999,Prusa,Prusament rPLA,Wine Pigment,UNKNOWN,,,,,prusament_filament_index.csv
+PCDB-004-032-1,Prusa,Prusament PETG,Sky Blue,PETG,,,,,prusament_filament_index.csv
+PCDB-004-002-2,Prusa,Prusament TPU 95A,Jet Black,TPU,,,,,prusament_filament_index.csv
