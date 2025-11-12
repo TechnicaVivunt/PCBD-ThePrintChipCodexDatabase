@@ -48,6 +48,48 @@ The original **Print Chip Codex (PCX)** is a great system, but lacks a lot of fi
 
 
 <!-- MATERIAL_CODES_START -->
+| Key | Abbreviation |
+|-----|--------------|
+| 0 | PLA |
+| 1 | PETG |
+| 2 | TPU |
+| 3 | ABS |
+| 4 | ASA |
+| 5 | PC |
+| 6 | PCTG |
+| 7 | PP |
+| 8 | PA6 |
+| 9 | PA11 |
+| 10 | PA12 |
+| 11 | PA66 |
+| 12 | CPE |
+| 13 | TPE |
+| 14 | HIPS |
+| 15 | PHA |
+| 16 | PET |
+| 17 | PEI |
+| 18 | PBT |
+| 19 | PVB |
+| 20 | PVA |
+| 21 | PEKK |
+| 22 | PEEK |
+| 23 | BVOH |
+| 24 | TPC |
+| 25 | PPS |
+| 26 | PPSU |
+| 27 | PVC |
+| 28 | PEBA |
+| 29 | PVDF |
+| 30 | PPA |
+| 31 | PCL |
+| 32 | PES |
+| 33 | PMMA |
+| 34 | POM |
+| 35 | PPE |
+| 36 | PS |
+| 37 | PSU |
+| 38 | TPI |
+| 39 | SBS |
 <!-- MATERIAL_CODES_END -->
 
 
