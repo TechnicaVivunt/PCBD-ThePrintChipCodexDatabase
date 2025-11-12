@@ -26,55 +26,29 @@ The original **Print Chip Codex (PCX)** is a great system, but lacks a lot of fi
 
 ## Manufacturer Mapping
 
-
-<!-- MATERIAL_CODES_START -->
-<!-- MATERIAL_CODES_END -->
+<!-- manufacturer-table-start -->
+| Manufacturer | Code |
+|--------------|------|
+| AmazonBasics | 7 |
+| Bambu Lab | 3 |
+| ERYONE | 10 |
+| HATCHBOX | 11 |
+| Overture | 5 |
+| Polymaker | 2 |
+| Prusa | 4 |
+| SUNLU | 9 |
+| Unknown | 999 |
+| VOXELPLA | 8 |
+| eSUN | 6 |
+<!-- manufacturer-table-end -->
 
 ---
 
 ## Filament Type Mapping (Updated to Match OpenPrintTag's Type Codes)
 
-| Key | Name | Full name |
-|-----|------|-----------|
-| 0 | `PLA` | Polylactic Acid |
-| 1 | `PETG` | Polyethylene Terephthalate Glycol |
-| 2 | `TPU` | Thermoplastic Polyurethane |
-| 3 | `ABS` | Acrylonitrile Butadiene Styrene |
-| 4 | `ASA` | Acrylonitrile Styrene Acrylate |
-| 5 | `PC` | Polycarbonate |
-| 6 | `PCTG` | Polycyclohexylenedimethylene Terephthalate Glycol |
-| 7 | `PP` | Polypropylene |
-| 8 | `PA6` | Polyamide 6 |
-| 9 | `PA11` | Polyamide 11 |
-| 10 | `PA12` | Polyamide 12 |
-| 11 | `PA66` | Polyamide 66 |
-| 12 | `CPE` | Copolyester |
-| 13 | `TPE` | Thermoplastic Elastomer |
-| 14 | `HIPS` | High Impact Polystyrene |
-| 15 | `PHA` | Polyhydroxyalkanoate |
-| 16 | `PET` | Polyethylene Terephthalate |
-| 17 | `PEI` | Polyetherimide |
-| 18 | `PBT` | Polybutylene Terephthalate |
-| 19 | `PVB` | Polyvinyl Butyral |
-| 20 | `PVA` | Polyvinyl Alcohol |
-| 21 | `PEKK` | Polyetherketoneketone |
-| 22 | `PEEK` | Polyether Ether Ketone |
-| 23 | `BVOH` | Butenediol Vinyl Alcohol Copolymer |
-| 24 | `TPC` | Thermoplastic Copolyester |
-| 25 | `PPS` | Polyphenylene Sulfide |
-| 26 | `PPSU` | Polyphenylsulfone |
-| 27 | `PVC` | Polyvinyl Chloride |
-| 28 | `PEBA` | Polyether Block Amide |
-| 29 | `PVDF` | Polyvinylidene Fluoride |
-| 30 | `PPA` | Polyphthalamide |
-| 31 | `PCL` | Polycaprolactone |
-| 32 | `PES` | Polyethersulfone |
-| 33 | `PMMA` | Polymethyl Methacrylate |
-| 34 | `POM` | Polyoxymethylene |
-| 35 | `PPE` | Polyphenylene Ether |
-| 36 | `PS` | Polystyrene |
-| 37 | `PSU` | Polysulfone |
-| 38 | `TPI` | Thermoplastic Polyimide |
+
+<!-- MATERIAL_CODES_START -->
+<!-- MATERIAL_CODES_END -->
 
 
 ---
