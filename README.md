@@ -46,47 +46,51 @@ The original **Print Chip Codex (PCX)** is a great system, but lacks a lot of fi
 
 ## Filament Type Mapping (Updated to Match OpenPrintTag's Type Codes)
 
-| Key | Name | Full name |
-|-----|------|-----------|
-| 0 | `PLA` | Polylactic Acid |
-| 1 | `PETG` | Polyethylene Terephthalate Glycol |
-| 2 | `TPU` | Thermoplastic Polyurethane |
-| 3 | `ABS` | Acrylonitrile Butadiene Styrene |
-| 4 | `ASA` | Acrylonitrile Styrene Acrylate |
-| 5 | `PC` | Polycarbonate |
-| 6 | `PCTG` | Polycyclohexylenedimethylene Terephthalate Glycol |
-| 7 | `PP` | Polypropylene |
-| 8 | `PA6` | Polyamide 6 |
-| 9 | `PA11` | Polyamide 11 |
-| 10 | `PA12` | Polyamide 12 |
-| 11 | `PA66` | Polyamide 66 |
-| 12 | `CPE` | Copolyester |
-| 13 | `TPE` | Thermoplastic Elastomer |
-| 14 | `HIPS` | High Impact Polystyrene |
-| 15 | `PHA` | Polyhydroxyalkanoate |
-| 16 | `PET` | Polyethylene Terephthalate |
-| 17 | `PEI` | Polyetherimide |
-| 18 | `PBT` | Polybutylene Terephthalate |
-| 19 | `PVB` | Polyvinyl Butyral |
-| 20 | `PVA` | Polyvinyl Alcohol |
-| 21 | `PEKK` | Polyetherketoneketone |
-| 22 | `PEEK` | Polyether Ether Ketone |
-| 23 | `BVOH` | Butenediol Vinyl Alcohol Copolymer |
-| 24 | `TPC` | Thermoplastic Copolyester |
-| 25 | `PPS` | Polyphenylene Sulfide |
-| 26 | `PPSU` | Polyphenylsulfone |
-| 27 | `PVC` | Polyvinyl Chloride |
-| 28 | `PEBA` | Polyether Block Amide |
-| 29 | `PVDF` | Polyvinylidene Fluoride |
-| 30 | `PPA` | Polyphthalamide |
-| 31 | `PCL` | Polycaprolactone |
-| 32 | `PES` | Polyethersulfone |
-| 33 | `PMMA` | Polymethyl Methacrylate |
-| 34 | `POM` | Polyoxymethylene |
-| 35 | `PPE` | Polyphenylene Ether |
-| 36 | `PS` | Polystyrene |
-| 37 | `PSU` | Polysulfone |
-| 38 | `TPI` | Thermoplastic Polyimide |
+
+<!-- MATERIAL_CODES_START -->
+| Key | Abbreviation |
+|-----|--------------|
+| 0 | PLA |
+| 1 | PETG |
+| 2 | TPU |
+| 3 | ABS |
+| 4 | ASA |
+| 5 | PC |
+| 6 | PCTG |
+| 7 | PP |
+| 8 | PA6 |
+| 9 | PA11 |
+| 10 | PA12 |
+| 11 | PA66 |
+| 12 | CPE |
+| 13 | TPE |
+| 14 | HIPS |
+| 15 | PHA |
+| 16 | PET |
+| 17 | PEI |
+| 18 | PBT |
+| 19 | PVB |
+| 20 | PVA |
+| 21 | PEKK |
+| 22 | PEEK |
+| 23 | BVOH |
+| 24 | TPC |
+| 25 | PPS |
+| 26 | PPSU |
+| 27 | PVC |
+| 28 | PEBA |
+| 29 | PVDF |
+| 30 | PPA |
+| 31 | PCL |
+| 32 | PES |
+| 33 | PMMA |
+| 34 | POM |
+| 35 | PPE |
+| 36 | PS |
+| 37 | PSU |
+| 38 | TPI |
+| 39 | SBS |
+<!-- MATERIAL_CODES_END -->
 
 
 ---
