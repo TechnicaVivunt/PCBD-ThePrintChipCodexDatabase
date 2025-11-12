@@ -1,6 +1,8 @@
 import os
 import pandas as pd
 import re
+import requests
+import yaml
 
 # Paths
 folder_path = 'dbworker'
@@ -14,15 +16,17 @@ manufacturer_ids = {
     'ERYONE': '10', 'HATCHBOX': '11', 'Unknown': '999'
 }
 
-material_code_ids = {
-    'PLA': '0', 'PETG': '1', 'TPU': '2', 'ABS': '3', 'ASA': '4', 'PC': '5',
-    'PCTG': '6', 'PP': '7', 'PA6': '8', 'PA11': '9', 'PA12': '10', 'PA66': '11',
-    'CPE': '12', 'TPE': '13', 'HIPS': '14', 'PHA': '15', 'PET': '16', 'PEI': '17',
-    'PBT': '18', 'PVB': '19', 'PVA': '20', 'PEKK': '21', 'PEEK': '22', 'BVOH': '23',
-    'TPC': '24', 'PPS': '25', 'PPSU': '26', 'PVC': '27', 'PEBA': '28', 'PVDF': '29',
-    'PPA': '30', 'PCL': '31', 'PES': '32', 'PMMA': '33', 'POM': '34', 'PPE': '35',
-    'PS': '36', 'PSU': '37', 'TPI': '38', 'UNKNOWN': '999'
-}
+# ✅ Fetch material codes dynamically from OpenPrintTag
+OPENPRINTTAG_YAML_URL = "https://raw.githubusercontent.com/prusa3d/OpenPrintTag/main/data/material_type_enum.yaml"
+
+def fetch_material_codes():
+    response = requests.get(OPENPRINTTAG_YAML_URL)
+    response.raise_for_status()
+    data = yaml.safe_load(response.text)
+    # Build dict: abbreviation → key (string)
+    return {item["abbreviation"]: str(item["key"]) for item in data}
+
+material_code_ids = fetch_material_codes()
 
 manufacturer_map = {
     'polymaker': 'Polymaker',
@@ -72,7 +76,6 @@ def debug_material_inference(row):
         return inferred
     else:
         return fallback if fallback else 'UNKNOWN'
-
 
 # Load master file
 master_df = pd.read_csv(master_file, encoding='utf-8')
@@ -147,6 +150,7 @@ def generate_product_id(row):
             return product_id
         count += 1
 
+# Process new rows from folder
 new_rows = []
 skipped_files = []
 processed_files = 0
@@ -196,7 +200,7 @@ if new_rows:
     combined_new_rows = pd.concat(new_rows, ignore_index=True)
     updated_master_df = pd.concat([master_df, combined_new_rows], ignore_index=True)
 else:
-    updated_master_df = master_df  # ← Ensure corrections are saved even if no new rows
+    updated_master_df = master_df  # Ensure corrections are saved even if no new rows
 
 if not dry_run:
     try:

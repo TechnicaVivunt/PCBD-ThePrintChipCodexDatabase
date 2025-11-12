@@ -1,5 +1,4 @@
 name: Update README Manufacturer Table
-
 on:
   push:
     paths:
@@ -19,6 +18,10 @@ jobs:
         uses: actions/setup-python@v4
         with:
           python-version: '3.x'
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install pyyaml requests
 
       - name: Run update script
         run: python dbworker/update_readme.py

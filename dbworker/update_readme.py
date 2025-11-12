@@ -1,36 +1,68 @@
-import ast
+#!/usr/bin/env python3
+import requests
+import yaml
 import re
+from pathlib import Path
 
-SOURCE_FILE = 'dbworker/update_master.py'
-README_FILE = 'README.md'
-TABLE_HEADER = "| Manufacturer | Code |\n|--------------|------|\n"
+# Paths and constants
+README_PATH = Path(__file__).parent.parent / "README.md"
+OPENPRINTTAG_YAML_URL = "https://raw.githubusercontent.com/prusa3d/OpenPrintTag/main/data/material_type_enum.yaml"
 
-def extract_mapping():
-    with open(SOURCE_FILE, 'r') as f:
-        content = f.read()
-    match = re.search(r'manufacturer_ids\s*=\s*({.*?})', content, re.DOTALL)
-    if not match:
-        raise ValueError("manufacturer_ids dictionary not found")
-    return ast.literal_eval(match.group(1))
+def fetch_material_codes():
+    """
+    Fetch material codes from OpenPrintTag YAML and return {key: abbreviation} dict.
+    YAML structure:
+    - key: 0
+      abbreviation: PLA
+      name: Polylactic Acid
+      category: FFF
+      description: ...
+    """
+    response = requests.get(OPENPRINTTAG_YAML_URL)
+    response.raise_for_status()
+    data = yaml.safe_load(response.text)
 
-def update_readme(mapping):
-    with open(README_FILE, 'r') as f:
-        readme = f.read()
+    # Extract key and abbreviation
+    material_codes = {int(item["key"]): item["abbreviation"] for item in data}
+    return material_codes
 
-    table = TABLE_HEADER + '\n'.join(
-        f"| {manufacturer} | {code} |" for manufacturer, code in sorted(mapping.items())
-    )
+def generate_material_table(material_codes):
+    """
+    Generate a Markdown table for README.
+    Columns: ID | Abbreviation
+    """
+    lines = ["| Key | Abbreviation |", "|-----|--------------|"]
+    for key, abbrev in sorted(material_codes.items()):
+        lines.append(f"| {key} | {abbrev} |")
+    return "\n".join(lines)
 
-    updated = re.sub(
-        r"(<!-- manufacturer-table-start -->)(.*?)(<!-- manufacturer-table-end -->)",
-        rf"\1\n{table}\n\3",
-        readme,
-        flags=re.DOTALL
-    )
+def update_readme(material_table):
+    """
+    Replace the MATERIAL CODES section in README.md between markers:
+    <!-- MATERIAL_CODES_START --> ... <!-- MATERIAL_CODES_END -->
+    If markers don't exist, append at the end.
+    """
+    readme_text = README_PATH.read_text(encoding="utf-8")
 
-    with open(README_FILE, 'w') as f:
-        f.write(updated)
+    start_marker = "<!-- MATERIAL_CODES_START -->"
+    end_marker = "<!-- MATERIAL_CODES_END -->"
+    pattern = re.compile(f"{start_marker}.*?{end_marker}", re.DOTALL)
+
+    new_section = f"{start_marker}\n{material_table}\n{end_marker}"
+
+    if pattern.search(readme_text):
+        updated_text = pattern.sub(new_section, readme_text)
+    else:
+        updated_text = readme_text + "\n\n" + new_section
+
+    README_PATH.write_text(updated_text, encoding="utf-8")
+    print("README.md updated successfully.")
 
 if __name__ == "__main__":
-    mapping = extract_mapping()
-    update_readme(mapping)
+    try:
+        codes = fetch_material_codes()
+        table = generate_material_table(codes)
+        update_readme(table)
+    except Exception as e:
+        print(f"Error updating README: {e}")
+        exit(1)
