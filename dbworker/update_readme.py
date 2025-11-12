@@ -1,78 +1,46 @@
-import ast
-import re
+#!/usr/bin/env python3
 import requests
 import yaml
+import re
+from pathlib import Path
 
-SOURCE_FILE = 'dbworker/update_master.py'
-README_FILE = 'README.md'
-TABLE_HEADER = "| Manufacturer | Code |\n|--------------|------|\n"
-MATERIAL_TABLE_HEADER = "| Key | Name | Full name |\n|-----|------|-----------|\n"
+README_PATH = Path(__file__).parent / "README.md"
+OPENPRINTTAG_YAML_URL = "https://raw.githubusercontent.com/prusa3d/OpenPrintTag/main/data/material_type_enum.yaml"
 
-def extract_mapping():
-    with open(SOURCE_FILE, 'r') as f:
-        content = f.read()
-    match = re.search(r'manufacturer_ids\s*=\s*({.*?})', content, re.DOTALL)
-    if not match:
-        raise ValueError("manufacturer_ids dictionary not found")
-    return ast.literal_eval(match.group(1))
+def fetch_material_codes():
+    """Fetch material codes from OpenPrintTag YAML and return {id: abbreviation} dict."""
+    response = requests.get(OPENPRINTTAG_YAML_URL)
+    response.raise_for_status()
+    data = yaml.safe_load(response.text)
+    return {int(k): v.get("abbreviation") for k, v in data.items()}
 
-def fetch_openprinttag_materials():
-    """Fetch material codes from OpenPrintTag YAML"""
-    url = "https://raw.githubusercontent.com/prusa3d/OpenPrintTag/main/data/material_type_enum.yaml"
-    try:
-        response = requests.get(url)
-        response.raise_for_status()
-        return yaml.safe_load(response.text)
-    except Exception as e:
-        print(f"⚠️ Failed to fetch OpenPrintTag materials: {e}")
-        return None
+def generate_material_table(material_codes):
+    """Generate a Markdown table for README."""
+    lines = ["| ID | Abbreviation |", "|----|--------------|"]
+    for mid, abbrev in sorted(material_codes.items()):
+        lines.append(f"| {mid} | {abbrev} |")
+    return "\n".join(lines)
 
-def update_readme(mapping):
-    with open(README_FILE, 'r') as f:
-        readme = f.read()
+def update_readme(material_table):
+    """Replace the MATERIAL CODES section in README.md."""
+    readme_text = README_PATH.read_text(encoding="utf-8")
 
-    # Update manufacturer table
-    manufacturer_table = TABLE_HEADER + '\n'.join(
-        f"| {manufacturer} | {code} |" for manufacturer, code in sorted(mapping.items())
-    )
+    # Look for markers in README
+    start_marker = "<!-- MATERIAL_CODES_START -->"
+    end_marker = "<!-- MATERIAL_CODES_END -->"
 
-    # Update material table from OpenPrintTag
-    opentag_materials = fetch_openprinttag_materials()
-    if opentag_materials:
-        material_rows = []
-        for key, value in sorted(opentag_materials.items(), key=lambda x: int(x[0]) if x[0].isdigit() else 999):
-            name = value.get('abbreviation', '')
-            full_name = value.get('name', '')
-            material_rows.append(f"| {key} | `{name}` | {full_name} |")
-        
-        material_table = MATERIAL_TABLE_HEADER + "\n".join(material_rows)
-        
-        # Update both tables
-        updated = re.sub(
-            r"(<!-- manufacturer-table-start -->)(.*?)(<!-- manufacturer-table-end -->)",
-            rf"\\1\n{manufacturer_table}\n\\3",
-            readme,
-            flags=re.DOTALL
-        )
-        
-        updated = re.sub(
-            r"(## Filament Type Mapping.*?)(\n---)",
-            f"\\1\n\n{material_table}\\2",
-            updated,
-            flags=re.DOTALL
-        )
+    pattern = re.compile(f"{start_marker}.*?{end_marker}", re.DOTALL)
+    new_section = f"{start_marker}\n{material_table}\n{end_marker}"
+
+    if pattern.search(readme_text):
+        updated_text = pattern.sub(new_section, readme_text)
     else:
-        # Fallback to just updating manufacturer table
-        updated = re.sub(
-            r"(<!-- manufacturer-table-start -->)(.*?)(<!-- manufacturer-table-end -->)",
-            rf"\\1\n{manufacturer_table}\n\\3",
-            readme,
-            flags=re.DOTALL
-        )
+        # If markers don't exist, append at the end
+        updated_text = readme_text + "\n\n" + new_section
 
-    with open(README_FILE, 'w') as f:
-        f.write(updated)
+    README_PATH.write_text(updated_text, encoding="utf-8")
+    print("README.md updated successfully.")
 
 if __name__ == "__main__":
-    mapping = extract_mapping()
-    update_readme(mapping)
+    codes = fetch_material_codes()
+    table = generate_material_table(codes)
