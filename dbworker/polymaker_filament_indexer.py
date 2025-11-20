@@ -62,7 +62,7 @@ def is_valid_option1(value):
         return False
     if "sample box" in s:
         return False
-    if "refill" in s:   # exclude refill variants
+    if "refill" in s:   # exclude refill variants - PR testing
         return False
     return True
 
@@ -148,4 +148,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
