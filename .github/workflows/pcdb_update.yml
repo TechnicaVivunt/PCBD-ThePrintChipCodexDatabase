@@ -28,7 +28,7 @@ jobs:
           python-version: '3.11'
 
       - name: Install dependencies
-        run: pip install pandas requests yaml
+        run: pip install pandas requests pyyaml
 
       - name: Run enrichment script
         run: python dbworker/update_master.py
