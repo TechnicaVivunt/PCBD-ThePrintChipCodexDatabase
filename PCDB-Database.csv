@@ -1780,3 +1780,54 @@ PCDB-004-006-999,Prusa,Prusament rPLA,Risotto Pigment,UNKNOWN,,,,,prusament_fila
 PCDB-004-007-999,Prusa,Prusament rPLA,Wine Pigment,UNKNOWN,,,,,prusament_filament_index.csv
 PCDB-004-032-1,Prusa,Prusament PETG,Sky Blue,PETG,,,,,prusament_filament_index.csv
 PCDB-004-002-2,Prusa,Prusament TPU 95A,Jet Black,TPU,,,,,prusament_filament_index.csv
+PCDB-002-028-999,Polymaker,Panchroma Gradient Celestial,Gradient Celestial Rainbow,UNKNOWN,,,,,polymaker_filament_index.csv
+PCDB-002-029-999,Polymaker,Panchroma Gradient Celestial,Gradient Celestial Blue-Purple,UNKNOWN,,,,,polymaker_filament_index.csv
+PCDB-002-030-999,Polymaker,Panchroma Gradient Celestial,Gradient Celestial Purple-Pink,UNKNOWN,,,,,polymaker_filament_index.csv
+PCDB-002-031-999,Polymaker,Panchroma Gradient Celestial,Gradient Celestial Blue-White,UNKNOWN,,,,,polymaker_filament_index.csv
+PCDB-002-032-999,Polymaker,Panchroma Gradient Crystal,Gradient Crystal Tourmaline,UNKNOWN,,,,,polymaker_filament_index.csv
+PCDB-002-033-999,Polymaker,Panchroma Gradient Crystal,Gradient Crystal Rose Quartz,UNKNOWN,,,,,polymaker_filament_index.csv
+PCDB-002-034-999,Polymaker,Panchroma Gradient Crystal,Gradient Crystal Aquamarine,UNKNOWN,,,,,polymaker_filament_index.csv
+PCDB-002-035-999,Polymaker,Panchroma Gradient Crystal,Gradient Crystal Citrine,UNKNOWN,,,,,polymaker_filament_index.csv
+PCDB-002-036-999,Polymaker,Panchroma Gradient Crystal,Gradient Crystal Carnelian,UNKNOWN,,,,,polymaker_filament_index.csv
+PCDB-002-037-999,Polymaker,Panchroma Gradient Galaxy,Gradient Galaxy Black-Grey,UNKNOWN,,,,,polymaker_filament_index.csv
+PCDB-002-038-999,Polymaker,Panchroma Gradient Galaxy,Gradient Galaxy Blue-Green,UNKNOWN,,,,,polymaker_filament_index.csv
+PCDB-002-039-999,Polymaker,Panchroma Gradient Galaxy,Gradient Galaxy Black-Blue,UNKNOWN,,,,,polymaker_filament_index.csv
+PCDB-002-298-0,Polymaker,Panchroma Gradient Luminous Rainbow PLA,Gradient Luminous Rainbow,PLA,,,,,polymaker_filament_index.csv
+PCDB-002-299-0,Polymaker,Panchroma Gradient Matte PLA,Gradient Matte Tropical Squeeze,PLA,,,,,polymaker_filament_index.csv
+PCDB-002-300-0,Polymaker,Panchroma Gradient Matte PLA,Gradient Matte Lavender Fizz,PLA,,,,,polymaker_filament_index.csv
+PCDB-002-301-0,Polymaker,Panchroma Gradient Matte PLA,Gradient Matte Mint Splash,PLA,,,,,polymaker_filament_index.csv
+PCDB-002-302-0,Polymaker,Panchroma Gradient Matte PLA,Gradient Matte Sky,PLA,,,,,polymaker_filament_index.csv
+PCDB-002-303-0,Polymaker,Panchroma Gradient Matte PLA,Gradient Matte Sandstorm,PLA,,,,,polymaker_filament_index.csv
+PCDB-002-304-0,Polymaker,Panchroma Gradient Matte PLA,Gradient Matte Tornado,PLA,,,,,polymaker_filament_index.csv
+PCDB-002-040-999,Polymaker,Panchroma Gradient Neon,Gradient Halloween Neon,UNKNOWN,,,,,polymaker_filament_index.csv
+PCDB-002-041-999,Polymaker,Panchroma Gradient Starlight,Gradient Starlight Rainbow,UNKNOWN,,,,,polymaker_filament_index.csv
+PCDB-002-042-999,Polymaker,Panchroma Gradient Starlight,Gradient Starlight Purple,UNKNOWN,,,,,polymaker_filament_index.csv
+PCDB-002-043-999,Polymaker,Panchroma Gradient Starlight,Gradient Starlight Blue-Green,UNKNOWN,,,,,polymaker_filament_index.csv
+PCDB-002-044-999,Polymaker,Panchroma Gradient Starlight,Gradient Starlight Purple-Red,UNKNOWN,,,,,polymaker_filament_index.csv
+PCDB-002-045-999,Polymaker,Panchroma Gradient Starlight,Gradient Starlight Blue-Purple,UNKNOWN,,,,,polymaker_filament_index.csv
+PCDB-002-305-0,Polymaker,Panchroma PLA Refill,,PLA,,,,,polymaker_filament_index.csv
+PCDB-002-032-4,Polymaker,Polymaker ASA,Jet Black,ASA,,,,,polymaker_filament_index.csv
+PCDB-002-033-4,Polymaker,Polymaker ASA,Black,ASA,,,,,polymaker_filament_index.csv
+PCDB-002-034-4,Polymaker,Polymaker ASA,White,ASA,,,,,polymaker_filament_index.csv
+PCDB-002-035-4,Polymaker,Polymaker ASA,Grey,ASA,,,,,polymaker_filament_index.csv
+PCDB-002-036-4,Polymaker,Polymaker ASA,Blue,ASA,,,,,polymaker_filament_index.csv
+PCDB-002-037-4,Polymaker,Polymaker ASA,Red,ASA,,,,,polymaker_filament_index.csv
+PCDB-002-038-4,Polymaker,Polymaker ASA,Green,ASA,,,,,polymaker_filament_index.csv
+PCDB-002-039-4,Polymaker,Polymaker ASA,Orange,ASA,,,,,polymaker_filament_index.csv
+PCDB-002-040-4,Polymaker,Polymaker ASA,Yellow,ASA,,,,,polymaker_filament_index.csv
+PCDB-002-041-4,Polymaker,Polymaker ASA,Purple,ASA,,,,,polymaker_filament_index.csv
+PCDB-002-042-4,Polymaker,Polymaker ASA,Polymaker Teal,ASA,,,,,polymaker_filament_index.csv
+PCDB-002-043-4,Polymaker,Polymaker ASA,Natural,ASA,,,,,polymaker_filament_index.csv
+PCDB-002-044-4,Polymaker,Polymaker ASA,Army Green,ASA,,,,,polymaker_filament_index.csv
+PCDB-002-045-4,Polymaker,Polymaker ASA,Army Brown,ASA,,,,,polymaker_filament_index.csv
+PCDB-002-046-4,Polymaker,Polymaker ASA,Dark Grey,ASA,,,,,polymaker_filament_index.csv
+PCDB-002-047-4,Polymaker,Polymaker ASA,Pop Blue,ASA,,,,,polymaker_filament_index.csv
+PCDB-002-048-4,Polymaker,Polymaker ASA,Pop Pink,ASA,,,,,polymaker_filament_index.csv
+PCDB-002-049-4,Polymaker,Polymaker ASA,Pop Green,ASA,,,,,polymaker_filament_index.csv
+PCDB-002-050-4,Polymaker,Polymaker ASA,Dark Purple,ASA,,,,,polymaker_filament_index.csv
+PCDB-002-051-4,Polymaker,Polymaker ASA,Dark Gray Green,ASA,,,,,polymaker_filament_index.csv
+PCDB-002-052-4,Polymaker,Polymaker ASA,Olive Brown,ASA,,,,,polymaker_filament_index.csv
+PCDB-002-053-4,Polymaker,Polymaker Galaxy ASA,Galaxy Black,ASA,,,,,polymaker_filament_index.csv
+PCDB-002-054-4,Polymaker,Polymaker Galaxy ASA,Galaxy Blue,ASA,,,,,polymaker_filament_index.csv
+PCDB-002-055-4,Polymaker,Polymaker Galaxy ASA,Galaxy Red,ASA,,,,,polymaker_filament_index.csv
+PCDB-002-056-4,Polymaker,Polymaker Galaxy ASA,Galaxy Green,ASA,,,,,polymaker_filament_index.csv
