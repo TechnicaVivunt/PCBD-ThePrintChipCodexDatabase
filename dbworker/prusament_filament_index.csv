@@ -1,9 +1,9 @@
 Material,brand_name,color_name,Weight,Price (USD),Availability,Image URL,Product URL
+ASA,Prusament ASA,Jet Black,800g,25.916667,In stock,/content/images/product/90a28488-7fa4-447c-a665-de362d227435.jpg,https://www.prusa3d.com/product/product/prusament-asa-jet-black-800g-nfc//
 ASA,Prusament ASA,Natural,800g,25.916667,In stock,/content/images/product/6399a9e7-6020-49ec-87f4-92cad29d0532.jpg,https://www.prusa3d.com/product/product/prusament-asa-natural-800g-nfc//
 ASA,Prusament ASA,Prusa Galaxy Black,800g,25.916667,In stock,/content/images/product/3eba6ada-f1b5-451f-8a18-ae7ef1c8d7c7.jpg,https://www.prusa3d.com/product/product/prusament-asa-prusa-galaxy-black-800g-nfc//
 ASA,Prusament ASA,Prusa Orange,800g,25.916667,In stock,/content/images/product/0ea4d2e1-1401-458f-8350-e25551b0a319.jpg,https://www.prusa3d.com/product/product/prusament-asa-prusa-orange-800g-nfc//
 ASA,Prusament ASA,Signal White,800g,25.916667,In stock,/content/images/product/21e58c90-5b74-45b5-baff-accff3b66372.jpg,https://www.prusa3d.com/product/product/prusament-asa-signal-white-800g-nfc//
-ASA,Prusament ASA,Jet Black,25g,2.190083,In stock,/content/images/product/5bcd1a05-059f-47a6-93fd-166f570c9068.jpg,https://www.prusa3d.com/product/product/prusament-asa-jet-black-25g-sample//
 ASA,Prusament ASA,Lipstick Red,25g,2.190083,In stock,/content/images/product/e44e679a-a276-4620-b485-3b99c03dd33c.jpg,https://www.prusa3d.com/product/product/prusament-asa-lipstick-red-25g-sample//
 ASA,Prusament ASA,Prusa Pro Green,25g,2.190083,In stock,/content/images/product/008ef881-c2a4-4f3f-aba4-c162539750e2.jpg,https://www.prusa3d.com/product/product/prusament-asa-prusa-pro-green-25g-sample//
 ASA,Prusament ASA,Sapphire Blue,25g,2.190083,In stock,/content/images/product/5ee1028d-284d-4ab3-bdfe-b87557d7d7af.jpg,https://www.prusa3d.com/product/product/prusament-asa-sapphire-blue-25g-sample//
@@ -11,12 +11,12 @@ ASA,Prusament ASA,Olive Green,800g,25.916529,Out of stock,/content/images/produc
 PA11,Prusament PA11,Carbon Fiber Black,25g,3.586777,In stock,/content/images/product/f8365054-56b3-49c4-99e1-7ce096b1b46e.jpg,https://www.prusa3d.com/product/product/prusament-pa11-carbon-fiber-black-25g-sample-3//
 PC,Prusament PC Blend,Jet Black,900g,42.582645,In stock,/content/images/product/03394ba6-38ab-43a0-b41a-b0c011005abb.jpg,https://www.prusa3d.com/product/product/prusament-pc-blend-jet-black-900g-nfc//
 PC,Prusament PC Blend,Natural,900g,42.582645,In stock,/content/images/product/31183224-90bd-44eb-b357-2268146ebd2d.jpg,https://www.prusa3d.com/product/product/prusament-pc-blend-natural-900g-nfc//
-PC,Prusament PC Blend,Prusa Pro Green,25g,2.190083,In stock,/content/images/product/5d138b2a-c086-490b-9917-7ee84e20a269.jpg,https://www.prusa3d.com/product/product/prusament-pc-blend-prusa-pro-green-25g-sample//
+PC,Prusament PC Blend,Prusa Orange,900g,42.582645,In stock,/content/images/product/587bccbb-6a92-4d16-a3e7-57facc45b4b2.jpg,https://www.prusa3d.com/product/product/prusament-pc-blend-prusa-orange-900g-nfc//
+PC,Prusament PC Blend,Prusa Pro Green,900g,42.582645,In stock,/content/images/product/e11ee1cd-5a15-477f-96b5-b06e9b781744.jpg,https://www.prusa3d.com/product/product/prusament-pc-blend-prusa-pro-green-900g-nfc//
+PC,Prusament PC Blend,Urban Grey,900g,42.582645,In stock,/content/images/product/5f58f0f8-69bb-49a5-b19e-c4f69191555f.jpg,https://www.prusa3d.com/product/product/prusament-pc-blend-urban-grey-900g-nfc//
 PC,Prusament PC Blend,Carbon Fiber Black,800g,59.991736,In stock,/content/images/product/6bb0aa13-db41-4ac7-b5fe-d20d8bc5cc5d.jpg,https://www.prusa3d.com/product/product/prusament-pc-blend-carbon-fiber-black-800g-nfc//
 PC,Prusament PC Space,Grade Black,25g,11.101653,In stock,/content/images/product/b91b1d70-fa17-4193-80a8-f067efce40ee.jpg,https://www.prusa3d.com/product/product/prusament-pc-space-grade-black-25g-sample//
-PC,Prusament PC Blend,Prusa Orange,25g,2.190083,In stock,/content/images/product/c16698ac-84be-48b1-b802-f795565cd61f.jpg,https://www.prusa3d.com/product/product/prusament-pc-blend-prusa-orange-25g-sample//
-PC,Prusament PC Blend,Urban Grey,25g,2.190083,In stock,/content/images/product/5833657f-f8d2-41d4-9a2b-2e006281878d.jpg,https://www.prusa3d.com/product/product/prusament-pc-blend-urban-grey-25g-sample//
-PEI,Prusament PEI 1010,Natural,500g,139.000000,In stock,/content/images/product/b8a4e9cc-3a2e-407f-affa-60dfe2d7998b.jpg,https://www.prusa3d.com/product/product/prusament-pei-1010-natural-500g//
+PEI,Prusament PEI 1010,Natural,25g,7.190083,In stock,/content/images/product/37cfcee9-5db5-4e5a-85d3-2d2679d173d0.jpg,https://www.prusa3d.com/product/product/prusament-pei-1010-natural-25g-sample//
 PETG,Prusament PETG,Neon Green,1kg,29.991736,In stock,/content/images/product/fc7ef47a-441a-4e9f-a8cf-116ff930b6b5.jpg,https://www.prusa3d.com/product/product/prusament-petg-neon-green-1kg-nfc//
 PETG,Prusament PETG,Prusa Orange,1kg,29.991736,In stock,/content/images/product/f1d3e13c-602a-4236-b04e-580e37b4ba09.jpg,https://www.prusa3d.com/product/product/prusament-petg-prusa-orange-1kg-nfc//
 PETG,Prusament PETG,Prusa Pro Green,1kg,29.991736,In stock,/content/images/product/aa658b19-6ba7-4525-af81-c8ccd755d126.jpg,https://www.prusa3d.com/product/product/prusament-petg-prusa-pro-green-1kg-nfc//
@@ -29,7 +29,6 @@ PETG,Prusament PETG,Signal White,1kg,24.066116,In stock,/content/images/product/
 PETG,Prusament PETG,Sky Blue,1kg,29.991736,In stock,/content/images/product/9f5f81e9-dbc8-4320-906e-09748375d52b.jpg,https://www.prusa3d.com/product/product/prusament-petg-sky-blue-1kg-nfc//
 PETG,Prusament PETG,Tungsten 75%,1kg,229.000000,In stock,/content/images/product/9f34cf66-59a1-47fb-826f-09fe567f7d72.jpg,https://www.prusa3d.com/product/product/prusament-petg-tungsten-75-1kg-nfc//
 PETG,Prusament PETG,Urban Grey,1kg,24.066116,In stock,/content/images/product/788.jpg,https://www.prusa3d.com/product/product/prusament-petg-urban-grey-1kg//
-PETG,Prusament PETG V0,Jet Black,1kg,54.991736,In stock,/content/images/product/ba837a8f-849a-4b1a-8c8a-03f0b1e1f852.jpg,https://www.prusa3d.com/product/product/prusament-petg-v0-jet-black-1kg-nfc//
 PETG,Prusament PETG,Carmine Red,1kg,29.991736,In stock,/content/images/product/8633485a-7f4c-4eda-a622-ed95c844726b.jpg,https://www.prusa3d.com/product/product/prusament-petg-carmine-red-1kg-nfc//
 PETG,Prusament PETG,Chalky Blue,1kg,24.066116,In stock,/content/images/product/913.jpg,https://www.prusa3d.com/product/product/prusament-petg-chalky-blue-1kg//
 PETG,Prusament PETG,Jungle Green,1kg,24.066116,In stock,/content/images/product/980.jpg,https://www.prusa3d.com/product/product/prusament-petg-jungle-green-1kg//
@@ -45,6 +44,7 @@ PETG,Prusament PETG,Ocean Blue,1kg,24.066116,In stock,/content/images/product/93
 PETG,Prusament PETG,Pistachio Green,1kg,24.066116,In stock,/content/images/product/901.jpg,https://www.prusa3d.com/product/product/prusament-petg-pistachio-green-1kg//
 PETG,Prusament PETG,Prusa Orange Transparent,1kg,24.066116,In stock,/content/images/product/2861.jpg,https://www.prusa3d.com/product/product/prusament-petg-prusa-orange-transparent-1kg-2//
 PETG,Prusament PETG,Terracotta Light,1kg,24.066116,In stock,/content/images/product/906.jpg,https://www.prusa3d.com/product/product/prusament-petg-terracotta-light-1kg//
+PETG,Prusament PETG V0,Jet Black,25g,2.190083,In stock,/content/images/product/b45c54a9-2450-4594-a742-c66b0a79e3c6.jpg,https://www.prusa3d.com/product/product/prusament-petg-v0-jet-black-25g-sample//
 PETG,Prusament PETG V0,Natural,1kg,43.049587,In stock,/content/images/product/e150d5be-8777-44be-a8ab-cc3d76e422a6.jpg,https://www.prusa3d.com/product/product/prusament-petg-v0-natural-1kg//
 PETG,Prusament PETG,Yellow Gold,1kg,24.066116,In stock,/content/images/product/827.jpg,https://www.prusa3d.com/product/product/prusament-petg-yellow-gold-1kg//
 PLA,Prusament PLA Blend,Royal Blue,1kg,29.991736,In stock,/content/images/product/6a0e0a8d-e66b-4ea3-aedd-d47057dc78c4.jpg,https://www.prusa3d.com/product/product/prusament-pla-blend-royal-blue-1kg-nfc//
@@ -69,8 +69,9 @@ PLA,Prusament PLA,Galaxy Green,1kg,29.991736,In stock,/content/images/product/62
 PLA,Prusament PLA,Gentleman's Grey,1kg,24.066116,In stock,/content/images/product/4704.png,https://www.prusa3d.com/product/product/prusament-pla-gentleman-s-grey-1kg//
 PLA,Prusament PLA,Marble Grey,1kg,24.066116,In stock,/content/images/product/4224.jpg,https://www.prusa3d.com/product/product/prusament-pla-marble-grey-1kg//
 PLA,Prusament PLA,Recycled,2kg,38.880000,In stock,/content/images/product/3205.jpg,https://www.prusa3d.com/product/product/prusament-pla-recycled-2kg//
-PLA,Prusament PLA,Simply Green,1kg,24.066116,In stock,/content/images/product/3272.jpg,https://www.prusa3d.com/product/product/prusament-pla-simply-green-1kg//
+PLA,Prusament PLA,Simply Green,1kg,29.991736,In stock,/content/images/product/d9fe741e-bdcf-4ae6-83db-2869975e96d3.jpg,https://www.prusa3d.com/product/product/prusament-pla-simply-green-1kg-nfc//
 PLA,Prusament PLA,Army Green,2kg,36.289256,In stock,/content/images/product/9aa9ad7b-e233-474b-ab01-eb4a762b6fc5.jpg,https://www.prusa3d.com/product/product/prusament-pla-army-green-2kg//
+PLA,Prusament Woodfill,Chocolate Brown,25g,2.190083,In stock,/content/images/product/6b7c9955-1495-42c2-8613-8c34f3e66d10.png,https://www.prusa3d.com/product/product/prusament-woodfill-chocolate-brown-25g-sample//
 PLA,Prusament Woodfill,Linden Light,25g,2.190083,In stock,/content/images/product/6771c80e-f0d2-4473-a5ef-a0bcc412c97a.jpg,https://www.prusa3d.com/product/product/prusament-woodfill-linden-light-25g-sample//
 PLA,Prusament PLA,Anthracite Grey,25g,2.190083,In stock,/content/images/product/3bf9a6bc-1927-4759-99a3-9156b94cd47d.jpg,https://www.prusa3d.com/product/product/prusament-pla-anthracite-grey-25g-sample//
 PLA,Prusament PLA,Chalky Blue,25g,2.190083,In stock,/content/images/product/270377a9-f955-4039-818c-48bd8ad1aab6.jpg,https://www.prusa3d.com/product/product/prusament-pla-chalky-blue-25g-sample//
@@ -87,9 +88,6 @@ PLA,Prusament PLA,Mystic Green,25g,2.190083,In stock,/content/images/product/bbc
 PLA,Prusament PLA,Natural,1kg,29.991736,In stock,/content/images/product/1665ec6e-991f-46a6-9690-aa3758920850.jpg,https://www.prusa3d.com/product/product/prusament-pla-natural-1kg-nfc//
 PLA,Prusament PLA,Pearl Mouse,1kg,24.066116,In stock,/content/images/product/751.jpg,https://www.prusa3d.com/product/product/prusament-pla-pearl-mouse-1kg//
 PLA,Prusament PLA,Pineapple Yellow,1kg,24.066116,In stock,/content/images/product/851.jpg,https://www.prusa3d.com/product/product/prusament-pla-pineapple-yellow-1kg//
-PLA,Prusament PLA,Anniversary LE 2025,1kg,44.433884,Out of stock,/content/images/product/c62d6d5f-2b8f-46c4-90d3-6d1757d4712e.jpg,https://www.prusa3d.com/product/product/prusament-pla-anniversary-le-2025-1kg//
-PLA,Prusament Woodfill,Pastel Brown,1kg,51.840000,Out of stock,/content/images/product/b062290e-a3bf-4ebc-b22a-5830646d22de.jpg,https://www.prusa3d.com/product/product/prusament-woodfill-pastel-brown-1kg//
-PLA,Prusament Woodfill,Chocolate Brown,25g,2.190083,Out of stock,/content/images/product/6b7c9955-1495-42c2-8613-8c34f3e66d10.png,https://www.prusa3d.com/product/product/prusament-woodfill-chocolate-brown-25g-sample//
 PP,Prusament PP,Carbon Fiber Black,650g,69.991736,In stock,/content/images/product/7f1b58e9-96dd-47c4-86d2-0c4ed666eaec.jpg,https://www.prusa3d.com/product/product/prusament-pp-carbon-fiber-black-650g-nfc//
 PP,Prusament PP,Glass Fiber Natural,850g,69.991736,In stock,/content/images/product/c45d76e6-340d-4a9f-9562-e659f3b1ad8b.jpg,https://www.prusa3d.com/product/product/prusament-pp-glass-fiber-natural-850g-nfc//
 PVB,Prusament PVB,Natural,25g,2.190083,In stock,/content/images/product/90243cc0-fe68-4d1b-a320-12b4f353f9fe.jpg,https://www.prusa3d.com/product/product/prusament-pvb-natural-25g-sample//
