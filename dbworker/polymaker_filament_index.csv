@@ -1,32 +1,60 @@
 ﻿brand_name,color_name,variant_title,vendor,price,grams,inventory_quantity,option1,option2
-Fiberon ASA-CF08,Black,1.75mm / 0.5kg / Black,Polymaker US,19.99,500,,1.75mm,0.5kg
-Fiberon ASA-CF08,Dark Grey,1.75mm / 0.5kg / Dark Grey,Polymaker US,19.99,500,,1.75mm,0.5kg
-Fiberon ASA-CF08,Light Grey,1.75mm / 0.5kg / Light Grey,Polymaker US,19.99,500,,1.75mm,0.5kg
-Fiberon ASA-CF08,Navy Blue,1.75mm / 0.5kg / Navy Blue,Polymaker US,19.99,500,,1.75mm,0.5kg
-Fiberon ASA-CF08,Dark Red,1.75mm / 0.5kg / Dark Red,Polymaker US,19.99,500,,1.75mm,0.5kg
-Fiberon ASA-CF08,Desert Sand,1.75mm / 0.5kg / Desert Sand,Polymaker US,19.99,500,,1.75mm,0.5kg
+Fiberon ASA-CF08,Black,1.75mm / 0.5kg / Black,Polymaker,19.99,500,,1.75mm,0.5kg
+Fiberon ASA-CF08,Dark Grey,1.75mm / 0.5kg / Dark Grey,Polymaker,19.99,500,,1.75mm,0.5kg
+Fiberon ASA-CF08,Light Grey,1.75mm / 0.5kg / Light Grey,Polymaker,19.99,500,,1.75mm,0.5kg
+Fiberon ASA-CF08,Navy Blue,1.75mm / 0.5kg / Navy Blue,Polymaker,19.99,500,,1.75mm,0.5kg
+Fiberon ASA-CF08,Dark Red,1.75mm / 0.5kg / Dark Red,Polymaker,19.99,500,,1.75mm,0.5kg
+Fiberon ASA-CF08,Desert Sand,1.75mm / 0.5kg / Desert Sand,Polymaker,19.99,500,,1.75mm,0.5kg
 Fiberon PA12-CF10,Black,1.75mm / 0.5kg / Black,Polymaker,69.99,860,,1.75mm,0.5kg
 Fiberon PA6-CF20,Black,1.75mm / 0.5kg / Black,Polymaker,39.99,860,,1.75mm,0.5kg
 Fiberon PA6-GF25,Grey,1.75mm / 0.5kg / Grey,Polymaker,29.99,860,,1.75mm,0.5kg
 Fiberon PA612-CF15,Black,1.75mm / 0.5kg / Black,Polymaker,34.99,860,,1.75mm,0.5kg
 Fiberon PA612-ESD,Black,1.75mm / 0.5kg / Black,Polymaker,64.99,860,,1.75mm,0.5kg
 Fiberon PET-CF17,Black,1.75mm / 0.5kg / Black,Polymaker,24.99,860,,1.75mm,0.5kg
-Fiberon PET-GF15,Black,1.75mm / 1kg / Black,Polymaker US,29.99,1350,,1.75mm,1kg
-Fiberon PET-GF15,Dark Grey,1.75mm / 1kg / Dark Grey,Polymaker US,29.99,1350,,1.75mm,1kg
-Fiberon PET-GF15,Light Grey,1.75mm / 1kg / Light Grey,Polymaker US,29.99,1350,,1.75mm,1kg
-Fiberon PET-GF15,White,1.75mm / 1kg / White,Polymaker US,29.99,1350,,1.75mm,1kg
-Fiberon PET-GF15,Blue,1.75mm / 1kg / Blue,Polymaker US,29.99,1350,,1.75mm,1kg
-Fiberon PET-GF15,Red,1.75mm / 1kg / Red,Polymaker US,29.99,1350,,1.75mm,1kg
+Fiberon PET-GF15,Black,1.75mm / 1kg / Black,Polymaker,29.99,1350,,1.75mm,1kg
+Fiberon PET-GF15,Dark Grey,1.75mm / 1kg / Dark Grey,Polymaker,29.99,1350,,1.75mm,1kg
+Fiberon PET-GF15,Light Grey,1.75mm / 1kg / Light Grey,Polymaker,29.99,1350,,1.75mm,1kg
+Fiberon PET-GF15,White,1.75mm / 1kg / White,Polymaker,29.99,1350,,1.75mm,1kg
+Fiberon PET-GF15,Blue,1.75mm / 1kg / Blue,Polymaker,29.99,1350,,1.75mm,1kg
+Fiberon PET-GF15,Red,1.75mm / 1kg / Red,Polymaker,29.99,1350,,1.75mm,1kg
 Fiberon PETG-rCF08,Black,1.75mm / 0.5kg / Black,Polymaker,19.99,860,,1.75mm,0.5kg
 Fiberon PPS-CF10,Black,1.75mm / 0.5kg / Black,Polymaker,69.99,860,,1.75mm,0.5kg
-Fiberon PPS-GF20,Grey,1.75mm / 0.5kg / Grey,Polymaker US,59.99,500,,1.75mm,0.5kg
-Panchroma Celestial PLA,Celestial Blue,1.75mm / 1kg / Celestial Blue,Polymaker,29.99,1350,,1.75mm,1kg
-Panchroma Celestial PLA,Celestial Green,1.75mm / 1kg / Celestial Green,Polymaker,29.99,1350,,1.75mm,1kg
-Panchroma Celestial PLA,Celestial Purple,1.75mm / 1kg / Celestial Purple,Polymaker,29.99,1350,,1.75mm,1kg
-Panchroma Celestial PLA,Celestial White,1.75mm / 1kg / Celestial White,Polymaker,29.99,1350,,1.75mm,1kg
-Panchroma Celestial PLA,Celestial Light Yellow,1.75mm / 1kg / Celestial Light Yellow,Polymaker,29.99,1350,,1.75mm,1kg
-Panchroma Celestial PLA,Celestial Light Pink,1.75mm / 1kg / Celestial Light Pink,Polymaker,29.99,1350,,1.75mm,1kg
-Panchroma Celestial PLA,Celestial Yellow,1.75mm / 1kg / Celestial Yellow,Polymaker,29.99,1350,,1.75mm,1kg
+Fiberon PPS-GF20,Grey,1.75mm / 0.5kg / Grey,Polymaker,59.99,500,,1.75mm,0.5kg
+Panchroma Basic PLA,Black,1.75mm / 1kg / Black,Polymaker,18.99,1000,,1.75mm,1kg
+Panchroma Basic PLA,White,1.75mm / 1kg / White,Polymaker,18.99,1000,,1.75mm,1kg
+Panchroma Basic PLA,Cold White,1.75mm / 1kg / Cold White,Polymaker,18.99,1000,,1.75mm,1kg
+Panchroma Basic PLA,Red,1.75mm / 1kg / Red,Polymaker,19.99,1000,,1.75mm,1kg
+Panchroma Basic PLA,Orange,1.75mm / 1kg / Orange,Polymaker,19.99,1000,,1.75mm,1kg
+Panchroma Basic PLA,Magenta,1.75mm / 1kg / Magenta,Polymaker,19.99,1000,,1.75mm,1kg
+Panchroma Basic PLA,Pink,1.75mm / 1kg / Pink,Polymaker,19.99,1000,,1.75mm,1kg
+Panchroma Basic PLA,Wine Red,1.75mm / 1kg / Wine Red,Polymaker,19.99,1000,,1.75mm,1kg
+Panchroma Basic PLA,Lemon Yellow,1.75mm / 1kg / Lemon Yellow,Polymaker,19.99,1000,,1.75mm,1kg
+Panchroma Basic PLA,Yellow,1.75mm / 1kg / Yellow,Polymaker,19.99,1000,,1.75mm,1kg
+Panchroma Basic PLA,Cream,1.75mm / 1kg / Cream,Polymaker,19.99,1000,,1.75mm,1kg
+Panchroma Basic PLA,Beige,1.75mm / 1kg / Beige,Polymaker,19.99,1000,,1.75mm,1kg
+Panchroma Basic PLA,Tan,1.75mm / 1kg / Tan,Polymaker,19.99,1350,,1.75mm,1kg
+Panchroma Basic PLA,Brown,1.75mm / 1kg / Brown,Polymaker,19.99,1000,,1.75mm,1kg
+Panchroma Basic PLA,Green,1.75mm / 1kg / Green,Polymaker,19.99,1000,,1.75mm,1kg
+Panchroma Basic PLA,Lime Green,1.75mm / 1kg / Lime Green,Polymaker,19.99,1000,,1.75mm,1kg
+Panchroma Basic PLA,Jungle Green,1.75mm / 1kg / Jungle Green,Polymaker,19.99,1000,,1.75mm,1kg
+Panchroma Basic PLA,Olive Green,1.75mm / 1kg / Olive Green,Polymaker,19.99,1000,,1.75mm,1kg
+Panchroma Basic PLA,Dark Olive Drab,1.75mm / 1kg / Dark Olive Drab,Polymaker,19.98,1350,,1.75mm,1kg
+Panchroma Basic PLA,Azure Blue,1.75mm / 1kg / Azure Blue,Polymaker,19.99,1000,,1.75mm,1kg
+Panchroma Basic PLA,Blue,1.75mm / 1kg / Blue,Polymaker,19.99,1000,,1.75mm,1kg
+Panchroma Basic PLA,Aqua Blue,1.75mm / 1kg / Aqua Blue,Polymaker,19.99,1000,,1.75mm,1kg
+Panchroma Basic PLA,Stone Blue,1.75mm / 1kg / Stone Blue,Polymaker,19.99,1000,,1.75mm,1kg
+Panchroma Basic PLA,Polymaker Teal,1.75mm / 1kg / Polymaker Teal,Polymaker,19.99,1000,,1.75mm,1kg
+Panchroma Basic PLA,Steel Grey,1.75mm / 1kg / Steel Grey,Polymaker,19.99,1000,,1.75mm,1kg
+Panchroma Basic PLA,Grey,1.75mm / 1kg / Grey,Polymaker,19.99,1000,,1.75mm,1kg
+Panchroma Basic PLA,Dark Grey,1.75mm / 1kg / Dark Grey,Polymaker,19.99,1000,,1.75mm,1kg
+Panchroma Basic PLA,Purple,1.75mm / 1kg / Purple,Polymaker,19.99,1000,,1.75mm,1kg
+Panchroma Celestial PLA,Celestial Blue,1.75mm / 1kg / Celestial Blue,Polymaker,24.99,1350,,1.75mm,1kg
+Panchroma Celestial PLA,Celestial Green,1.75mm / 1kg / Celestial Green,Polymaker,24.99,1350,,1.75mm,1kg
+Panchroma Celestial PLA,Celestial Purple,1.75mm / 1kg / Celestial Purple,Polymaker,24.99,1350,,1.75mm,1kg
+Panchroma Celestial PLA,Celestial White,1.75mm / 1kg / Celestial White,Polymaker,24.99,1350,,1.75mm,1kg
+Panchroma Celestial PLA,Celestial Light Yellow,1.75mm / 1kg / Celestial Light Yellow,Polymaker,24.99,1350,,1.75mm,1kg
+Panchroma Celestial PLA,Celestial Light Pink,1.75mm / 1kg / Celestial Light Pink,Polymaker,24.99,1350,,1.75mm,1kg
+Panchroma Celestial PLA,Celestial Yellow,1.75mm / 1kg / Celestial Yellow,Polymaker,24.99,1350,,1.75mm,1kg
 Panchroma CoPE,Black,1.75mm / 1kg / Black,Polymaker,19.99,1350,,1.75mm,1kg
 Panchroma CoPE,Dark Grey,1.75mm / 1kg / Dark Grey,Polymaker,19.99,1350,,1.75mm,1kg
 Panchroma CoPE,Steel Grey,1.75mm / 1kg / Steel Grey,Polymaker,19.99,1350,,1.75mm,1kg
@@ -54,180 +82,166 @@ Panchroma CoPE,Aqua Blue,1.75mm / 1kg / Aqua Blue,Polymaker,19.99,1350,,1.75mm,1
 Panchroma CoPE,Stone Blue,1.75mm / 1kg / Stone Blue,Polymaker,19.99,1350,,1.75mm,1kg
 Panchroma CoPE,Blue,1.75mm / 1kg / Blue,Polymaker,19.99,1350,,1.75mm,1kg
 Panchroma CoPE,Purple,1.75mm / 1kg / Purple,Polymaker,19.99,1350,,1.75mm,1kg
-Panchroma Dual Matte PLA,Dual Matte Shadow Black,1.75mm / 1kg / Dual Matte Shadow Black,Polymaker,24.99,1350,,1.75mm,1kg
-Panchroma Dual Matte PLA,Dual Matte Shadow Red,1.75mm / 1kg / Dual Matte Shadow Red,Polymaker,24.99,1350,,1.75mm,1kg
-Panchroma Dual Matte PLA,Dual Matte Shadow Orange,1.75mm / 1kg / Dual Matte Shadow Orange,Polymaker,24.99,1350,,1.75mm,1kg
-Panchroma Dual Matte PLA,Dual Matte Foggy Orange,1.75mm / 1kg / Dual Matte Foggy Orange,Polymaker,24.99,1350,,1.75mm,1kg
-Panchroma Dual Matte PLA,Dual Matte Foggy Purple,1.75mm / 1kg / Dual Matte Foggy Purple,Polymaker,24.99,1350,,1.75mm,1kg
-Panchroma Dual Matte PLA,Dual Matte Glacier Blue,1.75mm / 1kg / Dual Matte Glacier Blue,Polymaker,24.99,1350,,1.75mm,1kg
-Panchroma Dual Matte PLA,Dual Matte Flamingo,1.75mm / 1kg / Dual Matte Flamingo,Polymaker,24.99,1350,,1.75mm,1kg
-Panchroma Dual Matte PLA,Dual Matte Chameleon,1.75mm / 1kg / Dual Matte Chameleon,Polymaker,24.99,1350,,1.75mm,1kg
-Panchroma Dual Matte PLA,Dual Matte Sunrise,1.75mm / 1kg / Dual Matte Sunrise,Polymaker,24.99,1350,,1.75mm,1kg
-Panchroma Dual Matte PLA,Camouflage,1.75mm / 1kg / Camouflage,Polymaker,24.99,1350,,1.75mm,1kg
-Panchroma Dual Matte PLA,Dual Matte Mixed Berries,1.75mm / 1kg / Dual Matte Mixed Berries,Polymaker,24.99,1350,,1.75mm,1kg
-Panchroma Dual Silk PLA,Dual Silk Aubergine,1.75mm / 1kg / Dual Silk Aubergine,Polymaker,29.99,1350,,1.75mm,1kg
-Panchroma Dual Silk PLA,Dual Silk Beluga,1.75mm / 1kg / Dual Silk Beluga,Polymaker,29.99,1350,,1.75mm,1kg
-Panchroma Dual Silk PLA,Dual Silk Chameleon,1.75mm / 1kg / Dual Silk Chameleon,Polymaker,29.99,1350,,1.75mm,1kg
-Panchroma Dual Silk PLA,Dual Silk Caribbean Sea,1.75mm / 1kg / Dual Silk Caribbean Sea,Polymaker,29.99,1350,,1.75mm,1kg
-Panchroma Dual Silk PLA,Dual Silk Crown,1.75mm / 1kg / Dual Silk Crown,Polymaker,29.99,1350,,1.75mm,1kg
-Panchroma Dual Silk PLA,Dual Silk Sovereign,1.75mm / 1kg / Dual Silk Sovereign,Polymaker,29.99,1350,,1.75mm,1kg
-Panchroma Dual Silk PLA,Dual Silk Banquet,1.75mm / 1kg / Dual Silk Banquet,Polymaker,29.99,1350,,1.75mm,1kg
-Panchroma Dual Silk PLA,Dual Silk Jadeite,1.75mm / 1kg / Dual Silk Jadeite,Polymaker,29.99,1350,,1.75mm,1kg
-Panchroma Dual Silk PLA,Dual Silk Sunset,1.75mm / 1kg / Dual Silk Sunset,Polymaker,29.99,1350,,1.75mm,1kg
+Panchroma Dual Matte PLA,Dual Matte Shadow Black,1.75mm / 1kg / Dual Matte Shadow Black,Polymaker,22.99,1350,,1.75mm,1kg
+Panchroma Dual Matte PLA,Dual Matte Shadow Red,1.75mm / 1kg / Dual Matte Shadow Red,Polymaker,22.99,1350,,1.75mm,1kg
+Panchroma Dual Matte PLA,Dual Matte Shadow Orange,1.75mm / 1kg / Dual Matte Shadow Orange,Polymaker,22.99,1350,,1.75mm,1kg
+Panchroma Dual Matte PLA,Dual Matte Foggy Orange,1.75mm / 1kg / Dual Matte Foggy Orange,Polymaker,22.99,1350,,1.75mm,1kg
+Panchroma Dual Matte PLA,Dual Matte Foggy Purple,1.75mm / 1kg / Dual Matte Foggy Purple,Polymaker,22.99,1350,,1.75mm,1kg
+Panchroma Dual Matte PLA,Dual Matte Glacier Blue,1.75mm / 1kg / Dual Matte Glacier Blue,Polymaker,22.99,1350,,1.75mm,1kg
+Panchroma Dual Matte PLA,Dual Matte Flamingo,1.75mm / 1kg / Dual Matte Flamingo,Polymaker,22.99,1350,,1.75mm,1kg
+Panchroma Dual Matte PLA,Dual Matte Chameleon,1.75mm / 1kg / Dual Matte Chameleon,Polymaker,22.99,1350,,1.75mm,1kg
+Panchroma Dual Matte PLA,Dual Matte Sunrise,1.75mm / 1kg / Dual Matte Sunrise,Polymaker,22.99,1350,,1.75mm,1kg
+Panchroma Dual Matte PLA,Camouflage,1.75mm / 1kg / Camouflage,Polymaker,22.99,1350,,1.75mm,1kg
+Panchroma Dual Matte PLA,Dual Matte Mixed Berries,1.75mm / 1kg / Dual Matte Mixed Berries,Polymaker,22.99,1350,,1.75mm,1kg
+Panchroma Dual Silk PLA,Dual Silk Aubergine,1.75mm / 1kg / Dual Silk Aubergine,Polymaker,22.99,1350,,1.75mm,1kg
+Panchroma Dual Silk PLA,Dual Silk Beluga,1.75mm / 1kg / Dual Silk Beluga,Polymaker,22.99,1350,,1.75mm,1kg
+Panchroma Dual Silk PLA,Dual Silk Chameleon,1.75mm / 1kg / Dual Silk Chameleon,Polymaker,22.99,1350,,1.75mm,1kg
+Panchroma Dual Silk PLA,Dual Silk Caribbean Sea,1.75mm / 1kg / Dual Silk Caribbean Sea,Polymaker,22.99,1350,,1.75mm,1kg
+Panchroma Dual Silk PLA,Dual Silk Crown,1.75mm / 1kg / Dual Silk Crown,Polymaker,22.99,1350,,1.75mm,1kg
+Panchroma Dual Silk PLA,Dual Silk Sovereign,1.75mm / 1kg / Dual Silk Sovereign,Polymaker,22.99,1350,,1.75mm,1kg
+Panchroma Dual Silk PLA,Dual Silk Banquet,1.75mm / 1kg / Dual Silk Banquet,Polymaker,22.99,1350,,1.75mm,1kg
+Panchroma Dual Silk PLA,Dual Silk Jadeite,1.75mm / 1kg / Dual Silk Jadeite,Polymaker,22.99,1350,,1.75mm,1kg
+Panchroma Dual Silk PLA,Dual Silk Sunset,1.75mm / 1kg / Dual Silk Sunset,Polymaker,22.99,1350,,1.75mm,1kg
 Panchroma Dual Special PLA,Dual Yin-Yang,1.75mm / 1kg / Dual Yin-Yang,Polymaker,29.99,1350,,1.75mm,1kg
-Panchroma Galaxy PLA,Galaxy Dark Green,1.75mm / 1kg / Galaxy Dark Green,Polymaker,29.99,1350,,1.75mm,1kg
-Panchroma Galaxy PLA,Galaxy Dark Grey,1.75mm / 1kg / Galaxy Dark Grey,Polymaker,29.99,1350,,1.75mm,1kg
-Panchroma Glow PLA,Glow Green,1.75mm / 1kg / Glow Green,Polymaker,29.99,1350,,1.75mm,1kg
-Panchroma Glow PLA,Glow Blue,1.75mm / 1kg / Glow Blue,Polymaker,29.99,1350,,1.75mm,1kg
-Panchroma Glow PLA,Glow Orange,1.75mm / 1kg / Glow Orange,Polymaker,34.99,1350,,1.75mm,1kg
-Panchroma Gradient Celestial,Gradient Celestial Rainbow,1.75mm / 1kg / Gradient Celestial Rainbow,Polymaker US,34.99,1350,,1.75mm,1kg
-Panchroma Gradient Celestial,Gradient Celestial Blue-Purple,1.75mm / 1kg / Gradient Celestial Blue-Purple,Polymaker US,34.99,1350,,1.75mm,1kg
-Panchroma Gradient Celestial,Gradient Celestial Purple-Pink,1.75mm / 1kg / Gradient Celestial Purple-Pink,Polymaker US,34.99,1350,,1.75mm,1kg
-Panchroma Gradient Celestial,Gradient Celestial Blue-White,1.75mm / 1kg / Gradient Celestial Blue-White,Polymaker US,34.99,1350,,1.75mm,1kg
-Panchroma Gradient Crystal,Gradient Crystal Tourmaline,1.75mm / 1kg / Gradient Crystal Tourmaline,Polymaker US,29.99,1350,,1.75mm,1kg
-Panchroma Gradient Crystal,Gradient Crystal Rose Quartz,1.75mm / 1kg / Gradient Crystal Rose Quartz,Polymaker US,29.99,1350,,1.75mm,1kg
-Panchroma Gradient Crystal,Gradient Crystal Aquamarine,1.75mm / 1kg / Gradient Crystal Aquamarine,Polymaker US,29.99,1350,,1.75mm,1kg
-Panchroma Gradient Crystal,Gradient Crystal Citrine,1.75mm / 1kg / Gradient Crystal Citrine,Polymaker US,29.99,1350,,1.75mm,1kg
-Panchroma Gradient Crystal,Gradient Crystal Carnelian,1.75mm / 1kg / Gradient Crystal Carnelian,Polymaker US,29.99,1350,,1.75mm,1kg
-Panchroma Gradient Galaxy,Gradient Galaxy Black-Grey,1.75mm / 1kg / Gradient Galaxy Black-Grey,Polymaker US,34.99,1350,,1.75mm,1kg
-Panchroma Gradient Galaxy,Gradient Galaxy Blue-Green,1.75mm / 1kg / Gradient Galaxy Blue-Green,Polymaker US,34.99,1350,,1.75mm,1kg
-Panchroma Gradient Galaxy,Gradient Galaxy Black-Blue,1.75mm / 1kg / Gradient Galaxy Black-Blue,Polymaker US,34.99,1350,,1.75mm,1kg
-Panchroma Gradient Luminous Rainbow PLA,Gradient Luminous Rainbow,1.75mm / 1kg / Gradient Luminous Rainbow,Polymaker US,34.99,1350,,1.75mm,1kg
-Panchroma Gradient Matte PLA,Gradient Matte Pastel Rainbow,1.75mm / 1kg / Gradient Matte Pastel Rainbow,Polymaker,29.99,1350,,1.75mm,1kg
-Panchroma Gradient Matte PLA,Gradient Matte Cappuccino,1.75mm / 1kg / Gradient Matte Cappuccino,Polymaker,29.99,1350,,1.75mm,1kg
-Panchroma Gradient Matte PLA,Gradient Matte Spring,1.75mm / 1kg / Gradient Matte Spring,Polymaker,29.99,1350,,1.75mm,1kg
-Panchroma Gradient Matte PLA,Gradient Matte Summer,1.75mm / 1kg / Gradient Matte Summer,Polymaker,29.99,1350,,1.75mm,1kg
-Panchroma Gradient Matte PLA,Gradient Matte Fall,1.75mm / 1kg / Gradient Matte Fall,Polymaker,29.99,1350,,1.75mm,1kg
-Panchroma Gradient Matte PLA,Gradient Matte Winter,1.75mm / 1kg / Gradient Matte Winter,Polymaker,29.99,1350,,1.75mm,1kg
-Panchroma Gradient Matte PLA,Dual Gradient Matte Wood,1.75mm / 1kg / Dual Gradient Matte Wood,Polymaker,29.99,1350,,1.75mm,1kg
-Panchroma Gradient Matte PLA,Gradient Matte Tropical Squeeze,1.75mm / 1kg / Gradient Matte Tropical Squeeze,Polymaker,29.99,1350,,1.75mm,1kg
-Panchroma Gradient Matte PLA,Gradient Matte Lavender Fizz,1.75mm / 1kg / Gradient Matte Lavender Fizz,Polymaker,29.99,1350,,1.75mm,1kg
-Panchroma Gradient Matte PLA,Gradient Matte Mint Splash,1.75mm / 1kg / Gradient Matte Mint Splash,Polymaker,29.99,1350,,1.75mm,1kg
-Panchroma Gradient Matte PLA,Gradient Matte Sky,1.75mm / 1kg / Gradient Matte Sky,Polymaker,29.99,1350,,1.75mm,1kg
-Panchroma Gradient Matte PLA,Gradient Matte Sandstorm,1.75mm / 1kg / Gradient Matte Sandstorm,Polymaker,29.99,1350,,1.75mm,1kg
-Panchroma Gradient Matte PLA,Gradient Matte Tornado,1.75mm / 1kg / Gradient Matte Tornado,Polymaker,29.99,1350,,1.75mm,1kg
-Panchroma Gradient Neon,Gradient Halloween Neon,1.75mm / 1kg / Gradient Halloween Neon,Polymaker US,29.99,1350,,1.75mm,1kg
-Panchroma Gradient Satin PLA,Gradient Satin Rainbow,1.75mm / 1kg / Gradient Satin Rainbow,Polymaker,29.99,1350,,1.75mm,1kg
-Panchroma Gradient Silk,Gradient Silk Rainbow,1.75mm / 1kg / Gradient Silk Rainbow,Polymaker US,29.99,1000,,1.75mm,1kg
-Panchroma Gradient Silk,Gradient Silk Fire,1.75mm / 1kg / Gradient Silk Fire,Polymaker US,29.99,1000,,1.75mm,1kg
-Panchroma Gradient Silk,Gradient Silk Water,1.75mm / 1kg / Gradient Silk Water,Polymaker US,29.99,1000,,1.75mm,1kg
-Panchroma Gradient Silk,Gradient Silk Air,1.75mm / 1kg / Gradient Silk Air,Polymaker US,29.99,1000,,1.75mm,1kg
-Panchroma Gradient Silk,Gradient Silk Earth,1.75mm / 1kg / Gradient Silk Earth,Polymaker US,29.99,1000,,1.75mm,1kg
-Panchroma Gradient Starlight,Gradient Starlight Rainbow,1.75mm / 1kg / Gradient Starlight Rainbow,Polymaker US,34.99,1350,,1.75mm,1kg
-Panchroma Gradient Starlight,Gradient Starlight Purple,1.75mm / 1kg / Gradient Starlight Purple,Polymaker US,34.99,1350,,1.75mm,1kg
-Panchroma Gradient Starlight,Gradient Starlight Blue-Green,1.75mm / 1kg / Gradient Starlight Blue-Green,Polymaker US,34.99,1350,,1.75mm,1kg
-Panchroma Gradient Starlight,Gradient Starlight Purple-Red,1.75mm / 1kg / Gradient Starlight Purple-Red,Polymaker US,34.99,1350,,1.75mm,1kg
-Panchroma Gradient Starlight,Gradient Starlight Blue-Purple,1.75mm / 1kg / Gradient Starlight Blue-Purple,Polymaker US,34.99,1350,,1.75mm,1kg
-Panchroma Gradient Translucent PLA,Gradient Translucent Rainbow,1.75mm / 1kg / Gradient Translucent Rainbow,Polymaker,29.99,1350,,1.75mm,1kg
-Panchroma Luminous PLA,Luminous Blue,1.75mm / 1kg / Luminous Blue,Polymaker,29.99,1350,,1.75mm,1kg
-Panchroma Luminous PLA,Luminous Orange,1.75mm / 1kg / Luminous Orange,Polymaker,29.99,1350,,1.75mm,1kg
-Panchroma Luminous PLA,Luminous Green,1.75mm / 1kg / Luminous Green,Polymaker,29.99,1350,,1.75mm,1kg
-Panchroma Luminous PLA,Luminous Pink,1.75mm / 1kg / Luminous Pink,Polymaker,29.99,1350,,1.75mm,1kg
-Panchroma Luminous PLA,Luminous Yellow,1.75mm / 1kg / Luminous Yellow,Polymaker,29.99,1350,,1.75mm,1kg
-Panchroma Marble PLA,Marble White,1.75mm / 1kg / Marble White,Polymaker,21.99,1350,,1.75mm,1kg
-Panchroma Marble PLA,Marble Slate Grey,1.75mm / 1kg / Marble Slate Grey,Polymaker,21.99,1350,,1.75mm,1kg
-Panchroma Marble PLA,Marble Brick,1.75mm / 1kg / Marble Brick,Polymaker,21.99,1350,,1.75mm,1kg
-Panchroma Marble PLA,Marble Limestone,1.75mm / 1kg / Marble Limestone,Polymaker,21.99,1350,,1.75mm,1kg
-Panchroma Marble PLA,Marble Sandstone,1.75mm / 1kg / Marble Sandstone,Polymaker,21.99,1350,,1.75mm,1kg
-Panchroma Matte PLA,Matte Lime Green,1.75mm / 1kg / Matte Lime Green,Polymaker,20.99,1350,,1.75mm,1kg
-Panchroma Matte PLA,Matte Army Purple,1.75mm / 1kg / Matte Army Purple,Polymaker,20.99,1350,,1.75mm,1kg
-Panchroma Matte PLA,Matte Ash Grey,1.75mm / 1kg / Matte Ash Grey,Polymaker,20.99,1350,,1.75mm,1kg
-Panchroma Matte PLA,Matte Electric Indigo,1.75mm / 1kg / Matte Electric Indigo,Polymaker,20.99,1350,,1.75mm,1kg
-Panchroma Matte PLA,Matte Pastel Periwinkle,1.75mm / 1kg / Matte Pastel Periwinkle,Polymaker,20.99,1350,,1.75mm,1kg
-Panchroma Matte PLA,Matte Lotus Pink,1.75mm / 1kg / Matte Lotus Pink,Polymaker,20.99,1350,,1.75mm,1kg
-Panchroma Matte PLA,Matte Sky Blue,1.75mm / 1kg / Matte Sky Blue,Polymaker,20.99,1350,,1.75mm,1kg
-Panchroma Metallic PLA,Metallic Gold,1.75mm / 1kg / Metallic Gold,Polymaker,29.99,1350,,1.75mm,1kg
-Panchroma Metallic PLA,Metallic Silver,1.75mm / 1kg / Metallic Silver,Polymaker,29.99,1350,,1.75mm,1kg
-Panchroma Metallic PLA,Metallic Bronze,1.75mm / 1kg / Metallic Bronze,Polymaker,29.99,1350,,1.75mm,1kg
-Panchroma Metallic PLA,Metallic Blue,1.75mm / 1kg / Metallic Blue,Polymaker,29.99,1350,,1.75mm,1kg
+Panchroma Galaxy PLA,Galaxy Dark Green,1.75mm / 1kg / Galaxy Dark Green,Polymaker,24.99,1350,,1.75mm,1kg
+Panchroma Galaxy PLA,Galaxy Dark Grey,1.75mm / 1kg / Galaxy Dark Grey,Polymaker,24.99,1350,,1.75mm,1kg
+Panchroma Glow PLA,Glow Green,1.75mm / 1kg / Glow Green,Polymaker,24.99,1350,,1.75mm,1kg
+Panchroma Glow PLA,Glow Blue,1.75mm / 1kg / Glow Blue,Polymaker,24.99,1350,,1.75mm,1kg
+Panchroma Glow PLA,Glow Orange,1.75mm / 1kg / Glow Orange,Polymaker,24.99,1350,,1.75mm,1kg
+Panchroma Gradient Celestial,Gradient Celestial Rainbow,1.75mm / 1kg / Gradient Celestial Rainbow,Polymaker,29.99,1350,,1.75mm,1kg
+Panchroma Gradient Celestial,Gradient Celestial Blue-Purple,1.75mm / 1kg / Gradient Celestial Blue-Purple,Polymaker,29.99,1350,,1.75mm,1kg
+Panchroma Gradient Celestial,Gradient Celestial Purple-Pink,1.75mm / 1kg / Gradient Celestial Purple-Pink,Polymaker,29.99,1350,,1.75mm,1kg
+Panchroma Gradient Celestial,Gradient Celestial Blue-White,1.75mm / 1kg / Gradient Celestial Blue-White,Polymaker,29.99,1350,,1.75mm,1kg
+Panchroma Gradient Crystal,Gradient Crystal Tourmaline,1.75mm / 1kg / Gradient Crystal Tourmaline,Polymaker,24.99,1350,,1.75mm,1kg
+Panchroma Gradient Crystal,Gradient Crystal Rose Quartz,1.75mm / 1kg / Gradient Crystal Rose Quartz,Polymaker,24.99,1350,,1.75mm,1kg
+Panchroma Gradient Crystal,Gradient Crystal Aquamarine,1.75mm / 1kg / Gradient Crystal Aquamarine,Polymaker,24.99,1350,,1.75mm,1kg
+Panchroma Gradient Crystal,Gradient Crystal Citrine,1.75mm / 1kg / Gradient Crystal Citrine,Polymaker,24.98,1350,,1.75mm,1kg
+Panchroma Gradient Crystal,Gradient Crystal Carnelian,1.75mm / 1kg / Gradient Crystal Carnelian,Polymaker,24.99,1350,,1.75mm,1kg
+Panchroma Gradient Galaxy,Gradient Galaxy Black-Grey,1.75mm / 1kg / Gradient Galaxy Black-Grey,Polymaker,29.98,1350,,1.75mm,1kg
+Panchroma Gradient Galaxy,Gradient Galaxy Blue-Green,1.75mm / 1kg / Gradient Galaxy Blue-Green,Polymaker,29.99,1350,,1.75mm,1kg
+Panchroma Gradient Galaxy,Gradient Galaxy Black-Blue,1.75mm / 1kg / Gradient Galaxy Black-Blue,Polymaker,29.99,1350,,1.75mm,1kg
+Panchroma Gradient Luminous Rainbow PLA,Gradient Luminous Rainbow,1.75mm / 1kg / Gradient Luminous Rainbow,Polymaker,29.99,1350,,1.75mm,1kg
+Panchroma Gradient Matte PLA,Gradient Matte Pastel Rainbow,1.75mm / 1kg / Gradient Matte Pastel Rainbow,Polymaker,24.99,1350,,1.75mm,1kg
+Panchroma Gradient Matte PLA,Gradient Matte Cappuccino,1.75mm / 1kg / Gradient Matte Cappuccino,Polymaker,24.99,1350,,1.75mm,1kg
+Panchroma Gradient Matte PLA,Gradient Matte Spring,1.75mm / 1kg / Gradient Matte Spring,Polymaker,24.99,1350,,1.75mm,1kg
+Panchroma Gradient Matte PLA,Gradient Matte Summer,1.75mm / 1kg / Gradient Matte Summer,Polymaker,24.99,1350,,1.75mm,1kg
+Panchroma Gradient Matte PLA,Gradient Matte Fall,1.75mm / 1kg / Gradient Matte Fall,Polymaker,24.99,1350,,1.75mm,1kg
+Panchroma Gradient Matte PLA,Gradient Matte Winter,1.75mm / 1kg / Gradient Matte Winter,Polymaker,24.99,1350,,1.75mm,1kg
+Panchroma Gradient Matte PLA,Gradient Matte Wood,1.75mm / 1kg / Gradient Matte Wood,Polymaker,24.99,1350,,1.75mm,1kg
+Panchroma Gradient Matte PLA,Gradient Matte Tropical Squeeze,1.75mm / 1kg / Gradient Matte Tropical Squeeze,Polymaker,24.99,1350,,1.75mm,1kg
+Panchroma Gradient Matte PLA,Gradient Matte Lavender Fizz,1.75mm / 1kg / Gradient Matte Lavender Fizz,Polymaker,24.98,1350,,1.75mm,1kg
+Panchroma Gradient Matte PLA,Gradient Matte Mint Splash,1.75mm / 1kg / Gradient Matte Mint Splash,Polymaker,24.99,1350,,1.75mm,1kg
+Panchroma Gradient Matte PLA,Gradient Matte Sky,1.75mm / 1kg / Gradient Matte Sky,Polymaker,24.99,1350,,1.75mm,1kg
+Panchroma Gradient Matte PLA,Gradient Matte Sandstorm,1.75mm / 1kg / Gradient Matte Sandstorm,Polymaker,24.99,1350,,1.75mm,1kg
+Panchroma Gradient Matte PLA,Gradient Matte Tornado,1.75mm / 1kg / Gradient Matte Tornado,Polymaker,24.99,1350,,1.75mm,1kg
+Panchroma Gradient Neon,Gradient Halloween Neon,1.75mm / 1kg / Gradient Halloween Neon,Polymaker,29.99,1350,,1.75mm,1kg
+Panchroma Gradient Satin PLA,Gradient Satin Rainbow,1.75mm / 1kg / Gradient Satin Rainbow,Polymaker,24.99,1350,,1.75mm,1kg
+Panchroma Gradient Silk,Gradient Silk Rainbow,1.75mm / 1kg / Gradient Silk Rainbow,Polymaker,24.99,1000,,1.75mm,1kg
+Panchroma Gradient Silk,Gradient Silk Fire,1.75mm / 1kg / Gradient Silk Fire,Polymaker,24.99,1000,,1.75mm,1kg
+Panchroma Gradient Silk,Gradient Silk Water,1.75mm / 1kg / Gradient Silk Water,Polymaker,24.99,1000,,1.75mm,1kg
+Panchroma Gradient Silk,Gradient Silk Air,1.75mm / 1kg / Gradient Silk Air,Polymaker,24.99,1000,,1.75mm,1kg
+Panchroma Gradient Silk,Gradient Silk Earth,1.75mm / 1kg / Gradient Silk Earth,Polymaker,24.99,1000,,1.75mm,1kg
+Panchroma Gradient Starlight,Gradient Starlight Rainbow,1.75mm / 1kg / Gradient Starlight Rainbow,Polymaker,34.99,1350,,1.75mm,1kg
+Panchroma Gradient Starlight,Gradient Starlight Purple,1.75mm / 1kg / Gradient Starlight Purple,Polymaker,34.98,1350,,1.75mm,1kg
+Panchroma Gradient Starlight,Gradient Starlight Blue-Green,1.75mm / 1kg / Gradient Starlight Blue-Green,Polymaker,34.99,1350,,1.75mm,1kg
+Panchroma Gradient Starlight,Gradient Starlight Purple-Red,1.75mm / 1kg / Gradient Starlight Purple-Red,Polymaker,34.98,1350,,1.75mm,1kg
+Panchroma Gradient Starlight,Gradient Starlight Blue-Purple,1.75mm / 1kg / Gradient Starlight Blue-Purple,Polymaker,34.98,1350,,1.75mm,1kg
+Panchroma Gradient Translucent PLA,Gradient Translucent Rainbow,1.75mm / 1kg / Gradient Translucent Rainbow,Polymaker,24.99,1350,,1.75mm,1kg
+Panchroma Luminous PLA,Luminous Blue,1.75mm / 1kg / Luminous Blue,Polymaker,24.99,1350,,1.75mm,1kg
+Panchroma Luminous PLA,Luminous Orange,1.75mm / 1kg / Luminous Orange,Polymaker,24.99,1350,,1.75mm,1kg
+Panchroma Luminous PLA,Luminous Green,1.75mm / 1kg / Luminous Green,Polymaker,24.99,1350,,1.75mm,1kg
+Panchroma Luminous PLA,Luminous Pink,1.75mm / 1kg / Luminous Pink,Polymaker,24.99,1350,,1.75mm,1kg
+Panchroma Luminous PLA,Luminous Yellow,1.75mm / 1kg / Luminous Yellow,Polymaker,24.99,1350,,1.75mm,1kg
+Panchroma Marble PLA,Marble White,1.75mm / 1kg / Marble White,Polymaker,20.99,1350,,1.75mm,1kg
+Panchroma Marble PLA,Marble Slate Grey,1.75mm / 1kg / Marble Slate Grey,Polymaker,20.99,1350,,1.75mm,1kg
+Panchroma Marble PLA,Marble Brick,1.75mm / 1kg / Marble Brick,Polymaker,20.99,1350,,1.75mm,1kg
+Panchroma Marble PLA,Marble Limestone,1.75mm / 1kg / Marble Limestone,Polymaker,20.99,1350,,1.75mm,1kg
+Panchroma Marble PLA,Marble Sandstone,1.75mm / 1kg / Marble Sandstone,Polymaker,20.99,1350,,1.75mm,1kg
+Panchroma Matte PLA,Matte Lime Green,1.75mm / 1kg / Matte Lime Green,Polymaker,19.99,1350,,1.75mm,1kg
+Panchroma Matte PLA,Matte Army Purple,1.75mm / 1kg / Matte Army Purple,Polymaker,19.99,1350,,1.75mm,1kg
+Panchroma Matte PLA,Matte Ash Grey,1.75mm / 1kg / Matte Ash Grey,Polymaker,19.99,1350,,1.75mm,1kg
+Panchroma Matte PLA,Matte Electric Indigo,1.75mm / 1kg / Matte Electric Indigo,Polymaker,19.99,1350,,1.75mm,1kg
+Panchroma Matte PLA,Matte Pastel Periwinkle,1.75mm / 1kg / Matte Pastel Periwinkle,Polymaker,19.99,1350,,1.75mm,1kg
+Panchroma Matte PLA,Matte Lotus Pink,1.75mm / 1kg / Matte Lotus Pink,Polymaker,19.99,1350,,1.75mm,1kg
+Panchroma Matte PLA,Matte Sky Blue,1.75mm / 1kg / Matte Sky Blue,Polymaker,19.99,1350,,1.75mm,1kg
+Panchroma Matte PLA,Matte Sunshine Yellow,1.75mm / 1kg / Matte Sunshine Yellow,Polymaker,19.99,1350,,1.75mm,1kg
+Panchroma Matte PLA,Matte Grass Green,1.75mm / 1kg / Matte Grass Green,Polymaker,19.99,1350,,1.75mm,1kg
+Panchroma Matte PLA,Matte Seafoam Green,1.75mm / 1kg / Matte Seafoam Green,Polymaker,19.99,1350,,1.75mm,1kg
+Panchroma Matte PLA,Matte Raspberry Blue,1.75mm / 1kg / Matte Raspberry Blue,Polymaker,19.99,1350,,1.75mm,1kg
+Panchroma Matte PLA,Matte Wine Burgundy,1.75mm / 1kg / Matte Wine Burgundy,Polymaker,19.99,1350,,1.75mm,1kg
+Panchroma Matte PLA,Matte Emerald Green,1.75mm / 1kg / Matte Emerald Green,Polymaker,19.99,1350,,1.75mm,1kg
+Panchroma Matte PLA,Matte Muted Moss,1.75mm / 1kg / Matte Muted Moss,Polymaker,19.98,1350,,1.75mm,1kg
+Panchroma Matte PLA,Matte Muted Teal,1.75mm / 1kg / Matte Muted Teal,Polymaker,19.99,1350,,1.75mm,1kg
+Panchroma Matte PLA,Matte Muted Mauve,1.75mm / 1kg / Matte Muted Mauve,Polymaker,19.99,1350,,1.75mm,1kg
+Panchroma Matte PLA,Matte Muted Terracotta,1.75mm / 1kg / Matte Muted Terracotta,Polymaker,19.99,1350,,1.75mm,1kg
+Panchroma Matte PLA,Matte Pastel Coral,1.75mm / 1kg / Matte Pastel Coral,Polymaker,19.99,1350,,1.75mm,1kg
+Panchroma Matte PLA,Matte Pastel Beige,1.75mm / 1kg / Matte Pastel Beige,Polymaker,19.99,1350,,1.75mm,1kg
+Panchroma Metallic PLA,Metallic Gold,1.75mm / 1kg / Metallic Gold,Polymaker,24.99,1350,,1.75mm,1kg
+Panchroma Metallic PLA,Metallic Silver,1.75mm / 1kg / Metallic Silver,Polymaker,24.99,1350,,1.75mm,1kg
+Panchroma Metallic PLA,Metallic Bronze,1.75mm / 1kg / Metallic Bronze,Polymaker,24.99,1350,,1.75mm,1kg
+Panchroma Metallic PLA,Metallic Blue,1.75mm / 1kg / Metallic Blue,Polymaker,24.99,1350,,1.75mm,1kg
 Panchroma Neon PLA,Neon Magenta,1.75mm / 1kg / Neon Magenta,Polymaker,24.99,1350,,1.75mm,1kg
 Panchroma Neon PLA,Neon Green,1.75mm / 1kg / Neon Green,Polymaker,24.99,1350,,1.75mm,1kg
 Panchroma Neon PLA,Neon Yellow,1.75mm / 1kg / Neon Yellow,Polymaker,24.99,1350,,1.75mm,1kg
 Panchroma Neon PLA,Neon Orange,1.75mm / 1kg / Neon Orange,Polymaker,24.99,1350,,1.75mm,1kg
 Panchroma Neon PLA,Neon Pink,1.75mm / 1kg / Neon Pink,Polymaker,24.99,1350,,1.75mm,1kg
 Panchroma Neon PLA,Neon Red,1.75mm / 1kg / Neon Red,Polymaker,24.99,1350,,1.75mm,1kg
-Panchroma PLA,Black,1.75mm / 1kg / Black,Polymaker US,19.99,1000,,1.75mm,1kg
-Panchroma PLA,White,1.75mm / 1kg / White,Polymaker US,19.99,1000,,1.75mm,1kg
-Panchroma PLA,Cold White,1.75mm / 1kg / Cold White,Polymaker US,19.99,1000,,1.75mm,1kg
-Panchroma PLA,Red,1.75mm / 1kg / Red,Polymaker US,19.99,1000,,1.75mm,1kg
-Panchroma PLA,Orange,1.75mm / 1kg / Orange,Polymaker US,19.99,1000,,1.75mm,1kg
-Panchroma PLA,Magenta,1.75mm / 1kg / Magenta,Polymaker US,19.99,1000,,1.75mm,1kg
-Panchroma PLA,Pink,1.75mm / 1kg / Pink,Polymaker US,19.99,1000,,1.75mm,1kg
-Panchroma PLA,Wine Red,1.75mm / 1kg / Wine Red,Polymaker US,19.99,1000,,1.75mm,1kg
-Panchroma PLA,Lemon Yellow,1.75mm / 1kg / Lemon Yellow,Polymaker US,19.99,1000,,1.75mm,1kg
-Panchroma PLA,Yellow,1.75mm / 1kg / Yellow,Polymaker US,19.99,1000,,1.75mm,1kg
-Panchroma PLA,Cream,1.75mm / 1kg / Cream,Polymaker US,19.99,1000,,1.75mm,1kg
-Panchroma PLA,Beige,1.75mm / 1kg / Beige,Polymaker US,19.99,1000,,1.75mm,1kg
-Panchroma PLA,Tan,1.75mm / 1kg / Tan,Polymaker US,19.99,1350,,1.75mm,1kg
-Panchroma PLA,Brown,1.75mm / 1kg / Brown,Polymaker US,19.99,1000,,1.75mm,1kg
-Panchroma PLA,Green,1.75mm / 1kg / Green,Polymaker US,19.99,1000,,1.75mm,1kg
-Panchroma PLA,Lime Green,1.75mm / 1kg / Lime Green,Polymaker US,19.99,1000,,1.75mm,1kg
-Panchroma PLA,Jungle Green,1.75mm / 1kg / Jungle Green,Polymaker US,19.99,1000,,1.75mm,1kg
-Panchroma PLA,Olive Green,1.75mm / 1kg / Olive Green,Polymaker US,19.99,1000,,1.75mm,1kg
-Panchroma PLA,Dark Olive Drab,1.75mm / 1kg / Dark Olive Drab,Polymaker US,19.99,1350,,1.75mm,1kg
-Panchroma PLA,Azure Blue,1.75mm / 1kg / Azure Blue,Polymaker US,19.99,1000,,1.75mm,1kg
-Panchroma PLA,Blue,1.75mm / 1kg / Blue,Polymaker US,19.99,1000,,1.75mm,1kg
-Panchroma PLA,Aqua Blue,1.75mm / 1kg / Aqua Blue,Polymaker US,19.99,1000,,1.75mm,1kg
-Panchroma PLA,Stone Blue,1.75mm / 1kg / Stone Blue,Polymaker US,19.99,1000,,1.75mm,1kg
-Panchroma PLA,Polymaker Teal,1.75mm / 1kg / Polymaker Teal,Polymaker US,19.99,1000,,1.75mm,1kg
-Panchroma PLA,Steel Grey,1.75mm / 1kg / Steel Grey,Polymaker US,19.99,1000,,1.75mm,1kg
-Panchroma PLA,Grey,1.75mm / 1kg / Grey,Polymaker US,19.99,1000,,1.75mm,1kg
-Panchroma PLA,Dark Grey,1.75mm / 1kg / Dark Grey,Polymaker US,19.99,1000,,1.75mm,1kg
-Panchroma PLA,Purple,1.75mm / 1kg / Purple,Polymaker US,19.99,1000,,1.75mm,1kg
 Panchroma PLA Refill,,Matte / Matte Charcoal Black,Polymaker,17.99,1100,,Matte,Matte Charcoal Black
-Panchroma Satin PLA,Satin Black,1.75mm / 1kg / Satin Black,Polymaker,20.99,1350,,1.75mm,1kg
-Panchroma Satin PLA,Satin White,1.75mm / 1kg / Satin White,Polymaker,20.99,1350,,1.75mm,1kg
-Panchroma Satin PLA,Satin Grey,1.75mm / 1kg / Satin Grey,Polymaker,20.99,1350,,1.75mm,1kg
-Panchroma Satin PLA,Satin Orange,1.75mm / 1kg / Satin Orange,Polymaker,20.99,1350,,1.75mm,1kg
-Panchroma Satin PLA,Satin Yellow,1.75mm / 1kg / Satin Yellow,Polymaker,20.99,1350,,1.75mm,1kg
-Panchroma Satin PLA,Satin Green,1.75mm / 1kg / Satin Green,Polymaker,20.99,1350,,1.75mm,1kg
-Panchroma Satin PLA,Satin Polymaker Teal,1.75mm / 1kg / Satin Polymaker Teal,Polymaker,20.99,1350,,1.75mm,1kg
-Panchroma Satin PLA,Satin Blue,1.75mm / 1kg / Satin Blue,Polymaker,20.99,1350,,1.75mm,1kg
-Panchroma Satin PLA,Satin Purple,1.75mm / 1kg / Satin Purple,Polymaker,20.99,1350,,1.75mm,1kg
-Panchroma Satin PLA,Satin Red,1.75mm / 1kg / Satin Red,Polymaker,20.99,1350,,1.75mm,1kg
-Panchroma Silk PLA,Silk Black,1.75mm / 1kg / Silk Black,Polymaker,24.99,1350,,1.75mm,1kg
-Panchroma Silk PLA,Silk Purple,1.75mm / 1kg / Silk Purple,Polymaker,24.99,1350,,1.75mm,1kg
-Panchroma Silk PLA,Silk Magenta,1.75mm / 1kg / Silk Magenta,Polymaker,24.99,1350,,1.75mm,1kg
-Panchroma Silk PLA,Silk Rose,1.75mm / 1kg / Silk Rose,Polymaker,24.99,1350,,1.75mm,1kg
-Panchroma Silk PLA,Silk Red,1.75mm / 1kg / Silk Red,Polymaker,24.99,1350,,1.75mm,1kg
-Panchroma Silk PLA,Silk Rose Gold,1.75mm / 1kg / Silk Rose Gold,Polymaker,24.99,1350,,1.75mm,1kg
-Panchroma Silk PLA,Silk Quartz Pink,1.75mm / 1kg / Silk Quartz Pink,Polymaker,24.99,1350,,1.75mm,1kg
-Panchroma Silk PLA,Silk Bronze,1.75mm / 1kg / Silk Bronze,Polymaker,24.99,1350,,1.75mm,1kg
-Panchroma Silk PLA,Silk Orange,1.75mm / 1kg / Silk Orange,Polymaker,24.99,1350,,1.75mm,1kg
-Panchroma Silk PLA,Silk White,1.75mm / 1kg / Silk White,Polymaker,24.99,1350,,1.75mm,1kg
-Panchroma Silk PLA,Silk Gold,1.75mm / 1kg / Silk Gold,Polymaker,24.99,1350,,1.75mm,1kg
-Panchroma Silk PLA,Silk Yellow,1.75mm / 1kg / Silk Yellow,Polymaker,24.99,1350,,1.75mm,1kg
-Panchroma Silk PLA,Silk Lime,1.75mm / 1kg / Silk Lime,Polymaker,24.99,1350,,1.75mm,1kg
-Panchroma Silk PLA,Silk Green,1.75mm / 1kg / Silk Green,Polymaker,24.99,1350,,1.75mm,1kg
-Panchroma Silk PLA,Silk Teal,1.75mm / 1kg / Silk Teal,Polymaker,24.99,1350,,1.75mm,1kg
-Panchroma Silk PLA,Silk Light Blue,1.75mm / 1kg / Silk Light Blue,Polymaker,24.99,1350,,1.75mm,1kg
-Panchroma Silk PLA,Silk Blue,1.75mm / 1kg / Silk Blue,Polymaker,24.99,1350,,1.75mm,1kg
-Panchroma Silk PLA,Silk Chrome,1.75mm / 1kg / Silk Chrome,Polymaker,24.99,1350,,1.75mm,1kg
-Panchroma Silk PLA,Silk Silver,1.75mm / 1kg / Silk Silver,Polymaker,24.99,1350,,1.75mm,1kg
-Panchroma Silk PLA,Silk Brass,1.75mm / 1kg / Silk Brass,Polymaker,24.99,1350,,1.75mm,1kg
-Panchroma Silk PLA,Silk Peridot Green,1.75mm / 1kg / Silk Peridot Green,Polymaker,24.99,1350,,1.75mm,1kg
-Panchroma Silk PLA,Silk Periwinkle,1.75mm / 1kg / Silk Periwinkle,Polymaker,24.99,1350,,1.75mm,1kg
-Panchroma Silk PLA,Silk Dark Blue,1.75mm / 1kg / Silk Dark Blue,Polymaker,24.99,1350,,1.75mm,1kg
-Panchroma Silk PLA,Silk Gunmetal Grey,1.75mm / 1kg / Silk Gunmetal Grey,Polymaker,24.99,1350,,1.75mm,1kg
+Panchroma Satin PLA,Satin Black,1.75mm / 1kg / Satin Black,Polymaker,19.99,1350,,1.75mm,1kg
+Panchroma Satin PLA,Satin White,1.75mm / 1kg / Satin White,Polymaker,19.99,1350,,1.75mm,1kg
+Panchroma Satin PLA,Satin Grey,1.75mm / 1kg / Satin Grey,Polymaker,19.99,1350,,1.75mm,1kg
+Panchroma Satin PLA,Satin Orange,1.75mm / 1kg / Satin Orange,Polymaker,19.99,1350,,1.75mm,1kg
+Panchroma Satin PLA,Satin Yellow,1.75mm / 1kg / Satin Yellow,Polymaker,19.99,1350,,1.75mm,1kg
+Panchroma Satin PLA,Satin Green,1.75mm / 1kg / Satin Green,Polymaker,19.99,1350,,1.75mm,1kg
+Panchroma Satin PLA,Satin Polymaker Teal,1.75mm / 1kg / Satin Polymaker Teal,Polymaker,19.99,1350,,1.75mm,1kg
+Panchroma Satin PLA,Satin Blue,1.75mm / 1kg / Satin Blue,Polymaker,19.99,1350,,1.75mm,1kg
+Panchroma Satin PLA,Satin Purple,1.75mm / 1kg / Satin Purple,Polymaker,19.99,1350,,1.75mm,1kg
+Panchroma Satin PLA,Satin Red,1.75mm / 1kg / Satin Red,Polymaker,19.99,1350,,1.75mm,1kg
+Panchroma Silk PLA,Silk Black,1.75mm / 1kg / Silk Black,Polymaker,19.99,1350,,1.75mm,1kg
+Panchroma Silk PLA,Silk Purple,1.75mm / 1kg / Silk Purple,Polymaker,19.99,1350,,1.75mm,1kg
+Panchroma Silk PLA,Silk Magenta,1.75mm / 1kg / Silk Magenta,Polymaker,19.99,1350,,1.75mm,1kg
+Panchroma Silk PLA,Silk Rose,1.75mm / 1kg / Silk Rose,Polymaker,19.99,1350,,1.75mm,1kg
+Panchroma Silk PLA,Silk Red,1.75mm / 1kg / Silk Red,Polymaker,19.99,1350,,1.75mm,1kg
+Panchroma Silk PLA,Silk Rose Gold,1.75mm / 1kg / Silk Rose Gold,Polymaker,19.99,1350,,1.75mm,1kg
+Panchroma Silk PLA,Silk Quartz Pink,1.75mm / 1kg / Silk Quartz Pink,Polymaker,19.99,1350,,1.75mm,1kg
+Panchroma Silk PLA,Silk Bronze,1.75mm / 1kg / Silk Bronze,Polymaker,19.99,1350,,1.75mm,1kg
+Panchroma Silk PLA,Silk Orange,1.75mm / 1kg / Silk Orange,Polymaker,19.99,1350,,1.75mm,1kg
+Panchroma Silk PLA,Silk White,1.75mm / 1kg / Silk White,Polymaker,19.99,1350,,1.75mm,1kg
+Panchroma Silk PLA,Silk Gold,1.75mm / 1kg / Silk Gold,Polymaker,19.99,1350,,1.75mm,1kg
+Panchroma Silk PLA,Silk Yellow,1.75mm / 1kg / Silk Yellow,Polymaker,19.99,1350,,1.75mm,1kg
+Panchroma Silk PLA,Silk Lime,1.75mm / 1kg / Silk Lime,Polymaker,19.99,1350,,1.75mm,1kg
+Panchroma Silk PLA,Silk Green,1.75mm / 1kg / Silk Green,Polymaker,19.99,1350,,1.75mm,1kg
+Panchroma Silk PLA,Silk Teal,1.75mm / 1kg / Silk Teal,Polymaker,19.99,1350,,1.75mm,1kg
+Panchroma Silk PLA,Silk Light Blue,1.75mm / 1kg / Silk Light Blue,Polymaker,19.99,1350,,1.75mm,1kg
+Panchroma Silk PLA,Silk Blue,1.75mm / 1kg / Silk Blue,Polymaker,19.99,1350,,1.75mm,1kg
+Panchroma Silk PLA,Silk Chrome,1.75mm / 1kg / Silk Chrome,Polymaker,19.99,1350,,1.75mm,1kg
+Panchroma Silk PLA,Silk Silver,1.75mm / 1kg / Silk Silver,Polymaker,19.99,1350,,1.75mm,1kg
+Panchroma Silk PLA,Silk Brass,1.75mm / 1kg / Silk Brass,Polymaker,19.99,1350,,1.75mm,1kg
+Panchroma Silk PLA,Silk Peridot Green,1.75mm / 1kg / Silk Peridot Green,Polymaker,19.99,1350,,1.75mm,1kg
+Panchroma Silk PLA,Silk Periwinkle,1.75mm / 1kg / Silk Periwinkle,Polymaker,19.99,1350,,1.75mm,1kg
+Panchroma Silk PLA,Silk Dark Blue,1.75mm / 1kg / Silk Dark Blue,Polymaker,19.99,1350,,1.75mm,1kg
+Panchroma Silk PLA,Silk Gunmetal Grey,1.75mm / 1kg / Silk Gunmetal Grey,Polymaker,19.99,1350,,1.75mm,1kg
 Panchroma Starlight PLA,Starlight Mercury,1.75mm / 1kg / Starlight Mercury,Polymaker,29.99,1350,,1.75mm,1kg
-Panchroma Translucent PLA,Translucent Cyan,1.75mm / 1kg / Translucent Cyan,Polymaker,24.99,1350,,1.75mm,1kg
-Panchroma Translucent PLA,Translucent Magenta,1.75mm / 1kg / Translucent Magenta,Polymaker,24.99,1350,,1.75mm,1kg
-Panchroma Translucent PLA,Translucent Yellow,1.75mm / 1kg / Translucent Yellow,Polymaker,24.99,1350,,1.75mm,1kg
-Panchroma Translucent PLA,Translucent Grey,1.75mm / 1kg / Translucent Grey,Polymaker,24.99,1350,,1.75mm,1kg
-Panchroma Translucent PLA,Translucent Natural,1.75mm / 1kg / Translucent Natural,Polymaker,24.99,1350,,1.75mm,1kg
+Panchroma Translucent PLA,Translucent Cyan,1.75mm / 1kg / Translucent Cyan,Polymaker,19.99,1350,,1.75mm,1kg
+Panchroma Translucent PLA,Translucent Magenta,1.75mm / 1kg / Translucent Magenta,Polymaker,19.99,1350,,1.75mm,1kg
+Panchroma Translucent PLA,Translucent Yellow,1.75mm / 1kg / Translucent Yellow,Polymaker,19.99,1350,,1.75mm,1kg
+Panchroma Translucent PLA,Translucent Grey,1.75mm / 1kg / Translucent Grey,Polymaker,19.99,1350,,1.75mm,1kg
+Panchroma Translucent PLA,Translucent Natural,1.75mm / 1kg / Translucent Natural,Polymaker,19.99,1350,,1.75mm,1kg
 PolyCast,Natural,1.75mm / 0.75kg / Natural,Polymaker,49.99,1090,,1.75mm,0.75kg
+PolyFlex TPU95-HF,Translucent Red,1.75mm / 1kg / Translucent Red,Polymaker,49.99,1350,,1.75mm,1kg
 PolyLite Metallic PLA Pro,Gold,1.75mm / 1kg / Gold,Polymaker,26.99,1350,,1.75mm,1kg
-PolyLite Metallic PLA Pro,Silver,1.75mm / 1kg / Silver,Polymaker,24.99,1350,,1.75mm,1kg
+PolyLite Metallic PLA Pro,Silver,1.75mm / 1kg / Silver,Polymaker,26.99,1350,,1.75mm,1kg
 PolyLite Metallic PLA Pro,Bronze,1.75mm / 1kg / Bronze,Polymaker,26.99,1350,,1.75mm,1kg
 PolyLite Metallic PLA Pro,Metallic Blue,1.75mm / 1kg / Metallic Blue,Polymaker,26.99,1350,,1.75mm,1kg
 PolyLite Metallic PLA Pro,Metallic Red,1.75mm / 1kg / Metallic Red,Polymaker,26.99,1350,,1.75mm,1kg
 PolyLite Metallic PLA Pro,Metallic Magenta,1.75mm / 1kg / Metallic Magenta,Polymaker,26.99,1350,,1.75mm,1kg
 PolyLite Metallic PLA Pro,Metallic Chrome,1.75mm / 1kg / Metallic Chrome,Polymaker,26.99,1350,,1.75mm,1kg
 PolyLite Metallic PLA Pro,Metallic Black,1.75mm / 1kg / Metallic Black,Polymaker,26.99,1350,,1.75mm,1kg
+PolyLite Metallic PLA Pro,LM Sparkle Green,1.75mm / 1kg / LM Sparkle Green,Polymaker,29.99,1350,,1.75mm,1kg
 PolyLite PC,Transparent,1.75mm / 1kg / Transparent,Polymaker,29.99,1350,,1.75mm,1kg
-PolyLite PLA Pro,Black,1.75mm / 1kg / Black,Polymaker,24.99,1350,,1.75mm,1kg
-PolyLite PLA Pro,White,1.75mm / 1kg / White,Polymaker,24.99,1350,,1.75mm,1kg
-PolyLite PLA Pro,Cold White,1.75mm / 1kg / Cold White,Polymaker,24.99,1350,,1.75mm,1kg
+PolyLite PLA Pro,Black,1.75mm / 1kg / Black,Polymaker,23.99,1350,,1.75mm,1kg
+PolyLite PLA Pro,White,1.75mm / 1kg / White,Polymaker,23.99,1350,,1.75mm,1kg
+PolyLite PLA Pro,Cold White,1.75mm / 1kg / Cold White,Polymaker,23.99,1350,,1.75mm,1kg
 PolyLite PLA Pro,Orange,1.75mm / 1kg / Orange,Polymaker,24.99,1350,,1.75mm,1kg
 PolyLite PLA Pro,Army Beige,1.75mm / 1kg / Army Beige,Polymaker,24.99,1350,,1.75mm,1kg
 PolyLite PLA Pro,Yellow,1.75mm / 1kg / Yellow,Polymaker,24.99,1350,,1.75mm,1kg
@@ -236,7 +250,7 @@ PolyLite PLA Pro,Army Green,1.75mm / 1kg / Army Green,Polymaker,24.99,1350,,1.75
 PolyLite PLA Pro,Light Green,1.75mm / 1kg / Light Green,Polymaker,24.99,1350,,1.75mm,1kg
 PolyLite PLA Pro,Green,1.75mm / 1kg / Green,Polymaker,24.99,1350,,1.75mm,1kg
 PolyLite PLA Pro,Polymaker Teal,1.75mm / 1kg / Polymaker Teal,Polymaker,24.99,1350,,1.75mm,1kg
-PolyLite PLA Pro,Blue-Green,1.75mm / 1kg / Blue-Green,Polymaker,20.99,1350,,1.75mm,1kg
+PolyLite PLA Pro,Blue-Green,1.75mm / 1kg / Blue-Green,Polymaker,24.99,1350,,1.75mm,1kg
 PolyLite PLA Pro,Light Blue,1.75mm / 1kg / Light Blue,Polymaker,24.99,1350,,1.75mm,1kg
 PolyLite PLA Pro,Blue,1.75mm / 1kg / Blue,Polymaker,24.99,1350,,1.75mm,1kg
 PolyLite PLA Pro,Grey,1.75mm / 1kg / Grey,Polymaker,24.99,1350,,1.75mm,1kg
@@ -248,66 +262,120 @@ PolyLite PLA Pro,Light Red,1.75mm / 1kg / Light Red,Polymaker,24.99,1350,,1.75mm
 PolyLite PLA Pro,Red,1.75mm / 1kg / Red,Polymaker,24.99,1350,,1.75mm,1kg
 PolyLite PLA Pro,Brown,1.75mm / 1kg / Brown,Polymaker,24.99,1350,,1.75mm,1kg
 PolyLite PLA Pro,Dark Grey,1.75mm / 1kg / Dark Grey,Polymaker,24.99,1350,,1.75mm,1kg
-PolyLite PLA Pro,LM Sparkle Green,1.75mm / 1kg / LM Sparkle Green,Polymaker,29.99,1350,,1.75mm,1kg
 PolyLite PLA Pro,3D Print General Flat Dark Earth,1.75mm / 1kg / 3D Print General Flat Dark Earth,Polymaker,29.99,1350,,1.75mm,1kg
-PolyLite PLA-CF,Black,1.75mm / 1kg / Black,Polymaker,34.99,1350,,1.75mm,1kg
-PolyLite Translucent PETG,Translucent Blue,1.75mm / 1kg / Translucent Blue,Polymaker,22.99,1350,,1.75mm,1kg
-PolyLite Translucent PETG,Translucent Red,1.75mm / 1kg / Translucent Red,Polymaker,22.99,1350,,1.75mm,1kg
-PolyLite Translucent PETG,Translucent Green,1.75mm / 1kg / Translucent Green,Polymaker,22.99,1350,,1.75mm,1kg
-PolyLite Translucent PETG,Clear,1.75mm / 1kg / Clear,Polymaker,22.99,1350,,1.75mm,1kg
+PolyLite PLA-CF,Black,1.75mm / 1kg / Black,Polymaker,29.99,1350,,1.75mm,1kg
+PolyLite Translucent PETG,Translucent Blue,1.75mm / 1kg / Translucent Blue,Polymaker,19.99,1350,,1.75mm,1kg
+PolyLite Translucent PETG,Translucent Red,1.75mm / 1kg / Translucent Red,Polymaker,19.99,1350,,1.75mm,1kg
+PolyLite Translucent PETG,Translucent Green,1.75mm / 1kg / Translucent Green,Polymaker,19.99,1350,,1.75mm,1kg
+PolyLite Translucent PETG,Clear,1.75mm / 1kg / Clear,Polymaker,19.99,1350,,1.75mm,1kg
 Polymaker PC-ABS,Black,1.75mm / 1kg / Black,Polymaker,49.99,1350,,1.75mm,1kg
 Polymaker PC-ABS,White,1.75mm / 1kg / White,Polymaker,49.99,1350,,1.75mm,1kg
-Polymaker PC-PBT,Black,1.75mm / 1kg / Black,Polymaker,54.99,1350,,1.75mm,1kg
-Polymaker PC-PBT,Natural,1.75mm / 1kg / Natural,Polymaker,54.99,1350,,1.75mm,1kg
 Polymaker Wood PLA,Wood,1.75mm / 0.6kg / Wood,Polymaker,29.99,910,,1.75mm,0.6kg
-Polymaker ASA,Jet Black,1.75mm / 1kg / Jet Black,Polymaker,29.99,1350,,1.75mm,1kg
-Polymaker ASA,Black,1.75mm / 1kg / Black,Polymaker,29.99,1350,,1.75mm,1kg
-Polymaker ASA,White,1.75mm / 1kg / White,Polymaker,29.99,1350,,1.75mm,1kg
-Polymaker ASA,Grey,1.75mm / 1kg / Grey,Polymaker,29.99,1350,,1.75mm,1kg
-Polymaker ASA,Blue,1.75mm / 1kg / Blue,Polymaker,29.99,1350,,1.75mm,1kg
-Polymaker ASA,Red,1.75mm / 1kg / Red,Polymaker,29.99,1350,,1.75mm,1kg
-Polymaker ASA,Green,1.75mm / 1kg / Green,Polymaker,29.99,1350,,1.75mm,1kg
-Polymaker ASA,Orange,1.75mm / 1kg / Orange,Polymaker,29.99,1350,,1.75mm,1kg
-Polymaker ASA,Yellow,1.75mm / 1kg / Yellow,Polymaker,29.99,1350,,1.75mm,1kg
-Polymaker ASA,Purple,1.75mm / 1kg / Purple,Polymaker,29.99,1350,,1.75mm,1kg
-Polymaker ASA,Polymaker Teal,1.75mm / 1kg / Polymaker Teal,Polymaker,29.99,1350,,1.75mm,1kg
-Polymaker ASA,Natural,1.75mm / 1kg / Natural,Polymaker,29.99,1350,,1.75mm,1kg
-Polymaker ASA,Army Green,1.75mm / 1kg / Army Green,Polymaker,29.99,1350,,1.75mm,1kg
-Polymaker ASA,Army Brown,1.75mm / 1kg / Army Brown,Polymaker,29.99,1350,,1.75mm,1kg
-Polymaker ASA,Dark Grey,1.75mm / 1kg / Dark Grey,Polymaker,29.99,1350,,1.75mm,1kg
-Polymaker ASA,Pop Blue,1.75mm / 1kg / Pop Blue,Polymaker,29.99,1350,,1.75mm,1kg
-Polymaker ASA,Pop Pink,1.75mm / 1kg / Pop Pink,Polymaker,29.99,1350,,1.75mm,1kg
-Polymaker ASA,Pop Green,1.75mm / 1kg / Pop Green,Polymaker,29.99,1350,,1.75mm,1kg
-Polymaker ASA,Dark Purple,1.75mm / 1kg / Dark Purple,Polymaker,29.99,1350,,1.75mm,1kg
-Polymaker ASA,Dark Gray Green,1.75mm / 1kg / Dark Gray Green,Polymaker,29.99,1350,,1.75mm,1kg
-Polymaker ASA,Olive Brown,1.75mm / 1kg / Olive Brown,Polymaker,29.99,1350,,1.75mm,1kg
-Polymaker Galaxy ASA,Galaxy Black,1.75mm / 1kg / Galaxy Black,Polymaker,34.99,1350,,1.75mm,1kg
-Polymaker Galaxy ASA,Galaxy Blue,1.75mm / 1kg / Galaxy Blue,Polymaker,34.99,1350,,1.75mm,1kg
-Polymaker Galaxy ASA,Galaxy Red,1.75mm / 1kg / Galaxy Red,Polymaker,34.99,1350,,1.75mm,1kg
-Polymaker Galaxy ASA,Galaxy Green,1.75mm / 1kg / Galaxy Green,Polymaker,34.99,1350,,1.75mm,1kg
-Polymaker HT-PLA,Black,1.75mm / 1kg / Black,Polymaker US,24.99,1350,,1.75mm,1kg
-Polymaker HT-PLA,White,1.75mm / 1kg / White,Polymaker US,24.99,1350,,1.75mm,1kg
-Polymaker HT-PLA,Grey,1.75mm / 1kg / Grey,Polymaker US,24.99,1350,,1.75mm,1kg
-Polymaker HT-PLA,Blue,1.75mm / 1kg / Blue,Polymaker US,24.99,1350,,1.75mm,1kg
-Polymaker HT-PLA,Red,1.75mm / 1kg / Red,Polymaker US,24.99,1350,,1.75mm,1kg
-Polymaker HT-PLA,Green,1.75mm / 1kg / Green,Polymaker US,24.99,1350,,1.75mm,1kg
-Polymaker HT-PLA,Yellow,1.75mm / 1kg / Yellow,Polymaker US,24.99,1350,,1.75mm,1kg
-Polymaker HT-PLA,Orange,1.75mm / 1kg / Orange,Polymaker US,24.99,1350,,1.75mm,1kg
-Polymaker HT-PLA,Brown,1.75mm / 1kg / Brown,Polymaker US,24.99,1350,,1.75mm,1kg
-Polymaker HT-PLA,Teal,1.75mm / 1kg / Teal,Polymaker US,24.99,1350,,1.75mm,1kg
-Polymaker HT-PLA,Gradient Rainbow,1.75mm / 1kg / Gradient Rainbow,Polymaker US,29.99,1350,,1.75mm,1kg
-Polymaker HT-PLA,Gradient Tropical,1.75mm / 1kg / Gradient Tropical,Polymaker US,29.99,1350,,1.75mm,1kg
-Polymaker HT-PLA,Gradient Ice,1.75mm / 1kg / Gradient Ice,Polymaker US,29.99,1350,,1.75mm,1kg
-Polymaker HT-PLA,Gradient Fire,1.75mm / 1kg / Gradient Fire,Polymaker US,29.99,1350,,1.75mm,1kg
-Polymaker HT-PLA-GF,Black,1.75mm / 1kg / Black,Polymaker US,29.99,1350,,1.75mm,1kg
-Polymaker HT-PLA-GF,White,1.75mm / 1kg / White,Polymaker US,29.99,1350,,1.75mm,1kg
-Polymaker HT-PLA-GF,Grey,1.75mm / 1kg / Grey,Polymaker US,29.99,1350,,1.75mm,1kg
-Polymaker HT-PLA-GF,Blue,1.75mm / 1kg / Blue,Polymaker US,29.99,1350,,1.75mm,1kg
-Polymaker HT-PLA-GF,Army Green,1.75mm / 1kg / Army Green,Polymaker US,29.99,1350,,1.75mm,1kg
-Polymaker HT-PLA-GF,Power Tool Yellow,1.75mm / 1kg / Power Tool Yellow,Polymaker US,29.99,1350,,1.75mm,1kg
-Polymaker HT-PLA-GF,Power Tool Red,1.75mm / 1kg / Power Tool Red,Polymaker US,29.99,1350,,1.75mm,1kg
-Polymaker HT-PLA-GF,Power Tool Green,1.75mm / 1kg / Power Tool Green,Polymaker US,29.99,1350,,1.75mm,1kg
-Polymaker HT-PLA-GF,Power Tool Teal,1.75mm / 1kg / Power Tool Teal,Polymaker US,29.99,1350,,1.75mm,1kg
+Polymaker ABS Max,Black,1.75mm / 1kg / Black,Polymaker,29.99,1350,,1.75mm,1kg
+Polymaker ABS Max,White,1.75mm / 1kg / White,Polymaker,29.99,1350,,1.75mm,1kg
+Polymaker ABS Max,Grey,1.75mm / 1kg / Grey,Polymaker,29.99,1350,,1.75mm,1kg
+Polymaker ABS Max,Blue,1.75mm / 1kg / Blue,Polymaker,29.99,1350,,1.75mm,1kg
+Polymaker ABS Max,Red,1.75mm / 1kg / Red,Polymaker,29.99,1350,,1.75mm,1kg
+Polymaker ABS Max,Green,1.75mm / 1kg / Green,Polymaker,29.99,1350,,1.75mm,1kg
+Polymaker ABS Pro,Black,1.75mm / 1kg / Black,Polymaker,24.99,1350,,1.75mm,1kg
+Polymaker ABS Pro,White,1.75mm / 1kg / White,Polymaker,24.99,1350,,1.75mm,1kg
+Polymaker ABS Pro,Grey,1.75mm / 1kg / Grey,Polymaker,24.99,1350,,1.75mm,1kg
+Polymaker ABS Pro,Blue,1.75mm / 1kg / Blue,Polymaker,24.99,1350,,1.75mm,1kg
+Polymaker ABS Pro,Red,1.75mm / 1kg / Red,Polymaker,24.99,1350,,1.75mm,1kg
+Polymaker ABS Pro,Green,1.75mm / 1kg / Green,Polymaker,24.99,1350,,1.75mm,1kg
+Polymaker ABS Pro,Voron Red,1.75mm / 1kg / Voron Red,Polymaker,29.99,1350,,1.75mm,1kg
+Polymaker ABS Pro,Polymaker Teal,1.75mm / 1kg / Polymaker Teal,Polymaker,24.99,1350,,1.75mm,1kg
+Polymaker ABS Pro,Yellow,1.75mm / 1kg / Yellow,Polymaker,24.99,1350,,1.75mm,1kg
+Polymaker ABS Pro,Orange,1.75mm / 1kg / Orange,Polymaker,24.99,1350,,1.75mm,1kg
+Polymaker ABS Pro,Galaxy Black,1.75mm / 1kg / Galaxy Black,Polymaker,29.99,1350,,1.75mm,1kg
+Polymaker ABS Pro,Galaxy Dark Grey,1.75mm / 1kg / Galaxy Dark Grey,Polymaker,29.99,1350,,1.75mm,1kg
+Polymaker ABS Pro,Fire,1.75mm / 1kg / Fire,Polymaker,29.99,1350,,1.75mm,1kg
+Polymaker ABS Pro,Ice,1.75mm / 1kg / Ice,Polymaker,29.99,1350,,1.75mm,1kg
+Polymaker ASA,Black,1.75mm / 1kg / Black,Polymaker,25.99,1350,,1.75mm,1kg
+Polymaker ASA,Jet Black,1.75mm / 1kg / Jet Black,Polymaker,25.99,1350,,1.75mm,1kg
+Polymaker ASA,White,1.75mm / 1kg / White,Polymaker,25.99,1350,,1.75mm,1kg
+Polymaker ASA,Grey,1.75mm / 1kg / Grey,Polymaker,26.99,1350,,1.75mm,1kg
+Polymaker ASA,Blue,1.75mm / 1kg / Blue,Polymaker,26.99,1350,,1.75mm,1kg
+Polymaker ASA,Red,1.75mm / 1kg / Red,Polymaker,26.99,1350,,1.75mm,1kg
+Polymaker ASA,Green,1.75mm / 1kg / Green,Polymaker,26.99,1350,,1.75mm,1kg
+Polymaker ASA,Orange,1.75mm / 1kg / Orange,Polymaker,26.99,1350,,1.75mm,1kg
+Polymaker ASA,Yellow,1.75mm / 1kg / Yellow,Polymaker,26.99,1350,,1.75mm,1kg
+Polymaker ASA,Purple,1.75mm / 1kg / Purple,Polymaker,26.99,1350,,1.75mm,1kg
+Polymaker ASA,Polymaker Teal,1.75mm / 1kg / Polymaker Teal,Polymaker,26.99,1350,,1.75mm,1kg
+Polymaker ASA,Natural,1.75mm / 1kg / Natural,Polymaker,26.99,1350,,1.75mm,1kg
+Polymaker ASA,Army Green,1.75mm / 1kg / Army Green,Polymaker,26.99,1350,,1.75mm,1kg
+Polymaker ASA,Army Brown,1.75mm / 1kg / Army Brown,Polymaker,26.99,1350,,1.75mm,1kg
+Polymaker ASA,Dark Grey,1.75mm / 1kg / Dark Grey,Polymaker,26.99,1350,,1.75mm,1kg
+Polymaker ASA,Pop Blue,1.75mm / 1kg / Pop Blue,Polymaker,26.99,1350,,1.75mm,1kg
+Polymaker ASA,Pop Pink,1.75mm / 1kg / Pop Pink,Polymaker,26.99,1350,,1.75mm,1kg
+Polymaker ASA,Pop Green,1.75mm / 1kg / Pop Green,Polymaker,26.99,1350,,1.75mm,1kg
+Polymaker ASA,Dark Purple,1.75mm / 1kg / Dark Purple,Polymaker,26.99,1350,,1.75mm,1kg
+Polymaker ASA,Dark Gray Green,1.75mm / 1kg / Dark Gray Green,Polymaker,26.99,1350,,1.75mm,1kg
+Polymaker ASA,Olive Brown,1.75mm / 1kg / Olive Brown,Polymaker,26.99,1350,,1.75mm,1kg
+Polymaker Galaxy ASA,Galaxy Black,1.75mm / 1kg / Galaxy Black,Polymaker,29.99,1350,,1.75mm,1kg
+Polymaker Galaxy ASA,Galaxy Blue,1.75mm / 1kg / Galaxy Blue,Polymaker,29.99,1350,,1.75mm,1kg
+Polymaker Galaxy ASA,Galaxy Red,1.75mm / 1kg / Galaxy Red,Polymaker,29.99,1350,,1.75mm,1kg
+Polymaker Galaxy ASA,Galaxy Green,1.75mm / 1kg / Galaxy Green,Polymaker,29.99,1350,,1.75mm,1kg
+Polymaker HT-PLA,Black,1.75mm / 1kg / Black,Polymaker,24.99,1350,,1.75mm,1kg
+Polymaker HT-PLA,White,1.75mm / 1kg / White,Polymaker,24.99,1350,,1.75mm,1kg
+Polymaker HT-PLA,Grey,1.75mm / 1kg / Grey,Polymaker,24.99,1350,,1.75mm,1kg
+Polymaker HT-PLA,Blue,1.75mm / 1kg / Blue,Polymaker,24.99,1350,,1.75mm,1kg
+Polymaker HT-PLA,Red,1.75mm / 1kg / Red,Polymaker,24.99,1350,,1.75mm,1kg
+Polymaker HT-PLA,Green,1.75mm / 1kg / Green,Polymaker,24.99,1350,,1.75mm,1kg
+Polymaker HT-PLA,Yellow,1.75mm / 1kg / Yellow,Polymaker,24.99,1350,,1.75mm,1kg
+Polymaker HT-PLA,Orange,1.75mm / 1kg / Orange,Polymaker,24.99,1350,,1.75mm,1kg
+Polymaker HT-PLA,Brown,1.75mm / 1kg / Brown,Polymaker,24.99,1350,,1.75mm,1kg
+Polymaker HT-PLA,Teal,1.75mm / 1kg / Teal,Polymaker,24.99,1350,,1.75mm,1kg
+Polymaker HT-PLA,Gradient Rainbow,1.75mm / 1kg / Gradient Rainbow,Polymaker,29.99,1350,,1.75mm,1kg
+Polymaker HT-PLA,Gradient Tropical,1.75mm / 1kg / Gradient Tropical,Polymaker,29.99,1350,,1.75mm,1kg
+Polymaker HT-PLA,Gradient Ice,1.75mm / 1kg / Gradient Ice,Polymaker,29.99,1350,,1.75mm,1kg
+Polymaker HT-PLA,Gradient Fire,1.75mm / 1kg / Gradient Fire,Polymaker,29.99,1350,,1.75mm,1kg
+Polymaker HT-PLA-GF,Black,1.75mm / 1kg / Black,Polymaker,29.99,1350,,1.75mm,1kg
+Polymaker HT-PLA-GF,White,1.75mm / 1kg / White,Polymaker,29.99,1350,,1.75mm,1kg
+Polymaker HT-PLA-GF,Grey,1.75mm / 1kg / Grey,Polymaker,29.99,1350,,1.75mm,1kg
+Polymaker HT-PLA-GF,Blue,1.75mm / 1kg / Blue,Polymaker,29.99,1350,,1.75mm,1kg
+Polymaker HT-PLA-GF,Army Green,1.75mm / 1kg / Army Green,Polymaker,29.99,1350,,1.75mm,1kg
+Polymaker HT-PLA-GF,Power Tool Yellow,1.75mm / 1kg / Power Tool Yellow,Polymaker,29.99,1350,,1.75mm,1kg
+Polymaker HT-PLA-GF,Power Tool Red,1.75mm / 1kg / Power Tool Red,Polymaker,29.99,1350,,1.75mm,1kg
+Polymaker HT-PLA-GF,Power Tool Green,1.75mm / 1kg / Power Tool Green,Polymaker,29.99,1350,,1.75mm,1kg
+Polymaker HT-PLA-GF,Power Tool Teal,1.75mm / 1kg / Power Tool Teal,Polymaker,29.99,1350,,1.75mm,1kg
+Polymaker PETG,Army Brown,1.75mm / 1kg / Army Brown,Polymaker,19.99,1350,,1.75mm,1kg
+Polymaker PETG,Galaxy Black,1.75mm / 1kg / Galaxy Black,Polymaker,24.99,1350,,1.75mm,1kg
+Polymaker PETG,Galaxy Dark Grey,1.75mm / 1kg / Galaxy Dark Grey,Polymaker,24.99,1350,,1.75mm,1kg
+Polymaker PETG,Galaxy Blue,1.75mm / 1kg / Galaxy Blue,Polymaker,24.99,1350,,1.75mm,1kg
+Polymaker PETG,Galaxy Red,1.75mm / 1kg / Galaxy Red,Polymaker,24.99,1350,,1.75mm,1kg
+Polymaker PLA Pro,Black,1.75mm / 1kg / Black,Polymaker,23.99,1350,,1.75mm,1kg
+Polymaker PLA Pro,White,1.75mm / 1kg / White,Polymaker,23.99,1350,,1.75mm,1kg
+Polymaker PLA Pro,Red,1.75mm / 1kg / Red,Polymaker,24.99,1350,,1.75mm,1kg
+Polymaker PLA Pro,Blue,1.75mm / 1kg / Blue,Polymaker,24.99,1350,,1.75mm,1kg
+Polymaker PLA Pro,Grey,1.75mm / 1kg / Grey,Polymaker,24.99,1350,,1.75mm,1kg
+Polymaker PLA Pro,Yellow,1.75mm / 1kg / Yellow,Polymaker,24.99,1350,,1.75mm,1kg
+Polymaker PLA Pro,Orange,1.75mm / 1kg / Orange,Polymaker,24.99,1350,,1.75mm,1kg
+Polymaker PLA Pro,Purple,1.75mm / 1kg / Purple,Polymaker,24.98,1350,,1.75mm,1kg
+Polymaker PLA Pro,Polymaker Teal,1.75mm / 1kg / Polymaker Teal,Polymaker,24.99,1350,,1.75mm,1kg
+Polymaker PLA Pro,Green,1.75mm / 1kg / Green,Polymaker,24.99,1350,,1.75mm,1kg
+Polymaker PLA Pro,Army Beige,1.75mm / 1kg / Army Beige,Polymaker,24.99,1350,,1.75mm,1kg
+Polymaker PLA Pro,Army Green,1.75mm / 1kg / Army Green,Polymaker,24.99,1350,,1.75mm,1kg
+Polymaker PLA Pro,Blue-Green,1.75mm / 1kg / Blue-Green,Polymaker,24.99,1350,,1.75mm,1kg
+Polymaker PLA Pro,Brown,1.75mm / 1kg / Brown,Polymaker,24.99,1350,,1.75mm,1kg
+Polymaker PLA Pro,Cold White,1.75mm / 1kg / Cold White,Polymaker,24.98,1350,,1.75mm,1kg
+Polymaker PLA Pro,Dark Grey,1.75mm / 1kg / Dark Grey,Polymaker,24.99,1350,,1.75mm,1kg
+Polymaker PLA Pro,Dark Purple,1.75mm / 1kg / Dark Purple,Polymaker,24.99,1350,,1.75mm,1kg
+Polymaker PLA Pro,Light Blue,1.75mm / 1kg / Light Blue,Polymaker,24.98,1350,,1.75mm,1kg
+Polymaker PLA Pro,Light Green,1.75mm / 1kg / Light Green,Polymaker,24.98,1350,,1.75mm,1kg
+Polymaker PLA Pro,Light Red,1.75mm / 1kg / Light Red,Polymaker,24.98,1350,,1.75mm,1kg
+Polymaker PLA Pro,Light Yellow,1.75mm / 1kg / Light Yellow,Polymaker,24.98,1350,,1.75mm,1kg
+Polymaker PLA Pro,Magenta,1.75mm / 1kg / Magenta,Polymaker,24.99,1350,,1.75mm,1kg
+Polymaker PLA Pro,Pink,1.75mm / 1kg / Pink,Polymaker,24.99,1350,,1.75mm,1kg
+Polymaker PLA Pro,Metallic Bronze,1.75mm / 1kg / Metallic Bronze,Polymaker,26.98,1350,,1.75mm,1kg
+Polymaker PLA Pro,Metallic Gold,1.75mm / 1kg / Metallic Gold,Polymaker,26.98,1350,,1.75mm,1kg
+Polymaker PLA Pro,Metallic Silver,1.75mm / 1kg / Metallic Silver,Polymaker,26.98,1350,,1.75mm,1kg
+Polymaker PLA Pro,Metallic Black,1.75mm / 1kg / Metallic Black,Polymaker,26.98,1350,,1.75mm,1kg
+Polymaker PLA Pro,Metallic Blue,1.75mm / 1kg / Metallic Blue,Polymaker,26.98,1350,,1.75mm,1kg
+Polymaker PLA Pro,Metallic Chrome,1.75mm / 1kg / Metallic Chrome,Polymaker,26.98,1350,,1.75mm,1kg
+Polymaker PLA Pro,Metallic Green,1.75mm / 1kg / Metallic Green,Polymaker,26.99,1350,,1.75mm,1kg
+Polymaker PLA Pro,Metallic Plum,1.75mm / 1kg / Metallic Plum,Polymaker,26.99,1350,,1.75mm,1kg
+Polymaker PLA Pro,Metallic Dark Red,1.75mm / 1kg / Metallic Dark Red,Polymaker,26.98,1350,,1.75mm,1kg
 PolyMax PC,Black,1.75mm / 0.75kg / Black,Polymaker,38.99,1090,,1.75mm,0.75kg
 PolyMax PC,White,1.75mm / 0.75kg / White,Polymaker,38.99,1090,,1.75mm,0.75kg
 PolyMax PC,Grey,1.75mm / 0.75kg / Grey,Polymaker,38.99,1090,,1.75mm,0.75kg
@@ -336,21 +404,12 @@ PolySmooth,Polymaker Teal,1.75mm / 0.75kg / Polymaker Teal,Polymaker,36.99,1090,
 PolySmooth,Pink,1.75mm / 0.75kg / Pink,Polymaker,36.99,1090,,1.75mm,0.75kg
 PolySmooth,Beige,1.75mm / 0.75kg / Beige,Polymaker,36.99,1090,,1.75mm,0.75kg
 PolySmooth,Transparent,1.75mm / 0.75kg / Transparent,Polymaker,36.99,1090,,1.75mm,0.75kg
-PolySonic PLA,Black,1.75mm / 1kg / Black,Polymaker,24.99,1350,,1.75mm,1kg
-PolySonic PLA,White,1.75mm / 1kg / White,Polymaker,24.99,1350,,1.75mm,1kg
-PolySonic PLA,Grey,1.75mm / 1kg / Grey,Polymaker,24.99,1350,,1.75mm,1kg
-PolySonic PLA,Red,1.75mm / 1kg / Red,Polymaker,24.99,1350,,1.75mm,1kg
-PolySonic PLA,Blue,1.75mm / 1kg / Blue,Polymaker,24.99,1350,,1.75mm,1kg
-PolySonic PLA,Yellow,1.75mm / 1kg / Yellow,Polymaker,24.99,1350,,1.75mm,1kg
-PolySonic PLA,Green,1.75mm / 1kg / Green,Polymaker,24.99,1350,,1.75mm,1kg
-PolySonic PLA,Orange,1.75mm / 1kg / Orange,Polymaker,24.99,1350,,1.75mm,1kg
-PolySonic PLA,Purple,1.75mm / 1kg / Purple,Polymaker,24.99,1350,,1.75mm,1kg
-PolySonic PLA Pro,Black,1.75mm / 1kg / Black,Polymaker,29.99,1350,,1.75mm,1kg
-PolySonic PLA Pro,White,1.75mm / 1kg / White,Polymaker,29.99,1350,,1.75mm,1kg
-PolySonic PLA Pro,Red,1.75mm / 1kg / Red,Polymaker,29.99,1350,,1.75mm,1kg
-PolySonic PLA Pro,Blue,1.75mm / 1kg / Blue,Polymaker,29.99,1350,,1.75mm,1kg
-PolySonic PLA Pro,Grey,1.75mm / 1kg / Grey,Polymaker,29.99,1350,,1.75mm,1kg
-PolySonic PLA Pro,Yellow,1.75mm / 1kg / Yellow,Polymaker,29.99,1350,,1.75mm,1kg
-PolySonic PLA Pro,Orange,1.75mm / 1kg / Orange,Polymaker,29.99,1350,,1.75mm,1kg
-PolySonic PLA Pro,Purple,1.75mm / 1kg / Purple,Polymaker,29.99,1350,,1.75mm,1kg
-PolySonic PLA Pro,Green,1.75mm / 1kg / Green,Polymaker,29.99,1350,,1.75mm,1kg
+PolySonic PLA,Black,1.75mm / 1kg / Black,Polymaker,19.99,1350,,1.75mm,1kg
+PolySonic PLA,White,1.75mm / 1kg / White,Polymaker,19.99,1350,,1.75mm,1kg
+PolySonic PLA,Grey,1.75mm / 1kg / Grey,Polymaker,19.99,1350,,1.75mm,1kg
+PolySonic PLA,Red,1.75mm / 1kg / Red,Polymaker,19.99,1350,,1.75mm,1kg
+PolySonic PLA,Blue,1.75mm / 1kg / Blue,Polymaker,19.99,1350,,1.75mm,1kg
+PolySonic PLA,Yellow,1.75mm / 1kg / Yellow,Polymaker,19.99,1350,,1.75mm,1kg
+PolySonic PLA,Green,1.75mm / 1kg / Green,Polymaker,19.99,1350,,1.75mm,1kg
+PolySonic PLA,Orange,1.75mm / 1kg / Orange,Polymaker,19.99,1350,,1.75mm,1kg
+PolySonic PLA,Purple,1.75mm / 1kg / Purple,Polymaker,19.98,1350,,1.75mm,1kg
