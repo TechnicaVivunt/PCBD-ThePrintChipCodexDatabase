@@ -93,3 +93,4 @@ jobs:
           branch: 3dfp-sync-update
           base: main
           delete-branch: true
+          labels: auto-merge

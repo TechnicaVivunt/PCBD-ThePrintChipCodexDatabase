@@ -93,6 +93,10 @@ straight to `main` when present, separately from that check, so a
 partial run that found nothing new yet never opens an empty PR — it
 just quietly saves its progress for next time.
 
+PRs are opened with the `auto-merge` label and merged automatically by
+`.github/workflows/auto_merge.yml` — no manual review step for routine
+data updates.
+
 ## Row shape (for reference / if you ever add another source)
 ```python
 {
