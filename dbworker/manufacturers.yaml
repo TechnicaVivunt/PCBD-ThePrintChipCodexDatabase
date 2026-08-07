@@ -1,0 +1,108 @@
+# Registry of all Shopify-backed manufacturers scraped through the shared
+# engine (shopify_engine.py + parsers.py). Add a new brand by adding an
+# entry here + a parser function -- no new script, no new workflow needed.
+#
+# manufacturer_name must match the keys used in update_master.py's
+# manufacturer_ids / manufacturer_map so new rows get the right PCDB code.
+
+polymaker:
+  base_url: "https://us.polymaker.com/collections/all/products.json"
+  output_file: "dbworker/polymaker_filament_index.csv"
+  exclude_file: "exclude_list/exclude_list_polymaker.csv"
+  manufacturer_name: "Polymaker"
+  fieldnames:
+    - brand_name
+    - color_name
+    - variant_title
+    - vendor
+    - price
+    - grams
+    - inventory_quantity
+    - option1
+    - option2
+    - product_url
+
+hatchbox:
+  base_url: "https://www.hatchbox3d.com/collections/shop-all/products.json"
+  output_file: "dbworker/hatchbox_filament_index.csv"
+  exclude_file: null
+  manufacturer_name: "HATCHBOX"
+  fieldnames:
+    - Title
+    - Vendor
+    - Product Type
+    - Variant Title
+    - Price
+    - SKU
+    - Available
+    - brand_name
+    - color_name
+    - product_url
+
+voxelpla:
+  base_url: "https://voxelpla.com/collections/all/products.json"
+  output_file: "dbworker/voxel_filament_index.csv"
+  exclude_file: null
+  manufacturer_name: "VOXELPLA"
+  fieldnames:
+    - brand_name
+    - color_name
+    - diameter
+    - weight
+    - material
+    - price
+    - product_url
+
+overture:
+  base_url: "https://overture3d.com/collections/all-filaments/products.json"
+  output_file: "dbworker/overture_filament_index.csv"
+  exclude_file: null
+  manufacturer_name: "Overture"
+  fieldnames:
+    - Product
+    - Variant
+    - SKU
+    - Price
+    - Available
+    - Color
+    - URL
+    - brand_name
+    - color_name
+
+coex3d:
+  base_url: "https://coex3d.com/collections/all/products.json"
+  output_file: "dbworker/coex3d_filament_index.csv"
+  exclude_file: null
+  manufacturer_name: "Coex3D"
+  fieldnames:
+    - brand_name
+    - color_name
+    - vendor
+    - variant_title
+    - price
+    - sku
+    - available
+    - product_url
+
+bambu:
+  # Bambu's official storefront domain first, falling back to the
+  # underlying *.myshopify.com domain if the custom domain ever blocks
+  # or rate-limits plain scraper traffic. Both serve the same Shopify
+  # backend/catalog, so either produces identical data.
+  base_url:
+    - "https://us.store.bambulab.com/collections/bambu-lab-3d-printer-filament/products.json"
+    - "https://bambulab-us.myshopify.com/collections/bambu-lab-3d-printer-filament/products.json"
+  output_file: "dbworker/bambu_filament_index.csv"
+  exclude_file: null
+  manufacturer_name: "Bambu Lab"
+  fieldnames:
+    - brand_name
+    - variant_title
+    - color_name
+    - bambu_color_code
+    - filament_format
+    - weight
+    - price
+    - sku
+    - available
+    - product_url
