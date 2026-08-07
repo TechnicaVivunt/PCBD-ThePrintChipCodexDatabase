@@ -1,148 +1,80 @@
-# Print Chip Codex Database (PCDB)
+# PCDB v2 pipeline — exclusively sourced from 3DFilamentProfiles
 
-The **Print Chip Codex Database (PCDB)** is a universal filament lookup system designed as a companion to the existing [Print Chip Codex (PCX)](https://www.printables.com/refresh?redirectUrl=%2F%40JamesThePrint_699540) maintained by James@ThePrintCodex.  
+## What's here and tested
+- `dbworker/manufacturer_registry.py` — append-only manufacturer code
+  registry. First run seeds codes alphabetically; every run after that
+  only ever *appends* new brands at the next free code. Existing codes
+  never change, so anything already printed on a label stays valid.
+- `dbworker/product_id.py` — generates `PCDB-<mfg>-<seq>-<material>`
+  IDs exactly per the original scheme, using OpenPrintTag's material
+  codes (fetched live).
+- `dbworker/writers.py` — writes two files:
+  - `PCDB-Database.csv` — the full rich record (material, material
+    type, RGB hex, SKU/UPC, and the 3DFilamentProfiles cross-reference
+    ID/URL).
+  - `PCDB-PTouch-Import.csv` — **exactly** the 4 columns the PCX Color
+    Chip's Brother P-Touch template expects, in that order:
+    `Manufacturer, Brand Name, Color Name, ID number`.
+- `dbworker/build_pipeline.py` — orchestrates the above from a list of
+  raw row-dicts (see its docstring for the exact shape).
+- `dbworker/source_3dfp.py` — the real data source. A plain
+  `GET /filaments/{brand-slug}` on 3dfilamentprofiles.com returns raw
+  HTML that embeds that brand's **complete** filament list as a plain
+  JSON array, server-rendered directly into the page (a Next.js
+  streamed script chunk) — no JS execution, no pagination within a
+  brand, no Selenium. `discover_brand_slugs()` pulls the full
+  ~1,103-brand slug list the same way, from `/filaments`'s embedded
+  `options.brands` array. Both extraction functions are tested against
+  real objects copied out of actual page source (the `rgb`/
+  `measured_rgb` fallback and comma-joined SKU cases included).
+- `dbworker/run_full_sync.py` — the full-run entrypoint. Checkpoints
+  progress to `dbworker/.sync_checkpoint.jsonl` as each brand
+  finishes. If some brands fail, it **aborts without touching
+  `PCDB-Database.csv`** and preserves the checkpoint so `--resume`
+  retries only what failed — verified against a simulated mid-run
+  failure (round 1 aborted cleanly with the checkpoint intact; round 2
+  with `--resume` skipped the completed brands and retried only the
+  failed one, then produced a correct final CSV).
+- `.github/workflows/sync_3dfp.yml` — one weekly scheduled workflow,
+  replacing the six per-manufacturer Shopify workflows from the
+  earlier version of this project. Always passes `--resume`, so a
+  checkpoint committed by a partial run gets picked back up
+  automatically the following week.
 
-This project extends the functionality of the original PCX database by supporting multiple filament types and manufacturers while maintaining compatibility with existing PCX IDs for those who have purchased/printed their own filaments.
+## Running it
+```
+python dbworker/run_full_sync.py                # fresh full run, all ~1,100 brands
+python dbworker/run_full_sync.py --resume        # continue a partial run
+python dbworker/run_full_sync.py --limit 10      # smoke-test on a few brands first
+python dbworker/run_full_sync.py --allow-partial # build CSVs even if some brands failed
+```
 
----
+**Start with `--limit 10`** and spot-check `PCDB-Database.csv` against
+a couple of known filaments (e.g. Bambu PLA Basic colors) before
+trusting a full run or turning on the scheduled workflow — I couldn't
+verify any of this against the live site myself, since
+`3dfilamentprofiles.com` isn't reachable from this sandbox. Everything
+here is tested against real page source and simulated network
+failures, not against a live end-to-end run.
 
-## Background
+## Before turning on the scheduled workflow
+Send the maintainer a quick note first. A one-off manual pull is a few
+minutes of load on a hobbyist's server; a weekly automated job hitting
+~1,100 pages is a different kind of ask, and it costs nothing to let
+them know it exists — they've shown they're responsive to this kind of
+thing. Worth asking whether they'd rather provide a bulk export at
+that point too.
 
-The original **Print Chip Codex (PCX)** is a great system, but lacks a lot of filament brands as they expand. The PCDB expands that system to include:
-
-- More Manufacturers
-- Strives to stay up to date with automated updating via various methods
-- Suffix indicating filament type for additional reference.
-
-**Key points:**
-
-- Existing PCX numbers remain unchanged.  
-- New entries include a `-1` suffix to differentiate the different filament types.  
-- The first three digits represent the **manufacturer code**.
-- The second three digits represent the number entry. This will restart for each filament type.  
-- The last digit represents the **filament type**.  
-
----
-
-## Manufacturer Mapping
-
-<!-- manufacturer-table-start -->
-| Manufacturer | Code |
-|--------------|------|
-| AmazonBasics | 7 |
-| Bambu Lab | 3 |
-| ERYONE | 10 |
-| HATCHBOX | 11 |
-| Overture | 5 |
-| Polymaker | 2 |
-| Prusa | 4 |
-| SUNLU | 9 |
-| Unknown | 999 |
-| VOXELPLA | 8 |
-| eSUN | 6 |
-<!-- manufacturer-table-end -->
-
----
-
-## Filament Type Mapping (Updated to Match OpenPrintTag's Type Codes)
-
-
-<!-- MATERIAL_CODES_START -->
-| Key | Abbreviation |
-|-----|--------------|
-| 0 | PLA |
-| 1 | PETG |
-| 2 | TPU |
-| 3 | ABS |
-| 4 | ASA |
-| 5 | PC |
-| 6 | PCTG |
-| 7 | PP |
-| 8 | PA6 |
-| 9 | PA11 |
-| 10 | PA12 |
-| 11 | PA66 |
-| 12 | CPE |
-| 13 | TPE |
-| 14 | HIPS |
-| 15 | PHA |
-| 16 | PET |
-| 17 | PEI |
-| 18 | PBT |
-| 19 | PVB |
-| 20 | PVA |
-| 21 | PEKK |
-| 22 | PEEK |
-| 23 | BVOH |
-| 24 | TPC |
-| 25 | PPS |
-| 26 | PPSU |
-| 27 | PVC |
-| 28 | PEBA |
-| 29 | PVDF |
-| 30 | PPA |
-| 31 | PCL |
-| 32 | PES |
-| 33 | PMMA |
-| 34 | POM |
-| 35 | PPE |
-| 36 | PS |
-| 37 | PSU |
-| 38 | TPI |
-| 39 | SBS |
-<!-- MATERIAL_CODES_END -->
-
-
----
-
-## Database ID Format
-
-The universal filament ID format is structured as: .csv - this is to maintain compatiblity for the Brother P-Touch software. 
-
-**Components explained:**
-
-| Segment                  | Example | Meaning |
-|--------------------------|---------|---------|
-| `PCDB`                   | PCDB    | Prefix indicating Print Chip Database |
-| `<manufacturer_code>`     | 005     | Manufacturer code (Overture in this case) |
-| `<PCX_number>`            | 001     | Original PCX number for the filament |
-| `<filament_type_number>`  | 4       | Filament type (ASA) |
-
-**Example:**
-PCDB-005-001-4
-
-^ This would be the first ASA entry for Overture's filament.
-
-## References
-
-- [The Print Codex](https://theprintcodex.com/)
-- [Original Print Chip Codex by James@ThePrintCodex](https://www.printables.com/refresh?redirectUrl=%2F%40JamesThePrint_699540)
-- [OpenPrintTag Standards](https://specs.openprinttag.org/#/material_types)  
-
-## Roadmap
-
-Currently - this is mostly being updated manually - I have a few prototyped scripts to manually pull the filament options/colors/variations from different manufacturer websites. The end goal will be to create some workflow/actions to periodically pull the data and have this repository automatically update anytime new filaments are found on the popular manufacturers.
-
-Automated Updates for Filaments for the following manufacturers as of writing:
-
-| Brand      | Status/Notes                                      |
-|------------|---------------------------------------------------|
-| PolyMaker  | Complete                                          |
-| BambuLab   | Complete                                          |
-| Prusa      | Complete           |
-| VOXELPLA   | Complete                                          |
-| HATCHBOX   | Complete                                          |
-
-Future filament manufacturers will be added soon - you can keep track of my progress on manufacturers on the Project board: 
-[Project Roadmap](https://github.com/users/TechnicaVivunt/projects/5)
-
-If you don't see a filament brand that you'd like to see - Raise an issue here:
-[Filament Manufacter Additions List](https://github.com/TechnicaVivunt/PCBD-ThePrintChipCodexDatabase/issues?q=is%3Aissue%20state%3Aopen%20label%3A%22Manufacturer%20Addition%22)
-
-
-## Additional Notes
-
-I am open to adding additional manufacturers as well so long as they at least have their own websites (scraping popular ecommerce like amazon can be messy). Shopify based retailers tend to be the easiest to work with based on their structure, custom sites tend to take more effort.
-This is mostly a hobby project - so updates may be erradic. I'm also using this as a jumping off point to learning github - so PRs and commits may be a little messy. If I get to the point to where I can consistently pull from a fair few manufacturers and get adequate comparisons in python - I will split off between dev and stable branches to ensure entries aren't incidentally removed/changed.
-
-As this is a redux of sorts of the PCX database - if the PCX db ever gets updated (shows last updated some time in 2024) - then the cross compatibility of this database will get a bit muddy. In the interest of maintaining the current numbers in this DB. The PCDB's entries will NOT be modifed to change any updates made to PCX simply to avoid having to reprint any labels or to comprimise the lookup system. If you've made it this far. Thanks for checking out the project!
+## Row shape (for reference / if you ever add another source)
+```python
+{
+    "manufacturer_name": "Bambu Lab",   # required — 3DFP's "Brand" column
+    "material": "PLA",                  # required — must be an OpenPrintTag abbreviation
+    "color_name": "Jade White",         # required
+    "material_type": "Basic",           # optional — 3DFP's "Type" column
+    "rgb_hex": "#FFFFFF",               # optional
+    "sku": "...", "upc": "...",         # optional
+    "tdfp_id": "101",                   # optional — their internal ID, for cross-reference
+    "tdfp_url": "https://3dfilamentprofiles.com/filament/details/101",
+}
+```
