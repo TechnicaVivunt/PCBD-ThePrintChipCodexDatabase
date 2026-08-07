@@ -1,6 +1,12 @@
-# PCDB v2 pipeline — exclusively sourced from 3DFilamentProfiles
+# PCDB v2 pipeline — sourced from 3DFilamentProfiles
 
-## What's here and tested
+## Status: working, verified against the live site
+Confirmed pulling correct data from the live site: 1,103 brand slugs
+discovered, real per-brand filament rows extracted (e.g. 325 filaments
+for Bambu Lab with real colors like `Jade White (10100)`, correct
+SKUs/UPCs, and RGB hex codes).
+
+## What's here
 - `dbworker/manufacturer_registry.py` — append-only manufacturer code
   registry. First run seeds codes alphabetically; every run after that
   only ever *appends* new brands at the next free code. Existing codes
@@ -17,31 +23,51 @@
     `Manufacturer, Brand Name, Color Name, ID number`.
 - `dbworker/build_pipeline.py` — orchestrates the above from a list of
   raw row-dicts (see its docstring for the exact shape).
-- `dbworker/source_3dfp.py` — the real data source. A plain
-  `GET /filaments/{brand-slug}` on 3dfilamentprofiles.com returns raw
-  HTML that embeds that brand's **complete** filament list as a plain
-  JSON array, server-rendered directly into the page (a Next.js
-  streamed script chunk) — no JS execution, no pagination within a
-  brand, no Selenium. `discover_brand_slugs()` pulls the full
-  ~1,103-brand slug list the same way, from `/filaments`'s embedded
-  `options.brands` array. Both extraction functions are tested against
-  real objects copied out of actual page source (the `rgb`/
-  `measured_rgb` fallback and comma-joined SKU cases included).
+- `dbworker/source_3dfp.py` — the data source. See "How the data is
+  fetched" below.
 - `dbworker/run_full_sync.py` — the full-run entrypoint. Checkpoints
-  progress to `dbworker/.sync_checkpoint.jsonl` as each brand
-  finishes. If some brands fail, it **aborts without touching
-  `PCDB-Database.csv`** and preserves the checkpoint so `--resume`
-  retries only what failed — verified against a simulated mid-run
-  failure (round 1 aborted cleanly with the checkpoint intact; round 2
-  with `--resume` skipped the completed brands and retried only the
-  failed one, then produced a correct final CSV).
-- `.github/workflows/sync_3dfp.yml` — one weekly scheduled workflow,
-  replacing the six per-manufacturer Shopify workflows from the
-  earlier version of this project. Always passes `--resume`, so a
-  checkpoint committed by a partial run gets picked back up
-  automatically the following week.
+  progress to `dbworker/.sync_checkpoint.jsonl` as each brand finishes.
+  If some brands fail, it aborts without touching `PCDB-Database.csv`
+  and preserves the checkpoint so `--resume` retries only what failed.
+- `dbworker/debug_fetch.py` — diagnostic script; fetches a couple of
+  live pages and reports on the embedded data structure. Useful if the
+  site's structure ever changes and extraction breaks.
+- `.github/workflows/sync_3dfp.yml` — scheduled sync workflow, see
+  below.
 
-## Running it
+## How the data is fetched
+A plain `GET /filaments/{brand-slug}` on 3dfilamentprofiles.com
+returns raw HTML that embeds that brand's **complete** filament list
+directly in the page — no client-side JS, no pagination within a
+brand, no browser automation. `discover_brand_slugs()` pulls the full
+~1,103-brand slug list the same way from `/filaments`.
+
+The data is embedded as a Next.js "Flight" stream chunk:
+
+```
+self.__next_f.push([1, "16:[\"$\",...,{\"options\":{\"brands\":[...]}}]"])
+```
+
+`push()`'s argument is itself valid JSON: `[chunk_id, chunk_string]`.
+`chunk_string`'s own content is JSON too (e.g. `"rows":[...]`), but
+with every quote backslash-escaped, since it's nested inside an outer
+JSON string. `source_3dfp.py` decodes `push()`'s argument as JSON and
+lets the decoder handle the unescaping, then regexes the now-plain
+`"rows":[...]` / `"brands":[...]` blob out of the result.
+
+Two things worth knowing if you're maintaining this:
+- **Headers matter.** An unrecognized custom User-Agent triggers an
+  immediate 429 (this site's hosting has its own bot-management layer)
+  before request frequency is even a factor. `source_3dfp.py` sends
+  ordinary browser headers instead.
+- **Most of the 1,103 brands have very few filaments.** A lot of the
+  alphabetically-clustered "3D-something" names early in a run (3D
+  Aura, 3D Best, 3D Club, etc.) are real, distinct catalog entries,
+  just sparsely filled in — not a scraper bug. Possible optimization:
+  skip brands with `popularity: 0` in the discovery step, since that's
+  known upfront without fetching each brand's page.
+
+## Running it locally
 ```
 python dbworker/run_full_sync.py                # fresh full run, all ~1,100 brands
 python dbworker/run_full_sync.py --resume        # continue a partial run
@@ -49,21 +75,23 @@ python dbworker/run_full_sync.py --limit 10      # smoke-test on a few brands fi
 python dbworker/run_full_sync.py --allow-partial # build CSVs even if some brands failed
 ```
 
-**Start with `--limit 10`** and spot-check `PCDB-Database.csv` against
-a couple of known filaments (e.g. Bambu PLA Basic colors) before
-trusting a full run or turning on the scheduled workflow — I couldn't
-verify any of this against the live site myself, since
-`3dfilamentprofiles.com` isn't reachable from this sandbox. Everything
-here is tested against real page source and simulated network
-failures, not against a live end-to-end run.
+If extraction ever silently returns 0 rows/brands (e.g. after a site
+redesign), run `dbworker/debug_fetch.py` first — it saves raw page
+HTML and reports where the expected keys do/don't show up.
 
-## Before turning on the scheduled workflow
-Send the maintainer a quick note first. A one-off manual pull is a few
-minutes of load on a hobbyist's server; a weekly automated job hitting
-~1,100 pages is a different kind of ask, and it costs nothing to let
-them know it exists — they've shown they're responsive to this kind of
-thing. Worth asking whether they'd rather provide a bulk export at
-that point too.
+## Scheduled sync (`.github/workflows/sync_3dfp.yml`)
+Runs weekly (and on-demand via `workflow_dispatch`, optionally limited
+to the first N brands for testing). Always passes `--resume`, so a
+checkpoint left by a partial run gets picked back up automatically on
+the next scheduled run.
+
+**A pull request only opens when actual filament records change** —
+`PCDB-Database.csv`, `PCDB-PTouch-Import.csv`, or
+`registry/manufacturers.csv`. Checkpoint bookkeeping
+(`.sync_checkpoint.jsonl`, `.sync_done_brands.txt`) is committed
+straight to `main` when present, separately from that check, so a
+partial run that found nothing new yet never opens an empty PR — it
+just quietly saves its progress for next time.
 
 ## Row shape (for reference / if you ever add another source)
 ```python
