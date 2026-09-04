@@ -18,6 +18,13 @@ Two files come out of every pipeline run:
 import csv
 import os
 
+# Anchored to the repo root regardless of the caller's working directory
+# -- see manufacturer_registry.py for why this matters (a script run
+# from inside dbworker/ previously wrote output one directory too deep).
+_REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+DEFAULT_MASTER_PATH = os.path.join(_REPO_ROOT, "PCDB-Database.csv")
+DEFAULT_PTOUCH_PATH = os.path.join(_REPO_ROOT, "PCDB-PTouch-Import.csv")
+
 MASTER_FIELDNAMES = [
     "product_id",
     "manufacturer_name",
@@ -44,7 +51,8 @@ MASTER_FIELDNAMES = [
 PTOUCH_FIELDNAMES = ["manufacturer_name", "brand_name", "color_name", "product_id"]
 
 
-def write_master_csv(rows, path="PCDB-Database.csv"):
+def write_master_csv(rows, path=None):
+    path = path or DEFAULT_MASTER_PATH
     os.makedirs(os.path.dirname(path) or ".", exist_ok=True)
     with open(path, "w", newline="", encoding="utf-8-sig") as f:
         writer = csv.DictWriter(f, fieldnames=MASTER_FIELDNAMES, extrasaction="ignore")
@@ -53,10 +61,11 @@ def write_master_csv(rows, path="PCDB-Database.csv"):
     print(f"[master] wrote {len(rows)} rows -> {path}")
 
 
-def write_ptouch_csv(rows, path="PCDB-PTouch-Import.csv"):
+def write_ptouch_csv(rows, path=None):
     """Column order matters here -- P-Touch maps fields positionally
     (left to right: Manufacturer, Brand Name, Color Name, ID number)
     per the PCX Color Chip template instructions."""
+    path = path or DEFAULT_PTOUCH_PATH
     os.makedirs(os.path.dirname(path) or ".", exist_ok=True)
     with open(path, "w", newline="", encoding="utf-8-sig") as f:
         writer = csv.writer(f)

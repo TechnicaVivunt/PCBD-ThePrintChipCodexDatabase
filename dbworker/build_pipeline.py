@@ -38,7 +38,11 @@ def _synthesize_brand_name(material, material_type):
     return material or "Unknown"
 
 
-def run_pipeline(raw_rows, master_path="PCDB-Database.csv", ptouch_path="PCDB-PTouch-Import.csv"):
+def run_pipeline(raw_rows, master_path=None, ptouch_path=None):
+    """master_path/ptouch_path default to writers.py's repo-root-anchored
+    paths -- pass None (the default) rather than a bare relative string
+    like "PCDB-Database.csv" unless you specifically want output relative
+    to the current working directory."""
     raw_rows = list(raw_rows)
     if not raw_rows:
         print("No rows to process.")
@@ -79,7 +83,7 @@ def run_pipeline(raw_rows, master_path="PCDB-Database.csv", ptouch_path="PCDB-PT
         material = row.get("material", "").strip()
 
         mfg_code = mfg_codes[manufacturer]
-        product_id = id_gen.next_id(mfg_code, material)
+        product_id = id_gen.next_id(mfg_code, material, lookup_id=row.get("tdfp_id", ""))
         brand_name = _synthesize_brand_name(material, row.get("material_type", ""))
 
         output_rows.append({

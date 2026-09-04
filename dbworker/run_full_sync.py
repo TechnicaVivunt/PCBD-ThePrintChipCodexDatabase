@@ -23,8 +23,8 @@ import sys
 from source_3dfp import discover_brand_slugs, fetch_brand_rows, make_session
 from build_pipeline import run_pipeline
 
-CHECKPOINT_PATH = "dbworker/.sync_checkpoint.jsonl"
-DONE_BRANDS_PATH = "dbworker/.sync_done_brands.txt"
+CHECKPOINT_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), ".sync_checkpoint.jsonl")
+DONE_BRANDS_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), ".sync_done_brands.txt")
 
 
 def load_checkpoint():

@@ -16,7 +16,13 @@ This intentionally does NOT re-sort or re-number on subsequent runs --
 import csv
 import os
 
-REGISTRY_PATH = "registry/manufacturers.csv"
+# Anchored to the repo root regardless of the caller's working directory
+# -- this module lives in dbworker/, so its parent is the repo root.
+# Using bare relative paths here previously meant running the script
+# from inside dbworker/ (e.g. via IDLE, whose working directory is the
+# script's own folder) silently wrote output one directory too deep.
+_REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+REGISTRY_PATH = os.path.join(_REPO_ROOT, "registry", "manufacturers.csv")
 
 
 def load_registry(path=REGISTRY_PATH):
