@@ -47,8 +47,9 @@ SKUs/UPCs, and RGB hex codes).
 - `dbworker/debug_fetch.py` — diagnostic script; fetches a couple of
   live pages and reports on the embedded data structure. Useful if the
   site's structure ever changes and extraction breaks.
-- `.github/workflows/sync_3dfp.yml` — scheduled sync workflow, see
-  below.
+- `dbworker/sync_and_publish.py` — the scheduled entrypoint. Runs the
+  full sync, then commits and pushes directly to `main` if anything
+  actually changed. See "Keeping it current automatically" below.
 
 ## How the data is fetched
 A plain `GET /filaments/{brand-slug}` on 3dfilamentprofiles.com
@@ -94,23 +95,41 @@ If extraction ever silently returns 0 rows/brands (e.g. after a site
 redesign), run `dbworker/debug_fetch.py` first — it saves raw page
 HTML and reports where the expected keys do/don't show up.
 
-## Scheduled sync (`.github/workflows/sync_3dfp.yml`)
-Runs weekly (and on-demand via `workflow_dispatch`, optionally limited
-to the first N brands for testing). Always passes `--resume`, so a
-checkpoint left by a partial run gets picked back up automatically on
-the next scheduled run.
+## Keeping it current automatically
+This deliberately does NOT run through GitHub Actions. GitHub-hosted
+runner IPs get 429'd by 3dfilamentprofiles.com's bot protection --
+confirmed via a real failed run, not a guess -- and a self-hosted
+runner fixes that but means installing and babysitting one more
+always-on service. Since a plain local run already works fine (same
+IP as everything else you run by hand), the simplest fix is to run it
+locally on a schedule instead.
 
-**A pull request only opens when actual filament records change** —
-`PCDB-Database.csv`, `PCDB-PTouch-Import.csv`, or
-`registry/manufacturers.csv`. Checkpoint bookkeeping
-(`.sync_checkpoint.jsonl`, `.sync_done_brands.txt`) is committed
-straight to `main` when present, separately from that check, so a
-partial run that found nothing new yet never opens an empty PR — it
-just quietly saves its progress for next time.
+```
+python dbworker/sync_and_publish.py                # full run, commit + push if changed
+python dbworker/sync_and_publish.py --limit 10      # smoke-test
+python dbworker/sync_and_publish.py --no-push       # commit locally, review before pushing
+```
 
-PRs are opened with the `auto-merge` label and merged automatically by
-`.github/workflows/auto_merge.yml` — no manual review step for routine
-data updates.
+It only commits when `PCDB-Database.csv`, `PCDB-PTouch-Import.csv`, or
+`registry/manufacturers.csv` actually changed -- a run that finds
+nothing new does nothing, no empty commits. Uses your existing local
+git identity and credentials, the same ones a manual `git push`
+already needs -- nothing extra to configure beyond having push access
+to the repo.
+
+**To run it on a schedule (Windows Task Scheduler):**
+1. Task Scheduler → Create Task
+2. Trigger: Weekly, whatever day/time you want
+3. Action: Start a program
+   - Program: `python` (or the full path from `where python`)
+   - Arguments: `dbworker\sync_and_publish.py`
+   - Start in: the repo's root folder (this matters -- it's how the
+     script finds its own paths)
+4. Under Conditions, uncheck "Start the task only if the computer is
+   on AC power" if this is a laptop, so it still runs on battery.
+
+The machine just needs to be on and unlocked at the scheduled time --
+no service to install, nothing else running in the background.
 
 ## Row shape (for reference / if you ever add another source)
 ```python

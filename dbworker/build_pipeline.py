@@ -26,6 +26,7 @@ a real JSON API, or a manual CSV export from the maintainer would all
 plug in here identically.
 """
 from manufacturer_registry import assign_codes
+from material_normalization import normalize_material
 from product_id import ProductIdGenerator, fetch_material_codes
 from writers import write_master_csv, write_ptouch_csv
 
@@ -80,7 +81,7 @@ def run_pipeline(raw_rows, master_path=None, ptouch_path=None):
     for row in valid_rows:
         manufacturer = row["manufacturer_name"].strip()
         color = row["color_name"].strip()
-        material = row.get("material", "").strip()
+        material = normalize_material(row.get("material", ""), row.get("material_type", ""))
 
         mfg_code = mfg_codes[manufacturer]
         product_id = id_gen.next_id(mfg_code, material, lookup_id=row.get("tdfp_id", ""))
