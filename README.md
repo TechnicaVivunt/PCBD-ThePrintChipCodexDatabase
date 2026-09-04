@@ -1,3 +1,15 @@
+# PCDB Swatch Reference DB
+
+Generates a print-ready CSV for Brother P-Touch, matching the
+[PCX Color Chip](https://www.printables.com/model/440526-pcx-color-chip)
+label format -- one label per **catalog entry** (a brand/material/color
+combination), for a physical reference drawer of filament swatches.
+
+This is the type-level reference catalog only. It has no knowledge of
+which filaments you actually own or how much of each -- for that
+(inventory tracking synced with Bambuddy, individual spool labels),
+that's a separate, not-yet-built companion project.
+
 # PCDB v2 pipeline — sourced from 3DFilamentProfiles
 
 ## Status: working, verified against the live site
@@ -11,9 +23,12 @@ SKUs/UPCs, and RGB hex codes).
   registry. First run seeds codes alphabetically; every run after that
   only ever *appends* new brands at the next free code. Existing codes
   never change, so anything already printed on a label stays valid.
-- `dbworker/product_id.py` — generates `PCDB-<mfg>-<seq>-<material>`
-  IDs exactly per the original scheme, using OpenPrintTag's material
-  codes (fetched live).
+- `dbworker/product_id.py` — generates `PCDB-<mfg>-<tdfp_id>-<material>`
+  IDs. The middle segment is 3DFilamentProfiles' own filament ID
+  (`tdfp_id`), not a self-assigned sequence -- the same number that's
+  in their QR codes (`spooldb.com/f/<id>`), so the ID printed on a
+  label is a direct, one-step lookup on their site. Falls back to an
+  auto-incremented sequence only if a row somehow lacks a tdfp_id.
 - `dbworker/writers.py` — writes two files:
   - `PCDB-Database.csv` — the full rich record (material, material
     type, RGB hex, SKU/UPC, and the 3DFilamentProfiles cross-reference

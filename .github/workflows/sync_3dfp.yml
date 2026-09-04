@@ -12,7 +12,18 @@ on:
 
 jobs:
   sync:
-    runs-on: ubuntu-latest
+    # Was ubuntu-latest (GitHub-hosted). Switched to a self-hosted runner
+    # because GitHub's shared runner IP ranges get 429'd by
+    # 3dfilamentprofiles.com's bot protection even with correct browser
+    # headers -- confirmed via a real failed run (urllib3
+    # "too many 429 error responses" on the very first request). This
+    # isn't fixable with more retries: if it's IP-reputation-based rather
+    # than about our own request rate, backoff on our end doesn't help.
+    # A self-hosted runner uses a trusted IP instead (same one manual
+    # runs already work from) -- see Settings > Actions > Runners to
+    # register one. The runner's host machine must be on and the runner
+    # service running when the weekly schedule fires.
+    runs-on: self-hosted
     permissions:
       contents: write
       pull-requests: write
@@ -26,6 +37,7 @@ jobs:
           python-version: "3.11"
 
       - name: Install dependencies
+        shell: bash
         run: pip install requests pyyaml
 
       # --resume is always passed: if dbworker/.sync_checkpoint.jsonl was
@@ -39,6 +51,7 @@ jobs:
       - name: Run full sync
         id: sync
         continue-on-error: true
+        shell: bash
         run: |
           ARGS="--delay 0.5 --resume"
           if [ -n "${{ github.event.inputs.limit }}" ]; then
@@ -47,6 +60,7 @@ jobs:
           python dbworker/run_full_sync.py $ARGS
 
       - name: Configure git
+        shell: bash
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
@@ -56,6 +70,7 @@ jobs:
       # is internal state, not filament data, so it never opens a PR by
       # itself -- only actual record changes (below) do that.
       - name: Persist partial-run checkpoint, if any
+        shell: bash
         run: |
           if [ -f dbworker/.sync_checkpoint.jsonl ]; then
             git add dbworker/.sync_checkpoint.jsonl dbworker/.sync_done_brands.txt
@@ -68,15 +83,31 @@ jobs:
       # Only these three files count as "records changed" -- a PR opens
       # if and only if the actual filament data or manufacturer registry
       # differs from what's on main. A partial run with no new filaments
-      # found yet produces no PR at all.
+      # found yet produces no PR at all. `git add` only files that
+      # actually exist -- the very first run (or one that failed before
+      # writing anything) has none yet, and `git add` on a nonexistent
+      # path is a hard error, not a no-op.
       - name: Detect record changes
         id: detect
+        shell: bash
         run: |
-          git add PCDB-Database.csv PCDB-PTouch-Import.csv registry/manufacturers.csv
-          if git diff --cached --quiet; then
+          FILES_TO_CHECK="PCDB-Database.csv PCDB-PTouch-Import.csv registry/manufacturers.csv"
+          EXISTING_FILES=""
+          for f in $FILES_TO_CHECK; do
+            if [ -f "$f" ]; then
+              EXISTING_FILES="$EXISTING_FILES $f"
+            fi
+          done
+          if [ -z "$EXISTING_FILES" ]; then
+            echo "None of the expected output files exist yet -- sync likely failed before writing anything."
             echo "changed=false" >> "$GITHUB_OUTPUT"
           else
-            echo "changed=true" >> "$GITHUB_OUTPUT"
+            git add $EXISTING_FILES
+            if git diff --cached --quiet; then
+              echo "changed=false" >> "$GITHUB_OUTPUT"
+            else
+              echo "changed=true" >> "$GITHUB_OUTPUT"
+            fi
           fi
 
       - name: Open pull request

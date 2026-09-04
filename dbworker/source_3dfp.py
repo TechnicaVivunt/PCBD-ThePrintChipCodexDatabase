@@ -176,6 +176,12 @@ def fetch_rows(brand_slugs, delay=0.5):
 def discover_brand_slugs(session=None):
     session = session or make_session()
     resp = session.get("https://3dfilamentprofiles.com/filaments", timeout=20)
+    if not resp.ok:
+        # Print status + a body snippet before raising -- a 403/bot-block page
+        # looks nothing like the real site, and that's the fastest way to tell
+        # "blocked" apart from "actually broken".
+        print(f"  request failed: HTTP {resp.status_code}")
+        print(f"  response body (first 300 chars): {resp.text[:300]!r}")
     resp.raise_for_status()
     slugs = extract_brand_slugs(resp.text)
     print(f"discovered {len(slugs)} brand slugs")

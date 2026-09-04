@@ -80,7 +80,18 @@ def main():
 
     session = make_session()
     print("Discovering brand slugs...")
-    slugs = discover_brand_slugs(session=session)
+    try:
+        slugs = discover_brand_slugs(session=session)
+    except Exception as e:
+        print(f"FATAL: could not fetch the brand list -- {type(e).__name__}: {e}")
+        print("If this is a 403/429, the request is likely being blocked at the "
+              "network level (e.g. by IP-based bot protection) rather than failing "
+              "for a code reason. Check the response status/body above if visible.")
+        sys.exit(1)
+    if not slugs:
+        print("FATAL: brand list came back empty -- either the site's structure "
+              "changed (see debug_fetch.py) or the response wasn't real page content.")
+        sys.exit(1)
     if args.limit:
         slugs = slugs[:args.limit]
     remaining = [s for s in slugs if s not in done_slugs]
