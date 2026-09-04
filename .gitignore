@@ -1,16 +1,6 @@
-dbworker/voxel_filament_index.csv.prev
-dbworker/hatchbox_filament_index.csv.prev
-dbworker/polymaker_filament_index.csv.prev
-dbworker/bambu_filament_index.csv.prev
-dbworker/prusament_filament_index.csv.prev
-dbworker/prusament_filament_index.csv.prev
-dbworker/polymaker_filament_index.csv.prev
-dbworker/prusament_filament_index.csv.prev
-dbworker/polymaker_filament_index.csv.prev
-dbworker/hatchbox_filament_index.csv.prev
-dbworker/prusament_filament_index.csv.prev
-dbworker/polymaker_filament_index.csv.prev
-dbworker/prusament_filament_index.csv.prev
-dbworker/prusament_filament_index.csv.prev
-dbworker/hatchbox_filament_index.csv.prev
-dbworker/prusament_filament_index.csv.prev
+__pycache__/
+*.pyc
+dbworker/_debug_*.html
+
+# Keep sync checkpoint files tracked -- the scheduled workflow commits
+# them deliberately on a partial run, so they should NOT be ignored.
