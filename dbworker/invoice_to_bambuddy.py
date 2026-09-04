@@ -102,7 +102,14 @@ def convert(raw_input, manufacturer_name, output_path, master_path=None):
 if __name__ == "__main__":
     if len(sys.argv) != 4:
         print("Usage: python invoice_to_bambuddy.py <invoice_file> <manufacturer_name> <output.csv>")
+        print("  invoice_file: a .pdf (extracted automatically) or a .txt of already-extracted text")
         sys.exit(1)
-    with open(sys.argv[1], encoding="utf-8", errors="replace") as f:
-        raw = f.read()
+
+    invoice_path = sys.argv[1]
+    if invoice_path.lower().endswith(".pdf"):
+        from invoice_parsers import bambu  # only module with PDF extraction so far
+        raw = bambu.extract_pdf_text(invoice_path)
+    else:
+        with open(invoice_path, encoding="utf-8", errors="replace") as f:
+            raw = f.read()
     convert(raw, sys.argv[2], sys.argv[3])
